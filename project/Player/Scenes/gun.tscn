@@ -16,8 +16,11 @@ albedo_color = Color(0.380392, 0.403922, 0.247059, 1)
 script = ExtResource("1_w2kbx")
 
 [node name="Mesh" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.037, -0.216941)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.217)
+layers = 4
 mesh = SubResource("BoxMesh_hwdy7")
 surface_material_override/0 = SubResource("StandardMaterial3D_fmoo1")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="RayCast3D" type="RayCast3D" parent="."]
+target_position = Vector3(0, 0, -0.715)
+collision_mask = 0

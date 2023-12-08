@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://d4niveflkpj5o"]
+
+[ext_resource type="Script" path="res://Player/Scripts/orange.gd" id="1_5gt2i"]
+[ext_resource type="PackedScene" uid="uid://ccvplef6eejyv" path="res://Player/Scenes/bullet.tscn" id="2_uxedq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cufsp"]
+shading_mode = 2
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.647059, 0.666667, 0.101961, 1)
+emission_enabled = true
+emission = Color(0.686275, 0.752941, 0.113725, 1)
+emission_energy_multiplier = 5.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_j30ju"]
+radius = 0.1
+height = 0.2
+
+[node name="Orange" type="Node3D"]
+script = ExtResource("1_5gt2i")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_cufsp")
+mesh = SubResource("SphereMesh_j30ju")
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+target_position = Vector3(0, 0, -0.2)
+collision_mask = 2
+collide_with_areas = true
+collide_with_bodies = false
+
+[node name="Bullet" parent="." node_paths=PackedStringArray("raycast") instance=ExtResource("2_uxedq")]
+raycast = NodePath("../RayCast3D")
+
+[connection signal="hit" from="Bullet" to="." method="_on_bullet_hit"]

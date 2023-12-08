@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://d4niveflkpj5o"]
+[gd_scene load_steps=6 format=3 uid="uid://d4niveflkpj5o"]
 
 [ext_resource type="Script" path="res://Player/Scripts/orange.gd" id="1_5gt2i"]
 [ext_resource type="PackedScene" uid="uid://ccvplef6eejyv" path="res://Player/Scenes/bullet.tscn" id="2_uxedq"]
+[ext_resource type="PackedScene" uid="uid://chb7js2kohoap" path="res://Utils/Scenes/expiration.tscn" id="3_nmc3q"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cufsp"]
 shading_mode = 2
@@ -31,5 +32,8 @@ collide_with_bodies = false
 
 [node name="Bullet" parent="." node_paths=PackedStringArray("raycast") instance=ExtResource("2_uxedq")]
 raycast = NodePath("../RayCast3D")
+
+[node name="Expiration" parent="." instance=ExtResource("3_nmc3q")]
+seconds_until_deletion = 3.0
 
 [connection signal="hit" from="Bullet" to="." method="_on_bullet_hit"]

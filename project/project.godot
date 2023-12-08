@@ -60,4 +60,4 @@ EXIT={
 [layer_names]
 
 3d_render/layer_3="gun"
-3d_physics/layer_2="children"
+3d_physics/layer_2="shootable"

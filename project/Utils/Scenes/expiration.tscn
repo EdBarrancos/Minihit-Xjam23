@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://chb7js2kohoap"]
+
+[ext_resource type="Script" path="res://Utils/Scripts/expiration.gd" id="1_j42c7"]
+
+[node name="Expiration" type="Node"]
+script = ExtResource("1_j42c7")
+
+[node name="Timer" type="Timer" parent="."]

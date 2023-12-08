@@ -1,5 +1,8 @@
 extends Node3D
 
+@export var ammo_type_scene : PackedScene
+@onready var gun_barrel = $RayCast3D
+
 var charging_tween
 
 # Called when the node enters the scene tree for the first time.
@@ -24,3 +27,11 @@ func handle_shooting():
 	if charging_tween != null:
 		charging_tween.kill()
 	self.scale = Vector3(1, 1, 1)
+	shoot()
+	
+func shoot():
+	var bullet_instance = ammo_type_scene.instantiate()
+	bullet_instance.position = gun_barrel.global_position
+	bullet_instance.transform.basis = gun_barrel.global_transform.basis
+	get_viewport().add_child(bullet_instance)
+	

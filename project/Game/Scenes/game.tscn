@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://5tud527fwgyv"]
+[gd_scene load_steps=6 format=3 uid="uid://5tud527fwgyv"]
 
 [ext_resource type="PackedScene" uid="uid://da1yajnxnbrpo" path="res://Store/Scenes/store.tscn" id="1_nmjb7"]
+[ext_resource type="Script" path="res://Game/Scripts/game.gd" id="1_xyo1d"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4x3e7"]
 sky_top_color = Color(0.352941, 0.403922, 0.784314, 1)
@@ -19,6 +20,7 @@ tonemap_mode = 2
 glow_enabled = true
 
 [node name="Game" type="Node3D"]
+script = ExtResource("1_xyo1d")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866025, -0.464888, 0.184062, 0, 0.368125, 0.929776, -0.5, 0.80521, -0.318805, 0, 0, 0)

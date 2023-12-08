@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://buo5j43idfqcr"]
+[gd_scene load_steps=5 format=3 uid="uid://buo5j43idfqcr"]
 
 [ext_resource type="Script" path="res://Player/Scripts/player.gd" id="1_75rw3"]
 [ext_resource type="PackedScene" uid="uid://pvi750xacjly" path="res://Player/Scenes/gun.tscn" id="2_hw5sk"]
@@ -24,5 +24,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.742019, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
 
-[node name="Gun" parent="Camera3D" instance=ExtResource("2_hw5sk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2172, -0.280672, -0.5017)
+[node name="Gun" parent="Head/Camera3D" instance=ExtResource("2_hw5sk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2172, -0.309298, -0.5017)

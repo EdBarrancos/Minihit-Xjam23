@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://58ima0rognqc"]
+
+[ext_resource type="Script" path="res://Player/Scripts/shootable.gd" id="1_o0or6"]
+
+[node name="Shootable" type="Area3D"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_o0or6")

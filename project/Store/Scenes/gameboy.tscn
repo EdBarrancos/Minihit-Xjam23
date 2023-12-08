@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8au82xiqgrh1"]
+
+[ext_resource type="Script" path="res://Store/Scripts/gameboy.gd" id="1_xpk6i"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_bqhtt"]
+size = Vector3(0.2, 0.2, 0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mpsbd"]
+points = PackedVector3Array(-0.1, -0.1, -0.1, 0.0999954, 0.1, 0.1, 0.0999954, 0.1, -0.1, 0.0999954, -0.1, 0.1, -0.1, 0.1, 0.1, 0.0999954, -0.1, -0.1, -0.1, 0.1, -0.1, -0.1, -0.1, 0.1)
+
+[node name="Gameboy" type="Area3D"]
+script = ExtResource("1_xpk6i")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_bqhtt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_mpsbd")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

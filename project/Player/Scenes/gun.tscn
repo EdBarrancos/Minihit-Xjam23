@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://pvi750xacjly"]
+
+[ext_resource type="Script" path="res://Player/Scripts/gun.gd" id="1_w2kbx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_hwdy7"]
+lightmap_size_hint = Vector2i(8, 10)
+size = Vector3(0.1, 0.1, 0.7)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fmoo1"]
+shading_mode = 2
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.380392, 0.403922, 0.247059, 1)
+
+[node name="Gun" type="Node3D"]
+script = ExtResource("1_w2kbx")
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.037, -0.216941)
+mesh = SubResource("BoxMesh_hwdy7")
+surface_material_override/0 = SubResource("StandardMaterial3D_fmoo1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

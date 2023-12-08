@@ -2,9 +2,9 @@ extends Node3D
 
 @export var ammo_type_scene : PackedScene
 @onready var gun_barrel = $RayCast3D
-@onready var slingshot = $Slingshot
+@onready var slingshot = $Slingshot3
 
-var charging_tween
+var loaded_bullet
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -21,18 +21,21 @@ func handle_input():
 		handle_shooting()
 
 func handle_charging_shoot():
-	charging_tween = get_tree().create_tween().set_ease(Tween.EASE_IN)
-	charging_tween.tween_property(self, "scale", Vector3(1, 1, 1.5), 0.5)
+	create_bullet()
+	slingshot.charge()
 	
 func handle_shooting():
-	if charging_tween != null:
-		charging_tween.kill()
-	self.scale = Vector3(1, 1, 1)
 	shoot()
+	slingshot.shoot()
 	
 func shoot():
-	var bullet_instance = ammo_type_scene.instantiate()
-	bullet_instance.position = gun_barrel.global_position
-	bullet_instance.transform.basis = gun_barrel.global_transform.basis
-	get_viewport().add_child(bullet_instance)
+	loaded_bullet.shoot()
+	loaded_bullet.transform.basis = gun_barrel.global_transform.basis
+	
+	
+func create_bullet():
+	loaded_bullet = ammo_type_scene.instantiate()
+	loaded_bullet.marker_loaded = slingshot.marker_3d
+	get_viewport().add_child(loaded_bullet)
+	
 	

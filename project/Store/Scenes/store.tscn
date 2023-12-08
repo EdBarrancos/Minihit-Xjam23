@@ -1,6 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://da1yajnxnbrpo"]
+[gd_scene load_steps=4 format=3 uid="uid://da1yajnxnbrpo"]
 
 [ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_d57fn"]
+[ext_resource type="PackedScene" uid="uid://buo5j43idfqcr" path="res://Player/Scenes/player.tscn" id="2_2t2d7"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_hnwhr"]
 
 [node name="Store" type="Node3D"]
 script = ExtResource("1_d57fn")
+
+[node name="Player" parent="." instance=ExtResource("2_2t2d7")]
+transform = Transform3D(0.239228, 0, -0.970963, 0, 1, 0, 0.970963, 0, 0.239228, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.52191, -0.607572, -0.999508)
+mesh = SubResource("CapsuleMesh_hnwhr")
+skeleton = NodePath("../Player")

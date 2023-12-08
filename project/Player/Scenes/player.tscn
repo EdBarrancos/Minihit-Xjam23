@@ -1,12 +1,28 @@
-[gd_scene load_steps=3 format=3 uid="uid://buo5j43idfqcr"]
+[gd_scene load_steps=4 format=3 uid="uid://buo5j43idfqcr"]
 
 [ext_resource type="Script" path="res://Player/Scripts/player.gd" id="1_75rw3"]
 [ext_resource type="PackedScene" uid="uid://pvi750xacjly" path="res://Player/Scenes/gun.tscn" id="2_hw5sk"]
 
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ot820"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_42dqw"]
+
 [node name="Player" type="CharacterBody3D"]
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
 script = ExtResource("1_75rw3")
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_ot820")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_42dqw")
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.742019, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Head"]
 
 [node name="Gun" parent="Camera3D" instance=ExtResource("2_hw5sk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2172, -0.280672, -0.5017)

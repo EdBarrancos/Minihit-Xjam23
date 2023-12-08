@@ -1,17 +1,38 @@
-[gd_scene load_steps=4 format=3 uid="uid://da1yajnxnbrpo"]
+[gd_scene load_steps=6 format=3 uid="uid://da1yajnxnbrpo"]
 
 [ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_d57fn"]
 [ext_resource type="PackedScene" uid="uid://buo5j43idfqcr" path="res://Player/Scenes/player.tscn" id="2_2t2d7"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_hnwhr"]
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_n3gp5"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_5i27q"]
+sky_material = SubResource("ProceduralSkyMaterial_n3gp5")
+
+[sub_resource type="Environment" id="Environment_vqwgl"]
+background_mode = 2
+sky = SubResource("Sky_5i27q")
+tonemap_mode = 2
+glow_enabled = true
 
 [node name="Store" type="Node3D"]
 script = ExtResource("1_d57fn")
 
 [node name="Player" parent="." instance=ExtResource("2_2t2d7")]
-transform = Transform3D(0.239228, 0, -0.970963, 0, 1, 0, 0.970963, 0, 0.239228, 0, 0.334175, 0)
+transform = Transform3D(0.239228, 0, -0.970963, 0, 1, 0, 0.970963, 0, 0.239228, 0, 0.807365, 0)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.52191, 0.220871, -0.999508)
-mesh = SubResource("CapsuleMesh_hnwhr")
-skeleton = NodePath("../Player")
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_vqwgl")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, -0.94807, -10.5)
+use_collision = true
+size = Vector3(28, 1, 38)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.48657)

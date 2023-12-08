@@ -9,9 +9,9 @@
 script = ExtResource("1_d57fn")
 
 [node name="Player" parent="." instance=ExtResource("2_2t2d7")]
-transform = Transform3D(0.239228, 0, -0.970963, 0, 1, 0, 0.970963, 0, 0.239228, 0, 0, 0)
+transform = Transform3D(0.239228, 0, -0.970963, 0, 1, 0, 0.970963, 0, 0.239228, 0, 0.334175, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.52191, -0.607572, -0.999508)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.52191, 0.220871, -0.999508)
 mesh = SubResource("CapsuleMesh_hnwhr")
 skeleton = NodePath("../Player")

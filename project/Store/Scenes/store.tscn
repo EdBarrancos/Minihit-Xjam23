@@ -58,14 +58,3 @@ size = Vector3(19.4226, 1, 1)
 
 [node name="Door" parent="." instance=ExtResource("5_86msp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.68877, 0.931471, 8.29752)
-
-[node name="Child" parent="." instance=ExtResource("3_6s0l1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9309, 1.10658, 0)
-visible = false
-
-[node name="Gameboy" parent="." instance=ExtResource("3_qtsws")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.97599, 0.580008, -12.8658)
-visible = false
-
-[connection signal="body_entered" from="Door" to="Child" method="_on_door_body_entered"]
-[connection signal="body_entered" from="Gameboy" to="Child" method="_on_gameboy_body_entered"]

@@ -32,15 +32,14 @@ func _physics_process(delta):
 	velocity = velocity.lerp(direction * SPEED, ACCELERATION * delta)
 	
 	move_and_slide()
-	
-	
-
 
 func _on_gameboy_body_entered(body):
 	if(body == self):
 		caught_gameboy = true
-	
 
 func _on_door_body_entered(body):
 	if(body == self):
 		queue_free()
+
+func _on_shootable_was_hit():
+	queue_free()

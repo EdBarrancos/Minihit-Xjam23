@@ -2,27 +2,23 @@
 
 [ext_resource type="Script" path="res://Player/Scripts/gun.gd" id="1_w2kbx"]
 [ext_resource type="PackedScene" uid="uid://d4niveflkpj5o" path="res://Player/Scenes/orange.tscn" id="2_t88bw"]
+[ext_resource type="PackedScene" uid="uid://bkx1omk8op0qx" path="res://Player/Scenes/slingshot_3.tscn" id="3_ejg10"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_hwdy7"]
-lightmap_size_hint = Vector2i(8, 10)
-size = Vector3(0.1, 0.1, 0.7)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fmoo1"]
-shading_mode = 2
-diffuse_mode = 3
-specular_mode = 1
-albedo_color = Color(0.380392, 0.403922, 0.247059, 1)
+[sub_resource type="MultiMesh" id="MultiMesh_mplqr"]
 
 [node name="Gun" type="Node3D"]
 script = ExtResource("1_w2kbx")
 ammo_type_scene = ExtResource("2_t88bw")
 
-[node name="Mesh" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.217)
-layers = 4
-mesh = SubResource("BoxMesh_hwdy7")
-surface_material_override/0 = SubResource("StandardMaterial3D_fmoo1")
-
 [node name="RayCast3D" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.433514)
 target_position = Vector3(0, 0, -0.715)
 collision_mask = 0
+
+[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="."]
+multimesh = SubResource("MultiMesh_mplqr")
+
+[node name="Slingshot3" parent="." instance=ExtResource("3_ejg10")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, -0.364406, 0)
+
+[connection signal="shoot_animation_ended" from="Slingshot3" to="." method="_on_slingshot_3_shoot_animation_ended"]

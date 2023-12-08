@@ -25,4 +25,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.742019, 0)
 [node name="Camera3D" type="Camera3D" parent="Head"]
 
 [node name="Gun" parent="Head/Camera3D" instance=ExtResource("2_hw5sk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2172, -0.309298, -0.5017)
+transform = Transform3D(1, 0, 0, 0, 1, -0.000227511, 0, 0.000227511, 1, 0.2172, -0.293332, -0.934567)

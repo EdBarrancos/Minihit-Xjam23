@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=3 uid="uid://bkx1omk8op0qx"]
+
+[ext_resource type="PackedScene" uid="uid://dwrp0il7d80as" path="res://Player/Assets/Visuals/Slingshot3.glb" id="1_hxbyj"]
+[ext_resource type="Script" path="res://Player/Scripts/slingshot_3.gd" id="2_5lioa"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q03hs"]
+shading_mode = 2
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(1, 0.247059, 0.172549, 1)
+metallic_specular = 0.3
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x6ks8"]
+shading_mode = 2
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jhk3b"]
+shading_mode = 2
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.976471, 0.545098, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ppii"]
+shading_mode = 2
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.662745, 0.392157, 0.227451, 1)
+metallic = 0.15
+metallic_specular = 0.61
+
+[node name="Slingshot3" instance=ExtResource("1_hxbyj")]
+script = ExtResource("2_5lioa")
+
+[node name="Skeleton3D" parent="Sling_mechanic" index="0"]
+bones/0/rotation = Quaternion(-7.78172e-05, 7.36545e-07, -0.703252, 0.71094)
+bones/0/scale = Vector3(1, 0.326865, 1)
+bones/1/rotation = Quaternion(-0.707107, 0, 0, 0.707107)
+
+[node name="Panties_010" parent="Sling_mechanic/Skeleton3D" index="0"]
+material_override = SubResource("StandardMaterial3D_q03hs")
+
+[node name="Panties_011" parent="Sling_mechanic/Skeleton3D" index="1"]
+material_override = SubResource("StandardMaterial3D_x6ks8")
+
+[node name="Panties_012" parent="Sling_mechanic/Skeleton3D" index="2"]
+material_override = SubResource("StandardMaterial3D_jhk3b")
+
+[node name="Slingshot_002" parent="." index="1"]
+material_override = SubResource("StandardMaterial3D_2ppii")
+
+[node name="AnimationPlayer" parent="." index="2"]
+autoplay = "RESET"
+
+[node name="Marker3D" type="Marker3D" parent="." index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0269566, 0.334971, 0.0064247)
+
+[connection signal="animation_changed" from="AnimationPlayer" to="." method="_on_animation_player_animation_changed"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

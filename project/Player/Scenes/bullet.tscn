@@ -2,5 +2,9 @@
 
 [ext_resource type="Script" path="res://Player/Scripts/bullet.gd" id="1_j74bj"]
 
-[node name="Bullet" type="Node3D"]
+[node name="Bullet" type="Area3D"]
+collision_layer = 0
+collision_mask = 2
 script = ExtResource("1_j74bj")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

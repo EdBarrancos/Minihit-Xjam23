@@ -1,8 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://da1yajnxnbrpo"]
+[gd_scene load_steps=10 format=3 uid="uid://da1yajnxnbrpo"]
 
 [ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_d57fn"]
 [ext_resource type="PackedScene" uid="uid://buo5j43idfqcr" path="res://Player/Scenes/player.tscn" id="2_2t2d7"]
-[ext_resource type="Script" path="res://Store/Scripts/ChildrenManager.gd" id="2_pev48"]
 [ext_resource type="PackedScene" uid="uid://0fjnmd8u6yvw" path="res://Child/Scenes/child.tscn" id="3_6s0l1"]
 [ext_resource type="PackedScene" uid="uid://c8au82xiqgrh1" path="res://Store/Scenes/gameboy.tscn" id="3_qtsws"]
 [ext_resource type="PackedScene" uid="uid://bwb7odtagrx5s" path="res://Store/Scenes/door.tscn" id="5_86msp"]
@@ -26,12 +25,6 @@ polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Arr
 
 [node name="Store" type="Node3D"]
 script = ExtResource("1_d57fn")
-
-[node name="ChildrenManager" type="Node3D" parent="." node_paths=PackedStringArray("door")]
-script = ExtResource("2_pev48")
-door = NodePath("../Door")
-child_scene = ExtResource("3_6s0l1")
-gameboy_scene = ExtResource("3_qtsws")
 
 [node name="Player" parent="." instance=ExtResource("2_2t2d7")]
 transform = Transform3D(0.239228, 0, -0.970963, 0, 1, 0, 0.970963, 0, 0.239228, 0, 0.807365, 0)
@@ -59,13 +52,22 @@ size = Vector3(19.4226, 1, 1)
 [node name="Door" parent="." instance=ExtResource("5_86msp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.68877, 0.931471, 8.29752)
 
-[node name="Child" parent="." instance=ExtResource("3_6s0l1")]
+[node name="Child" parent="." node_paths=PackedStringArray("target", "door_target") instance=ExtResource("3_6s0l1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9309, 1.10658, 0)
-visible = false
+target = NodePath("../Gameboy")
+door_target = NodePath("../Door")
 
 [node name="Gameboy" parent="." instance=ExtResource("3_qtsws")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.97599, 0.580008, -12.8658)
-visible = false
+
+[node name="Child2" parent="." node_paths=PackedStringArray("target", "door_target") instance=ExtResource("3_6s0l1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.03705, 0.632845, 0)
+target = NodePath("../Gameboy2")
+door_target = NodePath("../Door")
+
+[node name="Gameboy2" parent="." instance=ExtResource("3_qtsws")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.95198, 0.248495, -23.8889)
 
 [connection signal="body_entered" from="Door" to="Child" method="_on_door_body_entered"]
 [connection signal="body_entered" from="Gameboy" to="Child" method="_on_gameboy_body_entered"]
+[connection signal="body_entered" from="Gameboy2" to="Child" method="_on_gameboy_body_entered"]

@@ -6,6 +6,10 @@ extends Node3D
 
 var loaded_bullet
 
+enum MODE {CHARGING, SHOOTING, NOTHING}
+
+@onready var mode = MODE.NOTHING
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	create_bullet()
@@ -15,22 +19,26 @@ func _process(delta):
 	handle_input()
 
 func handle_input():
-	if Input.is_action_just_pressed("SHOOT"):
+	if Input.is_action_pressed("SHOOT") && mode == MODE.NOTHING:
 		handle_charging_shoot()
-	elif Input.is_action_just_released("SHOOT"):
+	elif Input.is_action_just_released("SHOOT") && mode == MODE.CHARGING:
 		handle_shooting()
 
 func handle_charging_shoot():
 	slingshot.charge()
+	mode = MODE.CHARGING
 	
 func handle_shooting():
-	shoot()
-	slingshot.shoot()
+	var charging = slingshot.shoot()
+	print(charging)
+	shoot(charging)
+	mode = MODE.SHOOTING
 	
-func shoot():
-	loaded_bullet.shoot()
+func shoot(charging):
+	if !is_instance_valid(loaded_bullet):
+		create_bullet()
+	loaded_bullet.shoot(charging)
 	loaded_bullet.transform.basis = gun_barrel.global_transform.basis
-	
 	
 func create_bullet():
 	loaded_bullet = ammo_type_scene.instantiate()
@@ -38,5 +46,5 @@ func create_bullet():
 	get_viewport().call_deferred("add_child", loaded_bullet)
 	
 func _on_slingshot_3_shoot_animation_ended():
-	print("Hello")
+	mode = MODE.NOTHING
 	create_bullet()

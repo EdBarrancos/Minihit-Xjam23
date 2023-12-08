@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwb7odtagrx5s"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5p1ic"]
+size = Vector3(1.5, 2.5, 0.1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8wcc5"]
+points = PackedVector3Array(0.777778, 1.26934, 0.0888889, -0.769841, -1.26934, -0.0698413, -0.769841, -1.26934, 0.0888889, -0.769841, 1.26934, -0.0698413, 0.777778, -1.26934, -0.0698413, 0.777778, -1.26934, 0.0888889, -0.769841, 1.26934, 0.0888889, 0.777778, 1.26934, -0.0698413)
+
+[node name="Door" type="Area3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_5p1ic")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_8wcc5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

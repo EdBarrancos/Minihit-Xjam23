@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://da1yajnxnbrpo"]
+[gd_scene load_steps=10 format=3 uid="uid://da1yajnxnbrpo"]
 
 [ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_d57fn"]
 [ext_resource type="PackedScene" uid="uid://buo5j43idfqcr" path="res://Player/Scenes/player.tscn" id="2_2t2d7"]
+[ext_resource type="PackedScene" uid="uid://0fjnmd8u6yvw" path="res://Child/Scenes/child.tscn" id="3_6s0l1"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_n3gp5"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -16,6 +17,16 @@ sky = SubResource("Sky_5i27q")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="NavigationMesh" id="NavigationMesh_bhto4"]
+vertices = PackedVector3Array(5, 0.05193, -9.5, 5.25, 0.05193, -8.5, 6, 0.05193, -8.5, 6, 0.05193, -29, -21, 0.05193, -8.5, -15.5, 0.05193, -8.5, -15.25, 0.05193, -9.5, -21, 0.05193, -29, -15.25, 0.05193, -9.5, 5, 0.05193, -9.5, 6, 0.05193, -29, -21, 0.05193, -29, 6, 0.05193, -8.5, 5.25, 0.05193, -8.5, 5, 0.05193, -7.25, 6, 0.05193, 8, -15.25, 0.05193, -7.25, -15.5, 0.05193, -8.5, -21, 0.05193, -8.5, -21, 0.05193, 8, -15.25, 0.05193, -7.25, -21, 0.05193, 8, 6, 0.05193, 8, 5, 0.05193, -7.25)
+polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(5, 4, 6), PackedInt32Array(6, 4, 7), PackedInt32Array(9, 8, 10), PackedInt32Array(10, 8, 11), PackedInt32Array(13, 12, 14), PackedInt32Array(14, 12, 15), PackedInt32Array(17, 16, 18), PackedInt32Array(18, 16, 19), PackedInt32Array(23, 22, 20), PackedInt32Array(20, 22, 21)]
+
+[sub_resource type="BoxMesh" id="BoxMesh_2n27v"]
+size = Vector3(0.3, 0.2, 0.1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_v184g"]
+size = Vector3(2, 5, 0.1)
+
 [node name="Store" type="Node3D"]
 script = ExtResource("1_d57fn")
 
@@ -29,10 +40,28 @@ environment = SubResource("Environment_vqwgl")
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
 shadow_enabled = true
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_bhto4")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, -0.94807, -10.5)
 use_collision = true
 size = Vector3(28, 1, 38)
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.48657)
+[node name="CSGBox3D2" type="CSGBox3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1554, 0, -8.48657)
+use_collision = true
+size = Vector3(19.4226, 1, 1)
+
+[node name="Gameboy" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45405, 0.787574, -11.8148)
+mesh = SubResource("BoxMesh_2n27v")
+
+[node name="Child" parent="." node_paths=PackedStringArray("target", "door_target") instance=ExtResource("3_6s0l1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9309, 1.10658, 0)
+target = NodePath("../Gameboy")
+door_target = NodePath("../Door")
+
+[node name="Door" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.29771, 1.99352, 7.80834)
+mesh = SubResource("BoxMesh_v184g")

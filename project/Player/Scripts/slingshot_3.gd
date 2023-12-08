@@ -10,8 +10,10 @@ func charge():
 
 func shoot():
 	animation_player.play("Sling_bounce")
+	animation_player.seek(1.7)
 
 
 func _on_animation_player_animation_finished(anim_name):
+	print(anim_name == "Sling_bounce")
 	if anim_name == "Sling_bounce":
 		emit_signal("shoot_animation_ended")

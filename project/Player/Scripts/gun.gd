@@ -8,7 +8,7 @@ var loaded_bullet
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	create_bullet()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -21,7 +21,6 @@ func handle_input():
 		handle_shooting()
 
 func handle_charging_shoot():
-	create_bullet()
 	slingshot.charge()
 	
 func handle_shooting():
@@ -36,6 +35,8 @@ func shoot():
 func create_bullet():
 	loaded_bullet = ammo_type_scene.instantiate()
 	loaded_bullet.marker_loaded = slingshot.marker_3d
-	get_viewport().add_child(loaded_bullet)
+	get_viewport().call_deferred("add_child", loaded_bullet)
 	
-	
+func _on_slingshot_3_shoot_animation_ended():
+	print("Hello")
+	create_bullet()

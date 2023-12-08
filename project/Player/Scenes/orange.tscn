@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://d4niveflkpj5o"]
+[gd_scene load_steps=7 format=3 uid="uid://d4niveflkpj5o"]
 
 [ext_resource type="Script" path="res://Player/Scripts/orange.gd" id="1_5gt2i"]
+[ext_resource type="Texture2D" uid="uid://dsi51jit2wuxx" path="res://Player/Assets/Visuals/download.jpeg" id="2_s1v51"]
 [ext_resource type="PackedScene" uid="uid://ccvplef6eejyv" path="res://Player/Scenes/bullet.tscn" id="2_uxedq"]
 [ext_resource type="PackedScene" uid="uid://chb7js2kohoap" path="res://Utils/Scenes/expiration.tscn" id="3_nmc3q"]
 
@@ -8,10 +9,11 @@
 shading_mode = 2
 diffuse_mode = 3
 specular_mode = 1
-albedo_color = Color(0.647059, 0.666667, 0.101961, 1)
+albedo_color = Color(0.784314, 0.454902, 0, 1)
+roughness_texture = ExtResource("2_s1v51")
 emission_enabled = true
-emission = Color(0.686275, 0.752941, 0.113725, 1)
-emission_energy_multiplier = 5.0
+emission_energy_multiplier = 3.5
+emission_texture = ExtResource("2_s1v51")
 
 [sub_resource type="SphereMesh" id="SphereMesh_j30ju"]
 radius = 0.1

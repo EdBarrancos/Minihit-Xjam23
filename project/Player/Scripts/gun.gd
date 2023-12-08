@@ -2,6 +2,7 @@ extends Node3D
 
 @export var ammo_type_scene : PackedScene
 @onready var gun_barrel = $RayCast3D
+@onready var slingshot = $Slingshot
 
 var charging_tween
 

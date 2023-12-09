@@ -13,11 +13,13 @@ enum MODE { LOADED, SHOOTING }
 var marker_loaded
 
 @onready var expiration = $Expiration
+@onready var bullet = $Bullet
 
 func _on_bullet_hit():
 	queue_free()
 	
 func shoot(charge_value:float):
+	bullet.active = true
 	mode = MODE.SHOOTING
 	expiration.start_counting()
 	speed = (SPEED_MAX - SPEED_MIN) * charge_value + SPEED_MIN

@@ -1,20 +1,18 @@
 [gd_scene load_steps=4 format=3 uid="uid://c8au82xiqgrh1"]
 
 [ext_resource type="Script" path="res://Store/Scripts/gameboy.gd" id="1_xpk6i"]
+[ext_resource type="PackedScene" uid="uid://bfdsntq18sdtr" path="res://Store/Scenes/gameboyMesh.tscn" id="2_w58me"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_bqhtt"]
-size = Vector3(0.2, 0.2, 0.2)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mpsbd"]
-points = PackedVector3Array(-0.1, -0.1, -0.1, 0.0999954, 0.1, 0.1, 0.0999954, 0.1, -0.1, 0.0999954, -0.1, 0.1, -0.1, 0.1, 0.1, 0.0999954, -0.1, -0.1, -0.1, 0.1, -0.1, -0.1, -0.1, 0.1)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4yvq0"]
+points = PackedVector3Array(0.0157081, -0.0751746, -0.0344263, 0.00828348, 0.0717073, 0.0433315, -0.016, 0.0701767, 0.0423989, -0.0159939, 0.0701507, -0.0431132, -0.0148192, -0.0610757, 0.0454444, -0.0171712, -0.0751746, -0.0461746, 0.0157081, 0.0728199, -0.036767, 0.01806, -0.0704652, 0.0360458, 0.01806, 0.0751746, 0.0313464, 0.01806, -0.0704652, -0.0344263, -0.0124707, -0.0751746, 0.0313464, 0.00605924, -0.0719116, -0.0441862, 0.0080991, 0.0700207, -0.0430339, 0.01806, 0.0751746, -0.0273773, 0.0133596, -0.0681252, 0.0407451, -0.0158998, -0.0544831, 0.0421384, 0.0157081, 0.0751746, 0.0383954, 0.0133596, -0.0751746, 0.0336961, 0.00813461, -0.059342, 0.0425017, -0.0124707, -0.0704652, 0.0407451, 0.0104335, -0.071066, -0.0414497, -0.016, -0.0701767, 0.0116905, -0.0124707, -0.0634157, 0.0454444, 0.01806, -0.0728199, 0.0336961, 0.01806, 0.0728199, -0.029718, 0.01806, -0.0728199, -0.029718, -0.0124707, -0.0681252, 0.0430948, 0.0102589, 0.0676364, 0.0421836, 0.0157081, -0.0728199, 0.0360458, 0.0080991, -0.0678274, -0.0430339)
 
 [node name="Gameboy" type="Area3D"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 script = ExtResource("1_xpk6i")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("BoxMesh_bqhtt")
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("ConvexPolygonShape3D_mpsbd")
+shape = SubResource("ConvexPolygonShape3D_4yvq0")
+
+[node name="Gameboy_1" parent="." instance=ExtResource("2_w58me")]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

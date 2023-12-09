@@ -9,9 +9,11 @@ points = PackedVector3Array(0.777778, 1.26934, 0.0888889, -0.769841, -1.26934, -
 [node name="Door" type="Area3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("BoxMesh_5p1ic")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+visible = false
 shape = SubResource("ConvexPolygonShape3D_8wcc5")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,13 +1,17 @@
-[gd_scene load_steps=10 format=3 uid="uid://da1yajnxnbrpo"]
+[gd_scene load_steps=13 format=3 uid="uid://da1yajnxnbrpo"]
 
 [ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_d57fn"]
 [ext_resource type="PackedScene" uid="uid://buo5j43idfqcr" path="res://Player/Scenes/player.tscn" id="2_2t2d7"]
+[ext_resource type="PackedScene" uid="uid://bq3ei4rh77djq" path="res://Utils/Scenes/timer.tscn" id="2_n1lct"]
 [ext_resource type="Script" path="res://Store/Scripts/ChildrenManager.gd" id="2_pev48"]
 [ext_resource type="PackedScene" uid="uid://c8au82xiqgrh1" path="res://Store/Scenes/gameboy.tscn" id="3_qtsws"]
 [ext_resource type="PackedScene" uid="uid://bwb7odtagrx5s" path="res://Store/Scenes/door.tscn" id="5_86msp"]
+[ext_resource type="Script" path="res://Utils/Scripts/score.gd" id="7_pb05v"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_n3gp5"]
-sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+sky_top_color = Color(0.4, 0.333333, 0.913725, 1)
+sky_horizon_color = Color(0.937255, 0.65098, 0.172549, 1)
+sky_energy_multiplier = 1.2
 ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
 
 [sub_resource type="Sky" id="Sky_5i27q"]
@@ -26,6 +30,8 @@ polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Arr
 [node name="Store" type="Node3D"]
 script = ExtResource("1_d57fn")
 
+[node name="Timer" parent="." instance=ExtResource("2_n1lct")]
+
 [node name="ChildrenManager" type="Node3D" parent="." node_paths=PackedStringArray("door")]
 script = ExtResource("2_pev48")
 door = NodePath("../Door")
@@ -38,8 +44,12 @@ transform = Transform3D(0.239228, 0, -0.970963, 0, 1, 0, 0.970963, 0, 0.239228, 
 environment = SubResource("Environment_vqwgl")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 2.51134, 0)
+light_color = Color(1, 1, 0.854902, 1)
+light_energy = 2.0
+light_bake_mode = 1
 shadow_enabled = true
+shadow_bias = 1.566
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 navigation_mesh = SubResource("NavigationMesh_bhto4")
@@ -56,3 +66,17 @@ size = Vector3(19.4226, 1, 1)
 
 [node name="Door" parent="." instance=ExtResource("5_86msp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.68877, 0.931471, 8.29752)
+
+[node name="Score" type="Label" parent="."]
+layout_direction = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -100.0
+offset_right = -23.0
+offset_bottom = 42.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 30
+script = ExtResource("7_pb05v")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

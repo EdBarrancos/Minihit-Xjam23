@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=3 uid="uid://c7oot0tep422m"]
+
+[ext_resource type="FontFile" uid="uid://dravgrmm0jc6q" path="res://RubikBubbles-Regular.ttf" id="1_o0ren"]
+[ext_resource type="Script" path="res://Game/Scripts/end_screen.gd" id="1_rusjq"]
+[ext_resource type="PackedScene" uid="uid://c1am0enhtpict" path="res://Game/Scenes/play_button.tscn" id="2_gt40a"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_x3y2s"]
+font = ExtResource("1_o0ren")
+font_size = 150
+
+[sub_resource type="LabelSettings" id="LabelSettings_yit4a"]
+font = ExtResource("1_o0ren")
+font_size = 100
+font_color = Color(0.796078, 0.498039, 0.101961, 1)
+
+[node name="EndScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rusjq")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+text = "MINI HIT"
+label_settings = SubResource("LabelSettings_x3y2s")
+horizontal_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Points" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer2"]
+layout_mode = 2
+text = "150"
+label_settings = SubResource("LabelSettings_yit4a")
+horizontal_alignment = 1
+
+[node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 60
+
+[node name="Button" parent="MarginContainer/VBoxContainer/MarginContainer3" instance=ExtResource("2_gt40a")]
+layout_mode = 2
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer3/Button" to="." method="_on_button_pressed"]

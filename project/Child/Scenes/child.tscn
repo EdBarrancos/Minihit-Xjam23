@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://0fjnmd8u6yvw"]
+[gd_scene load_steps=7 format=3 uid="uid://0fjnmd8u6yvw"]
 
 [ext_resource type="Script" path="res://Child/Script/child.gd" id="1_sxdgi"]
 [ext_resource type="Shape3D" uid="uid://xcjld21uvhfg" path="res://Child/Assets/child_collision_capsule.tres" id="2_3g7wn"]
@@ -22,6 +22,8 @@ mesh = SubResource("CapsuleMesh_faxd6")
 shape = ExtResource("2_3g7wn")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." groups=["child"]]
+avoidance_enabled = true
+radius = 15.0
 
 [node name="Shootable" parent="." instance=ExtResource("2_ml5nd")]
 

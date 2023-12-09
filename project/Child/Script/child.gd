@@ -19,7 +19,10 @@ func _set_door(Door):
 	
 func _physics_process(delta):
 	
-	look_at(nav.get_next_path_position())
+	if (nav.get_next_path_position().distance_to(self.global_position) >= 1):
+		look_at(nav.get_next_path_position())
+		
+	
 	
 	var direction = Vector3()
 

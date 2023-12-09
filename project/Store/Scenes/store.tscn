@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://0fjnmd8u6yvw" path="res://Child/Scenes/child.tscn" id="3_6s0l1"]
 [ext_resource type="PackedScene" uid="uid://c8au82xiqgrh1" path="res://Store/Scenes/gameboy.tscn" id="3_qtsws"]
 [ext_resource type="PackedScene" uid="uid://bwb7odtagrx5s" path="res://Store/Scenes/door.tscn" id="5_86msp"]
+[ext_resource type="Script" path="res://Utils/Scripts/score.gd" id="7_pb05v"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_n3gp5"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -61,3 +62,15 @@ size = Vector3(19.4226, 1, 1)
 
 [node name="Door" parent="." instance=ExtResource("5_86msp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.68877, 0.931471, 8.29752)
+
+[node name="Score" type="Label" parent="."]
+layout_direction = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -100.0
+offset_right = -23.0
+offset_bottom = 42.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 30
+script = ExtResource("7_pb05v")

@@ -42,4 +42,5 @@ func _on_door_body_entered(body):
 		queue_free()
 
 func _on_shootable_was_hit():
+	Global._child_was_hit()
 	queue_free()

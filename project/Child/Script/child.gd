@@ -39,6 +39,7 @@ func _on_gameboy_body_entered(body):
 
 func _on_door_body_entered(body):
 	if(body == self):
+		Global._child_despawned()
 		queue_free()
 
 func _on_shootable_was_hit():

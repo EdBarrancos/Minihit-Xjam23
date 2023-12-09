@@ -17,7 +17,6 @@ mesh = SubResource("CapsuleMesh_faxd6")
 shape = ExtResource("2_3g7wn")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." groups=["child"]]
-debug_enabled = true
 
 [node name="Shootable" parent="." instance=ExtResource("2_ml5nd")]
 

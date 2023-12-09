@@ -27,6 +27,6 @@ debug_enabled = true
 shape = ExtResource("2_3g7wn")
 
 [node name="panic_long_run_loop2" parent="." instance=ExtResource("4_r6sfy")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, -0.729213, 0)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, -1.5, 0, -0.729213, 0)
 
 [connection signal="was_hit" from="Shootable" to="." method="_on_shootable_was_hit"]

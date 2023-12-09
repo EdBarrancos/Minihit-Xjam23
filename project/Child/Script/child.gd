@@ -19,6 +19,8 @@ func _set_door(Door):
 	
 func _physics_process(delta):
 	
+	look_at(nav.get_next_path_position())
+	
 	var direction = Vector3()
 
 	if(door and caught_gameboy):

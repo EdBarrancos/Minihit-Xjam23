@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 Global="*res://Utils/Scripts/Global.gd"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [filesystem]
 
 import/fbx/enabled=false
@@ -69,3 +73,7 @@ EXIT={
 
 3d_render/layer_3="gun"
 3d_physics/layer_2="shootable"
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0.4, 0.333333, 0.913725, 1)

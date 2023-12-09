@@ -1,0 +1,72 @@
+[gd_scene load_steps=7 format=3 uid="uid://3bsvtmwpejiv"]
+
+[ext_resource type="FontFile" uid="uid://dravgrmm0jc6q" path="res://RubikBubbles-Regular.ttf" id="1_0edf7"]
+[ext_resource type="Script" path="res://Game/Scripts/main_menu.gd" id="1_b81ih"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_uq2fc"]
+font = ExtResource("1_0edf7")
+font_size = 200
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qgmrj"]
+bg_color = Color(0.796078, 0.498039, 0.101961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cnlkl"]
+bg_color = Color(0.690196, 0.419608, 0.0627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uchn2"]
+bg_color = Color(0.4, 0.333333, 0.913725, 1)
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b81ih")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_0edf7")
+text = "MINI HIT"
+label_settings = SubResource("LabelSettings_uq2fc")
+horizontal_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 100
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.333333, 0.913725, 1)
+theme_override_colors/font_pressed_color = Color(0.796078, 0.498039, 0.101961, 1)
+theme_override_colors/font_hover_color = Color(0.360784, 0.298039, 0.831373, 1)
+theme_override_colors/font_focus_color = Color(0.4, 0.333333, 0.913725, 1)
+theme_override_fonts/font = ExtResource("1_0edf7")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_qgmrj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cnlkl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uchn2")
+text = "PLAY"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer2/Button" to="." method="_on_button_pressed"]

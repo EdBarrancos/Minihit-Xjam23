@@ -1,6 +1,7 @@
 extends Node3D
 
-@export var door: Area3D
+@export var doors: Array[Area3D] 
+@export var gameboySpawnPoints: Array[Marker3D]
 
 @onready var timer = 0.0
 @onready var interval = 7.0
@@ -12,6 +13,7 @@ extends Node3D
 
 @export var gameboy_scene : PackedScene #load("res://Store/Scenes/gameboy.tscn")
 @onready var gameboy_number  = 0
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -32,7 +34,8 @@ func _process(delta):
 		add_child(child_instance)
 		
 		child_instance.position = Vector3(-5.689, 0.931, 5.599)
-		child_instance._set_door(door)
+		
+		child_instance._set_door(doors[randi() % doors.size()])
 		child_instance._set_gameboy(_instantiate_gameboy()) 
 		
 		timer = 0.0
@@ -41,7 +44,7 @@ func _process(delta):
 func _instantiate_gameboy():
 	var gameboy_instance = gameboy_scene.instantiate()
 	#TODO: Create a gameboy in random position
-	gameboy_instance.position = Vector3(-0.976, 0.58, -12.866)
+	gameboy_instance.position = gameboySpawnPoints[randi() % gameboySpawnPoints.size()].position
 	gameboy_instance.set_name("Gameboy" + str(gameboy_number))
 	add_child(gameboy_instance)
 	return gameboy_instance

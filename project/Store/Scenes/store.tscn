@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://da1yajnxnbrpo"]
+[gd_scene load_steps=14 format=3 uid="uid://da1yajnxnbrpo"]
 
 [ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_d57fn"]
 [ext_resource type="PackedScene" uid="uid://buo5j43idfqcr" path="res://Player/Scenes/player.tscn" id="2_2t2d7"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c8au82xiqgrh1" path="res://Store/Scenes/gameboy.tscn" id="3_qtsws"]
 [ext_resource type="PackedScene" uid="uid://bwb7odtagrx5s" path="res://Store/Scenes/door.tscn" id="5_86msp"]
 [ext_resource type="Script" path="res://Utils/Scripts/score.gd" id="7_pb05v"]
+[ext_resource type="PackedScene" uid="uid://8t2pp8hdeyo8" path="res://Store/Scenes/shop.tscn" id="9_s11ty"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_n3gp5"]
 sky_top_color = Color(0.4, 0.333333, 0.913725, 1)
@@ -33,14 +34,14 @@ script = ExtResource("1_d57fn")
 
 [node name="Timer" parent="." instance=ExtResource("2_n1lct")]
 
-[node name="ChildrenManager" type="Node3D" parent="." node_paths=PackedStringArray("door")]
+[node name="ChildrenManager" type="Node3D" parent="." node_paths=PackedStringArray("doors")]
 script = ExtResource("2_pev48")
-door = NodePath("../Door")
+doors = [null, null]
 child_scene = ExtResource("3_6s0l1")
 gameboy_scene = ExtResource("3_qtsws")
 
 [node name="Player" parent="." instance=ExtResource("2_2t2d7")]
-transform = Transform3D(0.239228, 0, -0.970963, 0, 1, 0, 0.970963, 0, 0.239228, 0, 0.807365, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.90916, 0.807365, 1.66248)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_vqwgl")
@@ -54,20 +55,20 @@ shadow_enabled = true
 shadow_bias = 1.566
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+visible = false
 navigation_mesh = SubResource("NavigationMesh_bhto4")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, -0.94807, -10.5)
+visible = false
 use_collision = true
 size = Vector3(28, 1, 38)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1554, 0, -8.48657)
+visible = false
 use_collision = true
 size = Vector3(19.4226, 1, 1)
-
-[node name="Door" parent="." instance=ExtResource("5_86msp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.68877, 0.931471, 8.29752)
 
 [node name="Score" type="Label" parent="."]
 layout_direction = 1
@@ -81,4 +82,16 @@ grow_horizontal = 0
 theme_override_font_sizes/font_size = 30
 script = ExtResource("7_pb05v")
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[node name="Shop_layout_1" parent="." instance=ExtResource("9_s11ty")]
+
+[node name="Door" parent="." instance=ExtResource("5_86msp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.015, 0.75, -4.512)
+
+[node name="Door2" parent="." instance=ExtResource("5_86msp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.771, 0.75, -4.512)
+
+[node name="GameBoySpawnPoint" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.905, 0.75, 5.79534)
+
+[node name="GameBoySpawnPoint2" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.85, 0.75, 5.795)

@@ -5,7 +5,7 @@ extends Node3D
 @onready var timer = 0.0
 @onready var interval = 7.0
 
-@export var child_scene : PackedScene  #load("res://Child/Scenes/child.tscn")
+@onready var child_scene =  preload("res://Child/Scenes/child.tscn")
 @onready var child_number  = 0
 @onready var max_child = 5
 @onready var current_child = 0

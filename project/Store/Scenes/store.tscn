@@ -1,9 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://da1yajnxnbrpo"]
+[gd_scene load_steps=10 format=3 uid="uid://da1yajnxnbrpo"]
 
 [ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_d57fn"]
 [ext_resource type="PackedScene" uid="uid://buo5j43idfqcr" path="res://Player/Scenes/player.tscn" id="2_2t2d7"]
 [ext_resource type="Script" path="res://Store/Scripts/ChildrenManager.gd" id="2_pev48"]
-[ext_resource type="PackedScene" uid="uid://0fjnmd8u6yvw" path="res://Child/Scenes/child.tscn" id="3_6s0l1"]
 [ext_resource type="PackedScene" uid="uid://c8au82xiqgrh1" path="res://Store/Scenes/gameboy.tscn" id="3_qtsws"]
 [ext_resource type="PackedScene" uid="uid://bwb7odtagrx5s" path="res://Store/Scenes/door.tscn" id="5_86msp"]
 
@@ -30,7 +29,6 @@ script = ExtResource("1_d57fn")
 [node name="ChildrenManager" type="Node3D" parent="." node_paths=PackedStringArray("door")]
 script = ExtResource("2_pev48")
 door = NodePath("../Door")
-child_scene = ExtResource("3_6s0l1")
 gameboy_scene = ExtResource("3_qtsws")
 
 [node name="Player" parent="." instance=ExtResource("2_2t2d7")]

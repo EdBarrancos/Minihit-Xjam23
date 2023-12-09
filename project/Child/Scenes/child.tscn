@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://0fjnmd8u6yvw"]
+[gd_scene load_steps=8 format=3 uid="uid://0fjnmd8u6yvw"]
 
 [ext_resource type="Script" path="res://Child/Script/child.gd" id="1_sxdgi"]
 [ext_resource type="Shape3D" uid="uid://xcjld21uvhfg" path="res://Child/Assets/child_collision_capsule.tres" id="2_3g7wn"]
@@ -7,18 +7,11 @@
 [ext_resource type="AudioStream" uid="uid://bvf3wbaregqck" path="res://Child/Assets/Sound/zapsplat_human_boy_8_years_laugh_tickled_001_79451.mp3" id="5_pb467"]
 [ext_resource type="Script" path="res://Child/Script/Laughter.gd" id="6_stee3"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_faxd6"]
-height = 1.5
-
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hcgfl"]
 height = 1.49378
 
 [node name="Child" type="CharacterBody3D" groups=["Child"]]
 script = ExtResource("1_sxdgi")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-visible = false
-mesh = SubResource("CapsuleMesh_faxd6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = ExtResource("2_3g7wn")

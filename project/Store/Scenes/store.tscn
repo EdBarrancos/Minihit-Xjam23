@@ -35,7 +35,7 @@ Dminutes = 1
 [node name="ChildrenManager" type="Node3D" parent="." node_paths=PackedStringArray("doors", "gameboySpawnPoints")]
 script = ExtResource("2_pev48")
 doors = [NodePath("../Door"), NodePath("../Door2")]
-gameboySpawnPoints = [NodePath("../GameBoySpawnPoint"), NodePath("../GameBoySpawnPoint2"), NodePath("../GameBoySpawnPoint3")]
+gameboySpawnPoints = [NodePath("../GameBoySpawnPoint"), NodePath("../GameBoySpawnPoint2"), NodePath("../GameBoySpawnPoint3"), NodePath("../GameBoySpawnPoint4")]
 child_scene = ExtResource("3_6s0l1")
 gameboy_scene = ExtResource("3_qtsws")
 
@@ -73,12 +73,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.015, 0.75, -4.512)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.771, 0.75, -4.512)
 
 [node name="GameBoySpawnPoint" type="Marker3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.905, 0.75, 5.79534)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.72214, 0.75, 7.40367)
 
 [node name="GameBoySpawnPoint2" type="Marker3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.85, 0.75, 5.795)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.57516, 0.75, 7.25034)
 
 [node name="GameBoySpawnPoint3" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.603351, 0.75, 7.53478)
+
+[node name="GameBoySpawnPoint4" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.43009, 0.75, 0.691)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

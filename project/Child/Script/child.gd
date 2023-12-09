@@ -40,7 +40,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 func _on_gameboy_body_entered(body):
-	if(body == self):
+	if(body == self && caught_gameboy == false):
 		Global._child_caught_gameboy()
 		caught_gameboy = true
 		laughter.play()

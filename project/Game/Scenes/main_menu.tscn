@@ -6,7 +6,7 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_uq2fc"]
 font = ExtResource("1_0edf7")
-font_size = 200
+font_size = 160
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -36,7 +36,7 @@ size_flags_vertical = 3
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_0edf7")
-text = "MINI HIT"
+text = "MINI TARGET"
 label_settings = SubResource("LabelSettings_uq2fc")
 horizontal_alignment = 1
 

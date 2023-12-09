@@ -39,7 +39,7 @@ layout_mode = 2
 
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer"]
 layout_mode = 2
-text = "MINI HIT"
+text = "MINI TARGET"
 label_settings = SubResource("LabelSettings_x3y2s")
 horizontal_alignment = 1
 

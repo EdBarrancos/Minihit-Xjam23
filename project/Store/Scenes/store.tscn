@@ -29,6 +29,8 @@ glow_enabled = true
 script = ExtResource("1_d57fn")
 
 [node name="Timer" parent="." instance=ExtResource("2_n1lct")]
+Dseconds = 30
+Dminutes = 1
 
 [node name="ChildrenManager" type="Node3D" parent="." node_paths=PackedStringArray("doors", "gameboySpawnPoints")]
 script = ExtResource("2_pev48")

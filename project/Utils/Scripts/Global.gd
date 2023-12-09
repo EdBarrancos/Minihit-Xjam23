@@ -8,6 +8,7 @@ signal score_increased
 func _child_was_hit():
 	score += 10
 	_child_despawned()
+	emit_signal("score_increased")
 	
 func _child_caught_gameboy():
 	score -= 5

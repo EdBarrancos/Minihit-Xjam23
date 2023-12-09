@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://pvi750xacjly"]
+[gd_scene load_steps=7 format=3 uid="uid://pvi750xacjly"]
 
 [ext_resource type="Script" path="res://Player/Scripts/gun.gd" id="1_w2kbx"]
 [ext_resource type="PackedScene" uid="uid://d4niveflkpj5o" path="res://Player/Scenes/orange.tscn" id="2_t88bw"]
 [ext_resource type="PackedScene" uid="uid://bkx1omk8op0qx" path="res://Player/Scenes/slingshot_3.tscn" id="3_ejg10"]
 [ext_resource type="AudioStream" uid="uid://cglpitf62ewov" path="res://Player/Assets/Sound/zapsplat_foley_fabric_cotton_rip_007_42666.mp3" id="4_2dbsd"]
+[ext_resource type="AudioStream" uid="uid://du0ii06cdn7du" path="res://Player/Assets/Sound/foley_hair_elastic_band_twang_007.mp3" id="5_t3h75"]
 
 [sub_resource type="MultiMesh" id="MultiMesh_mplqr"]
 
@@ -27,6 +28,10 @@ stream = ExtResource("4_2dbsd")
 attenuation_model = 2
 volume_db = -20.0
 pitch_scale = 1.2
+bus = &"Sound effect"
+
+[node name="Sling" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("5_t3h75")
 bus = &"Sound effect"
 
 [connection signal="shoot_animation_ended" from="Slingshot3" to="." method="_on_slingshot_3_shoot_animation_ended"]

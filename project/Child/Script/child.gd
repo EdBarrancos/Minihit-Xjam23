@@ -4,6 +4,7 @@ const SPEED = 5
 const ACCELERATION = 10
 
 @onready var nav: NavigationAgent3D = $NavigationAgent3D
+@onready var laughter = $Laughter
 
 var caught_gameboy = false
 var gameboy = null
@@ -42,6 +43,7 @@ func _on_gameboy_body_entered(body):
 	if(body == self):
 		Global._child_caught_gameboy()
 		caught_gameboy = true
+		laughter.play()
 
 func _on_door_body_entered(body):
 	if(body == self):

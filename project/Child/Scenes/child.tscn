@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://0fjnmd8u6yvw"]
+[gd_scene load_steps=9 format=3 uid="uid://0fjnmd8u6yvw"]
 
 [ext_resource type="Script" path="res://Child/Script/child.gd" id="1_sxdgi"]
 [ext_resource type="Shape3D" uid="uid://xcjld21uvhfg" path="res://Child/Assets/child_collision_capsule.tres" id="2_3g7wn"]
 [ext_resource type="PackedScene" uid="uid://58ima0rognqc" path="res://Player/Scenes/shootable.tscn" id="2_ml5nd"]
 [ext_resource type="PackedScene" uid="uid://cowiv6b2ini13" path="res://Child/Scenes/panic_long_run_loop_1.tscn" id="4_cpwcy"]
+[ext_resource type="AudioStream" uid="uid://bvf3wbaregqck" path="res://Child/Assets/Sound/zapsplat_human_boy_8_years_laugh_tickled_001_79451.mp3" id="5_pb467"]
+[ext_resource type="Script" path="res://Child/Script/Laughter.gd" id="6_stee3"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_faxd6"]
 height = 1.5
@@ -32,5 +34,10 @@ shape = SubResource("CapsuleShape3D_hcgfl")
 
 [node name="panic_long_run_loop1" parent="." instance=ExtResource("4_cpwcy")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, -1.5, 0, -0.749786, 0)
+
+[node name="Laughter" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("5_pb467")
+bus = &"Sound effect"
+script = ExtResource("6_stee3")
 
 [connection signal="was_hit" from="Shootable" to="." method="_on_shootable_was_hit"]

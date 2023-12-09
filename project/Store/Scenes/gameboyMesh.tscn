@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfdsntq18sdtr"]
+
+[ext_resource type="PackedScene" uid="uid://bdbt2t0614dun" path="res://Store/Assets/Gameboy_1.glb" id="1_143cd"]
+
+[node name="Gameboy_1" instance=ExtResource("1_143cd")]

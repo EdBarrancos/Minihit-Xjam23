@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://0fjnmd8u6yvw"]
+[gd_scene load_steps=6 format=3 uid="uid://0fjnmd8u6yvw"]
 
 [ext_resource type="Script" path="res://Child/Script/child.gd" id="1_sxdgi"]
 [ext_resource type="Shape3D" uid="uid://xcjld21uvhfg" path="res://Child/Assets/child_collision_capsule.tres" id="2_3g7wn"]
@@ -6,6 +6,9 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_faxd6"]
 height = 1.5
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hcgfl"]
+height = 1.49378
 
 [node name="Child" type="CharacterBody3D" groups=["Child"]]
 script = ExtResource("1_sxdgi")
@@ -21,6 +24,6 @@ shape = ExtResource("2_3g7wn")
 [node name="Shootable" parent="." instance=ExtResource("2_ml5nd")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shootable"]
-shape = ExtResource("2_3g7wn")
+shape = SubResource("CapsuleShape3D_hcgfl")
 
 [connection signal="was_hit" from="Shootable" to="." method="_on_shootable_was_hit"]

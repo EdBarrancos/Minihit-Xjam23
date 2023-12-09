@@ -1,4 +1,4 @@
-[gd_scene load_steps=135 format=3 uid="uid://8t2pp8hdeyo8"]
+[gd_scene load_steps=136 format=3 uid="uid://8t2pp8hdeyo8"]
 
 [ext_resource type="Material" uid="uid://d4fey052yxqak" path="res://Store/Assets/wood.tres" id="1_wvopl"]
 [ext_resource type="Material" uid="uid://ckpsurxjb3bkn" path="res://Store/Assets/wall.tres" id="2_aavl6"]
@@ -786,6 +786,15 @@ shadow_mesh = SubResource("ArrayMesh_0k3uq")
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_2dwh0"]
 data = PackedVector3Array(-0.1668, -0.0676, 0.1736, -0.1668, 0.0676, -0.1736, -0.1668, 0.0676, 0.1736, -0.1668, -0.0676, 0.1736, -0.1668, -0.0676, -0.1736, -0.1668, 0.0676, -0.1736, -0.1668, -0.0676, -0.1736, 0.1668, 0.0676, -0.1736, -0.1668, 0.0676, -0.1736, -0.1668, -0.0676, -0.1736, 0.1668, -0.0676, -0.1736, 0.1668, 0.0676, -0.1736, 0.1668, -0.0676, -0.1736, 0.1668, 0.0676, 0.1736, 0.1668, 0.0676, -0.1736, 0.1668, -0.0676, -0.1736, 0.1668, -0.0676, 0.1736, 0.1668, 0.0676, 0.1736, 0.1668, -0.0676, 0.1736, -0.1668, 0.0676, 0.1736, 0.1668, 0.0676, 0.1736, 0.1668, -0.0676, 0.1736, -0.1668, -0.0676, 0.1736, -0.1668, 0.0676, 0.1736, -0.1668, -0.0676, -0.1736, 0.1668, -0.0676, 0.1736, 0.1668, -0.0676, -0.1736, -0.1668, -0.0676, -0.1736, -0.1668, -0.0676, 0.1736, 0.1668, -0.0676, 0.1736, 0.1668, 0.0676, -0.1736, -0.1668, 0.0676, 0.1736, -0.1668, 0.0676, -0.1736, 0.1668, 0.0676, -0.1736, 0.1668, 0.0676, 0.1736, -0.1668, 0.0676, 0.1736)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8kofk"]
+shading_mode = 2
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.117647, 0.909804, 0.152941, 1)
+emission_enabled = true
+emission = Color(0.0901961, 1, 0.145098, 1)
+emission_energy_multiplier = 4.0
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1wvx"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lm2rj"]
@@ -1408,6 +1417,7 @@ shape = SubResource("ConcavePolygonShape3D_2dwh0")
 
 [node name="Cube_007" type="MeshInstance3D" parent="NavigationRegion3D/ProductShelf1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.62073, 0.730894, 0.0792822)
+material_override = SubResource("StandardMaterial3D_8kofk")
 mesh = SubResource("ArrayMesh_8bqq5")
 skeleton = NodePath("")
 

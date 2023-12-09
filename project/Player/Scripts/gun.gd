@@ -3,6 +3,7 @@ extends Node3D
 @export var ammo_type_scene : PackedScene
 @onready var gun_barrel = $RayCast3D
 @onready var slingshot = $Slingshot3
+@onready var stretch_sound = $Stretch
 
 var loaded_bullet
 
@@ -27,6 +28,7 @@ func handle_input():
 func handle_charging_shoot():
 	slingshot.charge()
 	mode = MODE.CHARGING
+	stretch_sound.play()
 	
 func handle_shooting():
 	var charging = slingshot.shoot()

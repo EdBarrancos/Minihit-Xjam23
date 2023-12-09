@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://buo5j43idfqcr"]
+[gd_scene load_steps=7 format=3 uid="uid://buo5j43idfqcr"]
 
 [ext_resource type="Script" path="res://Player/Scripts/player.gd" id="1_75rw3"]
 [ext_resource type="PackedScene" uid="uid://pvi750xacjly" path="res://Player/Scenes/gun.tscn" id="2_hw5sk"]
+[ext_resource type="AudioStream" uid="uid://bobxjqb6v6nhb" path="res://Player/Assets/Sound/score.wav" id="3_y4jfb"]
+[ext_resource type="Script" path="res://Player/Scripts/AudioStreamPlayer.gd" id="4_wanaf"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ot820"]
 
@@ -26,3 +28,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.742019, 0)
 
 [node name="Gun" parent="Head/Camera3D" instance=ExtResource("2_hw5sk")]
 transform = Transform3D(1, 0, 0, 0, 1, -0.000227511, 0, 0.000227511, 1, 0.2172, -0.293332, -0.934567)
+
+[node name="ScoreIncreased" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_y4jfb")
+volume_db = -2.0
+bus = &"Sound effect"
+script = ExtResource("4_wanaf")
+
+[connection signal="finished" from="ScoreIncreased" to="ScoreIncreased" method="_on_finished"]

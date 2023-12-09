@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://c1am0enhtpict"]
 
-[ext_resource type="FontFile" uid="uid://dravgrmm0jc6q" path="res://RubikBubbles-Regular.ttf" id="1_w8gay"]
+[ext_resource type="FontFile" uid="uid://ce14242blc8m3" path="res://Montserrat-Regular.ttf" id="1_1f7f2"]
 [ext_resource type="Script" path="res://Game/Scripts/play_button.gd" id="2_xxdi3"]
 [ext_resource type="AudioStream" uid="uid://cn5ysn00c0viw" path="res://Game/Assets/Sounds/click-21156.mp3" id="3_fjpv0"]
 
@@ -18,7 +18,7 @@ theme_override_colors/font_color = Color(0.4, 0.333333, 0.913725, 1)
 theme_override_colors/font_pressed_color = Color(0.796078, 0.498039, 0.101961, 1)
 theme_override_colors/font_hover_color = Color(0.360784, 0.298039, 0.831373, 1)
 theme_override_colors/font_focus_color = Color(0.4, 0.333333, 0.913725, 1)
-theme_override_fonts/font = ExtResource("1_w8gay")
+theme_override_fonts/font = ExtResource("1_1f7f2")
 theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxFlat_qgmrj")
 theme_override_styles/hover = SubResource("StyleBoxFlat_cnlkl")

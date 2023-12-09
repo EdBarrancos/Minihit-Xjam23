@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://da1yajnxnbrpo"]
+[gd_scene load_steps=17 format=3 uid="uid://da1yajnxnbrpo"]
 
 [ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_d57fn"]
 [ext_resource type="PackedScene" uid="uid://buo5j43idfqcr" path="res://Player/Scenes/player.tscn" id="2_2t2d7"]
@@ -9,8 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://bwb7odtagrx5s" path="res://Store/Scenes/door.tscn" id="5_86msp"]
 [ext_resource type="Script" path="res://Utils/Scripts/score.gd" id="7_pb05v"]
 [ext_resource type="PackedScene" uid="uid://8t2pp8hdeyo8" path="res://Store/Scenes/shop.tscn" id="9_s11ty"]
-[ext_resource type="FontFile" uid="uid://dravgrmm0jc6q" path="res://RubikBubbles-Regular.ttf" id="10_5n8ap"]
 [ext_resource type="Script" path="res://Store/Scripts/TextController.gd" id="10_l4bu1"]
+[ext_resource type="FontFile" uid="uid://ce14242blc8m3" path="res://Montserrat-Regular.ttf" id="11_sn8ge"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_n3gp5"]
 sky_top_color = Color(0.4, 0.333333, 0.913725, 1)
@@ -27,8 +27,12 @@ sky = SubResource("Sky_5i27q")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="LabelSettings" id="LabelSettings_lisgv"]
+font = ExtResource("11_sn8ge")
+font_size = 70
+
 [sub_resource type="LabelSettings" id="LabelSettings_0vcbm"]
-font = ExtResource("10_5n8ap")
+font = ExtResource("11_sn8ge")
 font_size = 50
 
 [node name="Store" type="Node3D"]
@@ -81,11 +85,14 @@ layout_direction = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -100.0
-offset_right = -23.0
-offset_bottom = 42.0
+offset_left = -102.0
+offset_top = 18.0
+offset_right = -25.0
+offset_bottom = 104.0
 grow_horizontal = 0
 theme_override_font_sizes/font_size = 30
+text = "10"
+label_settings = SubResource("LabelSettings_lisgv")
 script = ExtResource("7_pb05v")
 
 [node name="Timer" parent="CanvasLayer" instance=ExtResource("2_n1lct")]

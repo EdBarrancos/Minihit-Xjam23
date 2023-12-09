@@ -1,15 +1,15 @@
 [gd_scene load_steps=6 format=3 uid="uid://c7oot0tep422m"]
 
-[ext_resource type="FontFile" uid="uid://dravgrmm0jc6q" path="res://RubikBubbles-Regular.ttf" id="1_o0ren"]
 [ext_resource type="Script" path="res://Game/Scripts/end_screen.gd" id="1_rusjq"]
+[ext_resource type="FontFile" uid="uid://ce14242blc8m3" path="res://Montserrat-Regular.ttf" id="2_cf6tg"]
 [ext_resource type="PackedScene" uid="uid://c1am0enhtpict" path="res://Game/Scenes/play_button.tscn" id="2_gt40a"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_x3y2s"]
-font = ExtResource("1_o0ren")
+font = ExtResource("2_cf6tg")
 font_size = 150
 
 [sub_resource type="LabelSettings" id="LabelSettings_yit4a"]
-font = ExtResource("1_o0ren")
+font = ExtResource("2_cf6tg")
 font_size = 100
 font_color = Color(0.796078, 0.498039, 0.101961, 1)
 

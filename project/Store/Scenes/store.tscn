@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://da1yajnxnbrpo"]
+[gd_scene load_steps=12 format=3 uid="uid://da1yajnxnbrpo"]
 
 [ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_d57fn"]
 [ext_resource type="PackedScene" uid="uid://buo5j43idfqcr" path="res://Player/Scenes/player.tscn" id="2_2t2d7"]
+[ext_resource type="PackedScene" uid="uid://bq3ei4rh77djq" path="res://Utils/Scenes/timer.tscn" id="2_n1lct"]
 [ext_resource type="Script" path="res://Store/Scripts/ChildrenManager.gd" id="2_pev48"]
 [ext_resource type="PackedScene" uid="uid://0fjnmd8u6yvw" path="res://Child/Scenes/child.tscn" id="3_6s0l1"]
 [ext_resource type="PackedScene" uid="uid://c8au82xiqgrh1" path="res://Store/Scenes/gameboy.tscn" id="3_qtsws"]
@@ -26,6 +27,8 @@ polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Arr
 
 [node name="Store" type="Node3D"]
 script = ExtResource("1_d57fn")
+
+[node name="Timer" parent="." instance=ExtResource("2_n1lct")]
 
 [node name="ChildrenManager" type="Node3D" parent="." node_paths=PackedStringArray("door")]
 script = ExtResource("2_pev48")

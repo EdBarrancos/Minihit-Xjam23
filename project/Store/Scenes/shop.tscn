@@ -1,7 +1,12 @@
-[gd_scene load_steps=136 format=3 uid="uid://8t2pp8hdeyo8"]
+[gd_scene load_steps=140 format=3 uid="uid://8t2pp8hdeyo8"]
 
 [ext_resource type="Material" uid="uid://d4fey052yxqak" path="res://Store/Assets/wood.tres" id="1_wvopl"]
 [ext_resource type="Material" uid="uid://ckpsurxjb3bkn" path="res://Store/Assets/wall.tres" id="2_aavl6"]
+[ext_resource type="Material" uid="uid://bffsmalwo1uj1" path="res://Store/Assets/light_brown.tres" id="2_gmvnq"]
+[ext_resource type="Material" uid="uid://qf7hiulw0i27" path="res://Store/Assets/Stuff_red.tres" id="2_ymklw"]
+[ext_resource type="Material" uid="uid://ctvs8n42ljr6g" path="res://Store/Assets/green_book.tres" id="3_diw6j"]
+[ext_resource type="Material" uid="uid://c5yqrpouwx88x" path="res://Store/Assets/orange_stuff.tres" id="6_cxnfd"]
+[ext_resource type="Material" uid="uid://bu4yuhcr6p30o" path="res://Store/Assets/blue_stuff.tres" id="7_jp44m"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_6kif5"]
 vertices = PackedVector3Array(-0.38368, 0.249896, 7.47217, -0.38368, 0.249896, 6.97217, -1.63368, 0.249896, 6.72217, -4.13368, 0.249896, 6.72217, -5.63368, 0.249896, 6.97217, -5.63368, 0.249896, 7.72217, 2.61632, 0.249896, -2.27783, 2.61632, 0.249896, -3.77783, 2.11632, 0.249896, -4.27783, 1.36632, 0.249896, -3.02783, 1.61632, 0.249896, -2.02783, -2.88368, 0.249896, 0.47217, -4.63368, 0.249896, 1.47217, -4.13368, 0.249896, 1.72217, -0.63368, 0.249896, 0.47217, -0.38368, 0.249896, 0.22217, -0.38368, 0.249896, -2.02783, -0.63368, 0.249896, -2.52783, -1.63368, 0.249896, 1.72217, -0.63368, 0.249896, 1.47217, -0.63368, 0.249896, 0.47217, -2.88368, 0.249896, 0.47217, -0.63368, 0.249896, -2.52783, 1.36632, 0.249896, -3.02783, -2.63368, 0.249896, -3.02783, -2.63368, 0.249896, -2.77783, -1.63368, 0.249896, 1.72217, -2.88368, 0.249896, 0.47217, -4.13368, 0.249896, 1.72217, -4.13368, 0.249896, 6.72217, -1.63368, 0.249896, 6.72217, -0.38368, 0.249896, -2.02783, 1.61632, 0.249896, -2.02783, 1.36632, 0.249896, -3.02783, -0.63368, 0.249896, -2.52783, -2.63368, 0.249896, -3.02783, -3.38368, 0.249896, -4.27783, -4.38368, 0.249896, -4.02783, -4.63368, 0.249896, 1.47217, -2.88368, 0.249896, 0.47217, -2.63368, 0.249896, -2.77783, 3.11632, 0.249896, -0.27783, 3.86632, 0.249896, -0.77783, 2.61632, 0.249896, -1.02783, 0.61632, 0.249896, 6.72217, -0.38368, 0.249896, 6.97217, -0.38368, 0.249896, 7.47217, 4.11632, 0.249896, 7.47217, 4.11632, 0.249896, 6.97217, 2.61632, 0.249896, 6.72217, 2.61632, 0.249896, -1.02783, 2.61632, 0.249896, -2.27783, 1.61632, 0.249896, -2.02783, 3.11632, 0.249896, -0.27783, 2.61632, 0.249896, -1.02783, 1.61632, 0.249896, -2.02783, 1.61632, 0.249896, 0.22217, 2.61632, 0.249896, 1.72217, 3.11632, 0.249896, 1.47217, 2.61632, 0.249896, 1.72217, 1.61632, 0.249896, 0.22217, 0.61632, 0.249896, 1.72217, 0.61632, 0.249896, 6.72217, 2.61632, 0.249896, 6.72217, -0.38368, 0.249896, 0.22217, -0.63368, 0.249896, 1.47217, 0.61632, 0.249896, 1.72217, 1.61632, 0.249896, 0.22217, -5.63368, 2.4999, 2.47217, -5.63368, 2.4999, 5.97217, -5.13368, 2.4999, 5.97217, -5.13368, 2.4999, 2.47217, 3.61632, 2.4999, 2.47217, 3.61632, 2.4999, 5.97217, 4.11632, 2.4999, 5.97217, 4.11632, 2.4999, 2.47217)
@@ -786,15 +791,6 @@ shadow_mesh = SubResource("ArrayMesh_0k3uq")
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_2dwh0"]
 data = PackedVector3Array(-0.1668, -0.0676, 0.1736, -0.1668, 0.0676, -0.1736, -0.1668, 0.0676, 0.1736, -0.1668, -0.0676, 0.1736, -0.1668, -0.0676, -0.1736, -0.1668, 0.0676, -0.1736, -0.1668, -0.0676, -0.1736, 0.1668, 0.0676, -0.1736, -0.1668, 0.0676, -0.1736, -0.1668, -0.0676, -0.1736, 0.1668, -0.0676, -0.1736, 0.1668, 0.0676, -0.1736, 0.1668, -0.0676, -0.1736, 0.1668, 0.0676, 0.1736, 0.1668, 0.0676, -0.1736, 0.1668, -0.0676, -0.1736, 0.1668, -0.0676, 0.1736, 0.1668, 0.0676, 0.1736, 0.1668, -0.0676, 0.1736, -0.1668, 0.0676, 0.1736, 0.1668, 0.0676, 0.1736, 0.1668, -0.0676, 0.1736, -0.1668, -0.0676, 0.1736, -0.1668, 0.0676, 0.1736, -0.1668, -0.0676, -0.1736, 0.1668, -0.0676, 0.1736, 0.1668, -0.0676, -0.1736, -0.1668, -0.0676, -0.1736, -0.1668, -0.0676, 0.1736, 0.1668, -0.0676, 0.1736, 0.1668, 0.0676, -0.1736, -0.1668, 0.0676, 0.1736, -0.1668, 0.0676, -0.1736, 0.1668, 0.0676, -0.1736, 0.1668, 0.0676, 0.1736, -0.1668, 0.0676, 0.1736)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8kofk"]
-shading_mode = 2
-diffuse_mode = 3
-specular_mode = 1
-albedo_color = Color(0.117647, 0.909804, 0.152941, 1)
-emission_enabled = true
-emission = Color(0.0901961, 1, 0.145098, 1)
-emission_energy_multiplier = 4.0
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1wvx"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lm2rj"]
@@ -1207,6 +1203,7 @@ shape = SubResource("ConcavePolygonShape3D_hqpgq")
 
 [node name="Cube_016" type="MeshInstance3D" parent="NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.55473, 0.263911, -2.23264)
+material_override = ExtResource("2_gmvnq")
 mesh = SubResource("ArrayMesh_t8lx3")
 skeleton = NodePath("")
 
@@ -1217,6 +1214,7 @@ shape = SubResource("ConcavePolygonShape3D_dg553")
 
 [node name="Cube_017" type="MeshInstance3D" parent="NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.56321, 0.600126, -2.23321)
+material_override = ExtResource("1_wvopl")
 mesh = SubResource("ArrayMesh_o8xff")
 skeleton = NodePath("")
 
@@ -1227,6 +1225,7 @@ shape = SubResource("ConcavePolygonShape3D_vqbke")
 
 [node name="Cube_023" type="MeshInstance3D" parent="NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.535, -0.60874, 0.297404, -4.04924)
+material_override = ExtResource("2_ymklw")
 mesh = SubResource("ArrayMesh_gtau1")
 skeleton = NodePath("")
 
@@ -1281,6 +1280,7 @@ shape = SubResource("ConcavePolygonShape3D_23oc1")
 
 [node name="Cube_028" type="MeshInstance3D" parent="NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.27974, 0.353988, -3.43499)
+material_override = ExtResource("2_gmvnq")
 mesh = SubResource("ArrayMesh_jcsph")
 skeleton = NodePath("")
 
@@ -1291,6 +1291,7 @@ shape = SubResource("ConcavePolygonShape3D_dqd82")
 
 [node name="Cube_029" type="MeshInstance3D" parent="NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.59655, 0.345405, -4.07332)
+material_override = ExtResource("2_ymklw")
 mesh = SubResource("ArrayMesh_fnbmp")
 skeleton = NodePath("")
 
@@ -1334,6 +1335,7 @@ shape = SubResource("ConcavePolygonShape3D_c76su")
 
 [node name="Cube_021" type="MeshInstance3D" parent="NavigationRegion3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.69249, 0.381053, 0.114073)
+material_override = ExtResource("2_gmvnq")
 mesh = SubResource("ArrayMesh_00ipc")
 skeleton = NodePath("")
 
@@ -1344,6 +1346,7 @@ shape = SubResource("ConcavePolygonShape3D_kuqmg")
 
 [node name="Cube_022" type="MeshInstance3D" parent="NavigationRegion3D"]
 transform = Transform3D(0, 1, 0, 0, 0, -1, -1, 0, 0, -5.63992, 0.404775, -2.89217)
+material_override = ExtResource("2_gmvnq")
 mesh = SubResource("ArrayMesh_xsw74")
 skeleton = NodePath("")
 
@@ -1354,6 +1357,7 @@ shape = SubResource("ConcavePolygonShape3D_q460w")
 
 [node name="Cube_033" type="MeshInstance3D" parent="NavigationRegion3D"]
 transform = Transform3D(0, -1, 0, 0, 0, -1, 1, 0, 0, 4.66129, 0.815421, -1.48654)
+material_override = ExtResource("2_ymklw")
 mesh = SubResource("ArrayMesh_t10el")
 skeleton = NodePath("")
 
@@ -1363,7 +1367,8 @@ skeleton = NodePath("")
 shape = SubResource("ConcavePolygonShape3D_j5461")
 
 [node name="Cube_035" type="MeshInstance3D" parent="NavigationRegion3D"]
-transform = Transform3D(2.73005, 0, 0, 0, 1, 0, 0, 0, 1, -0.60874, 0.297404, 8.75658)
+transform = Transform3D(2.73, 0, 0, 0, 1, 0, 0, 0, 0.73, -0.60874, 0.297404, 8.97825)
+material_override = ExtResource("2_ymklw")
 mesh = SubResource("ArrayMesh_p44tl")
 skeleton = NodePath("")
 
@@ -1377,6 +1382,7 @@ transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -0.587897, -0.0135418, 
 
 [node name="Cube_001" type="MeshInstance3D" parent="NavigationRegion3D/ProductShelf1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.47685, 0.344334, 0.206293)
+material_override = ExtResource("2_gmvnq")
 mesh = SubResource("ArrayMesh_wtiul")
 skeleton = NodePath("")
 
@@ -1387,6 +1393,7 @@ shape = SubResource("ConcavePolygonShape3D_2vyc8")
 
 [node name="Cube_004" type="MeshInstance3D" parent="NavigationRegion3D/ProductShelf1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.19515, 0.736311, 0.863562)
+material_override = ExtResource("3_diw6j")
 mesh = SubResource("ArrayMesh_uqhrr")
 skeleton = NodePath("")
 
@@ -1397,6 +1404,7 @@ shape = SubResource("ConcavePolygonShape3D_fpuyv")
 
 [node name="Cube_005" type="MeshInstance3D" parent="NavigationRegion3D/ProductShelf1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.65739, 0.752004, 0.569126)
+material_override = ExtResource("6_cxnfd")
 mesh = SubResource("ArrayMesh_ao8x2")
 skeleton = NodePath("")
 
@@ -1407,6 +1415,7 @@ shape = SubResource("ConcavePolygonShape3D_ua828")
 
 [node name="Cube_006" type="MeshInstance3D" parent="NavigationRegion3D/ProductShelf1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.30033, 0.756477, 0.473774)
+material_override = ExtResource("7_jp44m")
 mesh = SubResource("ArrayMesh_nfd52")
 skeleton = NodePath("")
 
@@ -1417,7 +1426,7 @@ shape = SubResource("ConcavePolygonShape3D_2dwh0")
 
 [node name="Cube_007" type="MeshInstance3D" parent="NavigationRegion3D/ProductShelf1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.62073, 0.730894, 0.0792822)
-material_override = SubResource("StandardMaterial3D_8kofk")
+material_override = ExtResource("3_diw6j")
 mesh = SubResource("ArrayMesh_8bqq5")
 skeleton = NodePath("")
 
@@ -1428,6 +1437,7 @@ shape = SubResource("ConcavePolygonShape3D_salsm")
 
 [node name="Cube_008" type="MeshInstance3D" parent="NavigationRegion3D/ProductShelf1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.30794, 0.745299, -0.258574)
+material_override = ExtResource("1_wvopl")
 mesh = SubResource("ArrayMesh_xxkny")
 skeleton = NodePath("")
 
@@ -1438,6 +1448,7 @@ shape = SubResource("ConcavePolygonShape3D_uy0vh")
 
 [node name="Cube_009" type="MeshInstance3D" parent="NavigationRegion3D/ProductShelf1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.60677, 0.802492, -0.328312)
+material_override = ExtResource("7_jp44m")
 mesh = SubResource("ArrayMesh_bi806")
 skeleton = NodePath("")
 
@@ -1448,6 +1459,7 @@ shape = SubResource("ConcavePolygonShape3D_fs153")
 
 [node name="Cube_010" type="MeshInstance3D" parent="NavigationRegion3D/ProductShelf1"]
 transform = Transform3D(0, 1, 0, 0, 0, -1, -1, 0, 0, 1.81323, 0.746675, -0.407099)
+material_override = ExtResource("6_cxnfd")
 mesh = SubResource("ArrayMesh_rv7c8")
 skeleton = NodePath("")
 
@@ -1458,6 +1470,7 @@ shape = SubResource("ConcavePolygonShape3D_h0iqe")
 
 [node name="Cube_011" type="MeshInstance3D" parent="NavigationRegion3D/ProductShelf1"]
 transform = Transform3D(0, -5.96046e-08, -1, 1, 0, 5.96046e-08, 5.96046e-08, -1, 0, 1.60693, 0.749611, -0.559281)
+material_override = ExtResource("6_cxnfd")
 mesh = SubResource("ArrayMesh_45ign")
 skeleton = NodePath("")
 
@@ -1471,6 +1484,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.614179, 0, 0)
 
 [node name="Cube_003" type="MeshInstance3D" parent="NavigationRegion3D/ProductShelf2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4845, 0.329287, 0.520032)
+material_override = ExtResource("2_gmvnq")
 mesh = SubResource("ArrayMesh_e6j7x")
 skeleton = NodePath("")
 
@@ -1481,6 +1495,7 @@ shape = SubResource("ConcavePolygonShape3D_1riaf")
 
 [node name="Cube_012" type="MeshInstance3D" parent="NavigationRegion3D/ProductShelf2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.27541, 0.735446, 0.654254)
+material_override = ExtResource("6_cxnfd")
 mesh = SubResource("ArrayMesh_846c4")
 skeleton = NodePath("")
 
@@ -1491,6 +1506,7 @@ shape = SubResource("ConcavePolygonShape3D_x5fgj")
 
 [node name="Cube_013" type="MeshInstance3D" parent="NavigationRegion3D/ProductShelf2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.49408, 0.729912, 0.870203)
+material_override = ExtResource("3_diw6j")
 mesh = SubResource("ArrayMesh_bhejm")
 skeleton = NodePath("")
 
@@ -1501,6 +1517,7 @@ shape = SubResource("ConcavePolygonShape3D_6pxd0")
 
 [node name="Cube_014" type="MeshInstance3D" parent="NavigationRegion3D/ProductShelf2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.48801, 0.70863, 0.548435)
+material_override = ExtResource("1_wvopl")
 mesh = SubResource("ArrayMesh_w1v07")
 skeleton = NodePath("")
 
@@ -1511,6 +1528,7 @@ shape = SubResource("ConcavePolygonShape3D_1v2w1")
 
 [node name="Cube_015" type="MeshInstance3D" parent="NavigationRegion3D/ProductShelf2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3523, 0.703977, 0.357349)
+material_override = ExtResource("7_jp44m")
 mesh = SubResource("ArrayMesh_jwrhh")
 skeleton = NodePath("")
 

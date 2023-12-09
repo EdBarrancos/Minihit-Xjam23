@@ -4,7 +4,7 @@ extends Node3D
 @export var gameboySpawnPoints: Array[Marker3D]
 
 @onready var timer = 0.0
-@onready var interval = 3.0
+@onready var interval = 2.3
 
 @export var child_scene : PackedScene  
 @onready var child_number  = 0

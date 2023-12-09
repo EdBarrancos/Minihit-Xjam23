@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://bq3ei4rh77djq"]
+
+[ext_resource type="Script" path="res://Utils/Scripts/timer.gd" id="1_krtnu"]
+
+[node name="Timer" type="Control" node_paths=PackedStringArray("label")]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_krtnu")
+label = NodePath("Label")
+
+[node name="Timer" type="Timer" parent="."]
+process_callback = 0
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 15.0
+offset_right = 536.0
+offset_bottom = 215.0
+theme_override_font_sizes/font_size = 30
+uppercase = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1am0enhtpict"]
+
+[ext_resource type="FontFile" uid="uid://dravgrmm0jc6q" path="res://RubikBubbles-Regular.ttf" id="1_w8gay"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qgmrj"]
+bg_color = Color(0.796078, 0.498039, 0.101961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cnlkl"]
+bg_color = Color(0.690196, 0.419608, 0.0627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uchn2"]
+bg_color = Color(0.4, 0.333333, 0.913725, 1)
+
+[node name="Button" type="Button"]
+theme_override_colors/font_color = Color(0.4, 0.333333, 0.913725, 1)
+theme_override_colors/font_pressed_color = Color(0.796078, 0.498039, 0.101961, 1)
+theme_override_colors/font_hover_color = Color(0.360784, 0.298039, 0.831373, 1)
+theme_override_colors/font_focus_color = Color(0.4, 0.333333, 0.913725, 1)
+theme_override_fonts/font = ExtResource("1_w8gay")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_qgmrj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cnlkl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uchn2")
+text = "PLAY"

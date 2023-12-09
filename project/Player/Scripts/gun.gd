@@ -30,7 +30,6 @@ func handle_charging_shoot():
 	
 func handle_shooting():
 	var charging = slingshot.shoot()
-	print(charging)
 	shoot(charging)
 	mode = MODE.SHOOTING
 	

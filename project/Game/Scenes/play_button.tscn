@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c1am0enhtpict"]
+[gd_scene load_steps=7 format=3 uid="uid://c1am0enhtpict"]
 
 [ext_resource type="FontFile" uid="uid://dravgrmm0jc6q" path="res://RubikBubbles-Regular.ttf" id="1_w8gay"]
+[ext_resource type="Script" path="res://Game/Scripts/play_button.gd" id="2_xxdi3"]
+[ext_resource type="AudioStream" uid="uid://cn5ysn00c0viw" path="res://Game/Assets/Sounds/click-21156.mp3" id="3_fjpv0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qgmrj"]
 bg_color = Color(0.796078, 0.498039, 0.101961, 1)
@@ -22,3 +24,11 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_qgmrj")
 theme_override_styles/hover = SubResource("StyleBoxFlat_cnlkl")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_uchn2")
 text = "PLAY"
+script = ExtResource("2_xxdi3")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_fjpv0")
+bus = &"Sound effect"
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

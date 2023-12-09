@@ -1,6 +1,5 @@
 extends CharacterBody3D
 
-
 const SPEED = 7.0
 const JUMP_VELOCITY = 4.5
 const SENSITIVITY = 0.003
@@ -13,6 +12,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	Global.score_increased.connect(score_increased)
 
 func _exit_tree():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
@@ -46,5 +46,7 @@ func _physics_process(delta):
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 		#velocity.x = 0.0
 		#velocity.z = 0.0
-
 	move_and_slide()
+
+func score_increased():
+	$ScoreIncreased.play()

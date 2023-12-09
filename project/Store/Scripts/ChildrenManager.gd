@@ -15,6 +15,8 @@ extends Node3D
 
 @onready var gameboys = []
 
+@onready var starting = false
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	spawn_gameboys()
@@ -25,27 +27,28 @@ func spawn_gameboys():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	timer += delta
-	if timer >= interval and Global.current_child < max_child:
-		child_number += 1
-		gameboy_number += 1
-		
-		var child_instance = child_scene.instantiate()
-		
-		child_instance.set_name("Child" + str(child_number))
-		
-		add_child(child_instance)
-		
-		var door = doors[randi() % doors.size()]
-		
-		child_instance.position = door.position + Vector3(0, 0, 1.2)
-		child_instance._set_door(door)
-		
-		var gameboy = gameboys[randi() % gameboys.size()]
-		child_instance._set_gameboy(gameboy) 
-		
-		Global._child_spawned()
-		timer = 0.0
+	if (starting):
+		timer += delta
+		if timer >= interval and Global.current_child < max_child:
+			child_number += 1
+			gameboy_number += 1
+			
+			var child_instance = child_scene.instantiate()
+			
+			child_instance.set_name("Child" + str(child_number))
+			
+			add_child(child_instance)
+			
+			var door = doors[randi() % doors.size()]
+			
+			child_instance.position = door.position + Vector3(0, 0, 1.2)
+			child_instance._set_door(door)
+			
+			var gameboy = gameboys[randi() % gameboys.size()]
+			child_instance._set_gameboy(gameboy) 
+			
+			Global._child_spawned()
+			timer = 0.0
 		
 func _instantiate_gameboy(gameboy_position):
 	var gameboy_instance = gameboy_scene.instantiate()
@@ -54,3 +57,7 @@ func _instantiate_gameboy(gameboy_position):
 	gameboy_instance.set_name("Gameboy" + str(gameboy_number))
 	add_child(gameboy_instance)
 	return gameboy_instance
+
+
+func _on_margin_container_start():
+	starting = true

@@ -51,5 +51,8 @@ theme_override_constants/margin_bottom = 100
 
 [node name="Button" parent="MarginContainer/VBoxContainer/MarginContainer2" instance=ExtResource("3_axceb")]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.333333, 0.913725, 1)
+theme_override_colors/font_pressed_color = Color(0.796078, 0.498039, 0.101961, 1)
+theme_override_colors/font_hover_color = Color(0.360784, 0.298039, 0.831373, 1)
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer2/Button" to="." method="_on_button_pressed"]

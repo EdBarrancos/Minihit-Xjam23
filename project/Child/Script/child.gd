@@ -37,10 +37,13 @@ func _physics_process(delta):
 
 func _on_gameboy_body_entered(body):
 	if(body == self):
+		Global._child_caught_gameboy()
 		caught_gameboy = true
 
 func _on_door_body_entered(body):
 	if(body == self):
+		Global._child_despawned()
+		Global._child_left_store()
 		queue_free()
 
 func _on_shootable_was_hit():

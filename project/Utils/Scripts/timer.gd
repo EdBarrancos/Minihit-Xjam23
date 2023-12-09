@@ -2,10 +2,12 @@ extends Control
 
 var seconds = 0
 var minutes = 0
-var Dseconds = 0
-var Dminutes = 2
+@export var Dseconds = 0
+@export var Dminutes = 2
 
 @export var label: Label
+
+signal timeout
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -27,7 +29,7 @@ func _on_timer_timeout():
 	
 	if seconds == 0 and minutes == 0:
 		#Maybe do something different here, like go to scoreboard
-		get_tree().quit()
+		emit_signal("timeout")
 
 func _reset_timer():
 	seconds = Dseconds

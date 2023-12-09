@@ -8,6 +8,9 @@
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_faxd6"]
 height = 1.5
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hcgfl"]
+height = 1.49378
+
 [node name="Child" type="CharacterBody3D" groups=["Child"]]
 script = ExtResource("1_sxdgi")
 
@@ -23,7 +26,7 @@ shape = ExtResource("2_3g7wn")
 [node name="Shootable" parent="." instance=ExtResource("2_ml5nd")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shootable"]
-shape = ExtResource("2_3g7wn")
+shape = SubResource("CapsuleShape3D_hcgfl")
 
 [node name="panic_long_run_loop1" parent="." instance=ExtResource("4_cpwcy")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, -1.5, 0, -0.749786, 0)

@@ -76,4 +76,4 @@ EXIT={
 
 [rendering]
 
-environment/defaults/default_clear_color=Color(0.4, 0.333333, 0.913725, 1)
+environment/defaults/default_clear_color=Color(0.203922, 0.780392, 0.764706, 1)

@@ -1,17 +1,14 @@
 [gd_scene load_steps=6 format=3 uid="uid://c7oot0tep422m"]
 
 [ext_resource type="Script" path="res://Game/Scripts/end_screen.gd" id="1_rusjq"]
-[ext_resource type="FontFile" uid="uid://ce14242blc8m3" path="res://Montserrat-Regular.ttf" id="2_cf6tg"]
+[ext_resource type="Texture2D" uid="uid://bhl7jgl5hwqrh" path="res://Game/Assets/GDTArtboard_24x.png" id="2_7paw4"]
 [ext_resource type="PackedScene" uid="uid://c1am0enhtpict" path="res://Game/Scenes/play_button.tscn" id="2_gt40a"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_x3y2s"]
-font = ExtResource("2_cf6tg")
-font_size = 150
+[ext_resource type="FontFile" uid="uid://q5wlfanhobnp" path="res://Montserrat-MediumItalic.ttf" id="3_yxl4l"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yit4a"]
-font = ExtResource("2_cf6tg")
+font = ExtResource("3_yxl4l")
 font_size = 100
-font_color = Color(0.796078, 0.498039, 0.101961, 1)
+font_color = Color(0.780392, 0.203922, 0.219608, 1)
 
 [node name="EndScreen" type="Control"]
 layout_mode = 3
@@ -37,11 +34,9 @@ alignment = 1
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Title" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer"]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MarginContainer"]
 layout_mode = 2
-text = "MINI TARGET"
-label_settings = SubResource("LabelSettings_x3y2s")
-horizontal_alignment = 1
+texture = ExtResource("2_7paw4")
 
 [node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2

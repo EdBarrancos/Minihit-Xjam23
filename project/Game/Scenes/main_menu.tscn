@@ -1,13 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://3bsvtmwpejiv"]
+[gd_scene load_steps=4 format=3 uid="uid://3bsvtmwpejiv"]
 
-[ext_resource type="FontFile" uid="uid://dravgrmm0jc6q" path="res://RubikBubbles-Regular.ttf" id="1_0edf7"]
 [ext_resource type="Script" path="res://Game/Scripts/main_menu.gd" id="1_b81ih"]
-[ext_resource type="FontFile" uid="uid://ce14242blc8m3" path="res://Montserrat-Regular.ttf" id="3_45pjw"]
 [ext_resource type="PackedScene" uid="uid://c1am0enhtpict" path="res://Game/Scenes/play_button.tscn" id="3_axceb"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_uq2fc"]
-font = ExtResource("3_45pjw")
-font_size = 160
+[ext_resource type="Texture2D" uid="uid://bhl7jgl5hwqrh" path="res://Game/Assets/GDTArtboard_24x.png" id="4_bfuhg"]
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -34,12 +29,9 @@ alignment = 1
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer"]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MarginContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("1_0edf7")
-text = "MINI TARGET"
-label_settings = SubResource("LabelSettings_uq2fc")
-horizontal_alignment = 1
+texture = ExtResource("4_bfuhg")
 
 [node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -51,8 +43,6 @@ theme_override_constants/margin_bottom = 100
 
 [node name="Button" parent="MarginContainer/VBoxContainer/MarginContainer2" instance=ExtResource("3_axceb")]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.4, 0.333333, 0.913725, 1)
-theme_override_colors/font_pressed_color = Color(0.796078, 0.498039, 0.101961, 1)
-theme_override_colors/font_hover_color = Color(0.360784, 0.298039, 0.831373, 1)
+theme_override_colors/font_hover_color = Color(0.184314, 0.266667, 0.439216, 1)
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer2/Button" to="." method="_on_button_pressed"]

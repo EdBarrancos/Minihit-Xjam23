@@ -18,7 +18,8 @@ shape = ExtResource("2_3g7wn")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." groups=["child"]]
 avoidance_enabled = true
-radius = 15.0
+radius = 20.0
+neighbor_distance = 60.0
 
 [node name="Shootable" parent="." instance=ExtResource("2_ml5nd")]
 

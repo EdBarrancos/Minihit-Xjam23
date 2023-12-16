@@ -3,6 +3,8 @@ extends Node
 var score = 0
 var current_child = 0
 
+var current_ammo = 10
+
 signal score_increased
 
 func _child_was_hit():
@@ -21,3 +23,6 @@ func _child_despawned():
 
 func _child_spawned():
 	current_child += 1
+	
+func _gun_shot():
+	current_ammo -= 1

@@ -21,7 +21,7 @@ func _process(delta):
 	handle_input()
 
 func handle_input():
-	if Input.is_action_pressed("SHOOT") && mode == MODE.NOTHING:
+	if Input.is_action_pressed("SHOOT") && mode == MODE.NOTHING && Global.current_ammo > 0:
 		handle_charging_shoot()
 	elif Input.is_action_just_released("SHOOT") && mode == MODE.CHARGING:
 		handle_shooting()
@@ -39,6 +39,7 @@ func handle_shooting():
 	sling_sound.play()
 	
 func shoot(charging):
+	Global._gun_shot()
 	if !is_instance_valid(loaded_bullet):
 		create_bullet()
 	loaded_bullet.shoot(charging)

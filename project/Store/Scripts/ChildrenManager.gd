@@ -52,7 +52,6 @@ func _process(delta):
 		
 func _instantiate_gameboy(gameboy_position):
 	var gameboy_instance = gameboy_scene.instantiate()
-	#TODO: Create a gameboy in random position
 	gameboy_instance.position = gameboy_position.position
 	gameboy_instance.set_name("Gameboy" + str(gameboy_number))
 	add_child(gameboy_instance)

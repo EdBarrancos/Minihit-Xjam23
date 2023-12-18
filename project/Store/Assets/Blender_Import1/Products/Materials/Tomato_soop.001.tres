@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c7ftp4n5sli7x"]
+
+[ext_resource type="Texture2D" uid="uid://ds7brk00hd1vq" path="res://Store/Assets/Blender_Import1/Products/Materials/Tomato_soop_001_Tomato_soop.png" id="1_ds65g"]
+
+[resource]
+resource_name = "Tomato_soop.001"
+cull_mode = 2
+albedo_texture = ExtResource("1_ds65g")
+roughness = 0.5
+texture_repeat = false

@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b3lvos5rsnlsk"]
+
+[resource]
+resource_name = "plastic1"
+cull_mode = 2
+albedo_color = Color(0.334956, 0.379082, 0.906332, 1)
+roughness = 0.5

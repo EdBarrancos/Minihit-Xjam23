@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://l4cl11a4rjtc"]
+
+[resource]
+resource_name = "Laranja"
+cull_mode = 2
+albedo_color = Color(0.906332, 0.439633, 0.16922, 1)
+roughness = 0.5

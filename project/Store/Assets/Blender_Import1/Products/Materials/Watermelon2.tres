@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bhcq5yixdur6t"]
+
+[ext_resource type="Texture2D" uid="uid://wdovfuk0p3td" path="res://Store/Assets/Blender_Import1/Products/Materials/Watermelon_Watermelon2.png" id="1_r8tpx"]
+
+[resource]
+resource_name = "Watermelon2"
+cull_mode = 2
+albedo_texture = ExtResource("1_r8tpx")
+roughness = 0.5

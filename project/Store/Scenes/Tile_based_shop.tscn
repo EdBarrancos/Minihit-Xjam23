@@ -1,15 +1,16 @@
-[gd_scene load_steps=62 format=3 uid="uid://la6262jmmnnq"]
+[gd_scene load_steps=63 format=3 uid="uid://la6262jmmnnq"]
 
 [ext_resource type="Material" uid="uid://bffsmalwo1uj1" path="res://Store/Assets/light_brown.tres" id="3_whsyv"]
 [ext_resource type="Material" uid="uid://d4fey052yxqak" path="res://Store/Assets/wood.tres" id="4_8nkfe"]
 [ext_resource type="Material" uid="uid://ckpsurxjb3bkn" path="res://Store/Assets/wall.tres" id="6_d2ljf"]
 [ext_resource type="Material" uid="uid://c5yqrpouwx88x" path="res://Store/Assets/orange_stuff.tres" id="7_f1blp"]
 [ext_resource type="Material" uid="uid://ctvs8n42ljr6g" path="res://Store/Assets/green_book.tres" id="8_fp6nu"]
-[ext_resource type="PackedScene" uid="uid://xbd25aabbcle" path="res://Store/Assets/Walls/Floor.glb" id="8_xcjoq"]
-[ext_resource type="PackedScene" uid="uid://dlqahd6nyntq2" path="res://Store/Assets/Walls/Door.glb" id="9_7b3si"]
+[ext_resource type="PackedScene" uid="uid://c008r45is7t0l" path="res://Store/Assets/Blender_Import1/Products/Shelves_corner2_001.glb" id="9_o1uq5"]
 [ext_resource type="Material" uid="uid://bu4yuhcr6p30o" path="res://Store/Assets/blue_stuff.tres" id="9_wrs7s"]
+[ext_resource type="PackedScene" uid="uid://dqcg4om1av83" path="res://Store/Assets/Blender_Import1/Products/Shelves_corner.glb" id="10_anf44"]
 [ext_resource type="PackedScene" uid="uid://hixi7tqi7tx6" path="res://Store/Scenes/fruit_box_large.tscn" id="10_j6ye0"]
 [ext_resource type="PackedScene" uid="uid://c83b72j55nh1e" path="res://Store/Assets/fruits_1.glb" id="11_oisf4"]
+[ext_resource type="PackedScene" uid="uid://80kebsa1fgx5" path="res://Store/Assets/Blender_Import1/Products/Shelves_corner2.glb" id="11_yy24u"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_6kif5"]
 vertices = PackedVector3Array(2.36632, 0.249896, -3.77783, 2.11632, 0.249896, -4.27783, 1.61632, 0.249896, -3.77783, 1.36632, 0.249896, -2.52783, -3.13368, 0.249896, -3.77783, -3.38368, 0.249896, -4.27783, -4.13368, 0.249896, -4.27783, -4.38368, 0.249896, -3.77783, 1.61632, 0.249896, -3.77783, -3.13368, 0.249896, -3.77783, -0.13368, 0.249896, -2.52783, 1.36632, 0.249896, -2.52783, 1.61632, 0.249896, 0.22217, 3.11632, 0.249896, 0.22217, 3.36632, 0.249896, -0.52783, 1.36632, 0.249896, -2.52783, -0.38368, 0.249896, -1.02783, -0.13368, 0.249896, -2.52783, -3.13368, 0.249896, -3.77783, -4.38368, 0.249896, -3.77783, -5.63368, 0.249896, -0.77783, -4.38368, 0.249896, -3.77783, -5.63368, 0.249896, -3.77783, -5.63368, 0.249896, -0.77783, 1.36632, 0.249896, -2.52783, 3.36632, 0.249896, -0.52783, 4.11632, 0.249896, -0.52783, 4.11632, 0.249896, -3.77783, 2.36632, 0.249896, -3.77783, 3.11632, 0.249896, 0.22217, 1.61632, 0.249896, 0.22217, 1.36632, 0.249896, 0.72217, 3.11632, 0.249896, 1.47217, -5.63368, 0.249896, 8.72217, 4.11632, 0.249896, 8.72217, -0.13368, 0.249896, 0.72217, -5.63368, 0.249896, -0.77783, 3.11632, 0.249896, 1.47217, 1.36632, 0.249896, 0.72217, -0.13368, 0.249896, 0.72217, 4.11632, 0.249896, 1.72217, 3.11632, 0.249896, 1.47217, -0.13368, 0.249896, 0.72217, 4.11632, 0.249896, 8.72217, -0.13368, 0.249896, 0.72217, -0.38368, 0.249896, -1.02783, -5.63368, 0.249896, -0.77783)
@@ -609,13 +610,6 @@ shape = SubResource("ConcavePolygonShape3D_c76su")
 
 [node name="Tiles" type="Node3D" parent="NavigationRegion3D"]
 
-[node name="Floor" parent="NavigationRegion3D/Tiles" instance=ExtResource("8_xcjoq")]
-visible = false
-
-[node name="Door" parent="NavigationRegion3D/Tiles" instance=ExtResource("9_7b3si")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
-visible = false
-
 [node name="fruits_1" parent="." instance=ExtResource("11_oisf4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.416533, 0.773321, -0.945353)
 visible = false
@@ -633,3 +627,15 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
 visible = false
 shape = SubResource("ConcavePolygonShape3D_nar3j")
+
+[node name="Shelves_corner2_0012" parent="." instance=ExtResource("9_o1uq5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -3)
+
+[node name="Shelves_corner2" parent="." instance=ExtResource("10_anf44")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="Shelves_corner2_0013" parent="." instance=ExtResource("9_o1uq5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+
+[node name="Shelves_corner22" parent="." instance=ExtResource("11_yy24u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 7)

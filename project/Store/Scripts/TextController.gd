@@ -8,9 +8,12 @@ extends MarginContainer
 
 @onready var timer_2 = $"Timer2"
 
+@onready var AmmoUI = $Ammo
+
 signal start
 
 func _ready():
+	AmmoUI.visible = false
 	label.text = first_text
 
 
@@ -21,5 +24,6 @@ func _on_timer_2_timeout():
 		timer_2.start()
 	elif current_text == 2:
 		label.visible = false
+		AmmoUI.visible = true
 		emit_signal("start")
 		

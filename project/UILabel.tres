@@ -1,0 +1,9 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://c86lt2fykbbxj"]
+
+[ext_resource type="FontFile" uid="uid://q5wlfanhobnp" path="res://Montserrat-MediumItalic.ttf" id="1_yp8or"]
+
+[resource]
+font = ExtResource("1_yp8or")
+font_size = 60
+outline_size = 7
+outline_color = Color(0.168627, 0.243137, 0.403922, 1)

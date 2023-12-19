@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://2tgx3dec0iqm"]
+
+[resource]
+resource_name = "baseboard"
+cull_mode = 2
+albedo_color = Color(0.906332, 0.666314, 0.479327, 1)
+roughness = 0.5

@@ -25,6 +25,8 @@ func handle_input():
 		handle_charging_shoot()
 	elif Input.is_action_just_released("SHOOT") && mode == MODE.CHARGING:
 		handle_shooting()
+	elif Input.is_action_just_pressed("INTERACT") && Global.can_reload == true:
+		handle_reload()
 
 func handle_charging_shoot():
 	slingshot.charge()
@@ -37,6 +39,9 @@ func handle_shooting():
 	mode = MODE.SHOOTING
 	stretch_sound.stop()
 	sling_sound.play()
+	
+func handle_reload():
+	Global.current_ammo = 10
 	
 func shoot(charging):
 	Global._gun_shot()

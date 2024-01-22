@@ -5,6 +5,8 @@ var current_child = 0
 
 var current_ammo = 10
 
+var can_reload = false
+
 signal score_increased
 
 func _child_was_hit():

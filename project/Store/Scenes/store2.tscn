@@ -59,12 +59,12 @@ shadow_enabled = true
 shadow_bias = 1.566
 
 [node name="Door" parent="." instance=ExtResource("7_bfai2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.015, 0.75, -4.512)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.015, 0.75, -4.26176)
 
 [node name="Shop_layout_1" parent="." instance=ExtResource("7_xpiq4")]
 
 [node name="Door2" parent="." instance=ExtResource("7_bfai2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.02619, 0.75, -4.512)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.02619, 0.75, -4.24371)
 
 [node name="GameBoySpawnPoint" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.00399, 0.75, 7.40367)

@@ -6,7 +6,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if Input.is_action_just_pressed("EXIT"):
+		get_tree().quit()
 
 func _on_timer_timeout():
 	get_parent().load_end_screen()

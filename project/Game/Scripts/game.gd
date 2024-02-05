@@ -8,8 +8,7 @@ const end_screen = preload("res://Game/Scenes/end_screen.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input.is_action_just_pressed("EXIT"):
-		get_tree().quit()
+	pass
 
 
 func loadGame():

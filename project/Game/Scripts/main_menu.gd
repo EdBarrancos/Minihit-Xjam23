@@ -10,4 +10,5 @@ func _process(delta):
 	pass
 
 func _on_button_pressed():
-	get_parent().loadGame()
+	#get_parent().loadGame()
+	get_tree().change_scene_to_file("res://Game/Scenes/level_selection.tscn")

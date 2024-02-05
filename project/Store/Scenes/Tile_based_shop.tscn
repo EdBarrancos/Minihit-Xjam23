@@ -518,12 +518,12 @@ mesh = ExtResource("6_t2ukn")
 transform = Transform3D(1, -0.000750491, 0, 0.000750491, 1, 0, 0, 0, 0.8, 0, 0.2, -0.7)
 layers = 9
 
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/fruit_box_large_001"]
+[node name="FruitBoxReload" type="StaticBody3D" parent="NavigationRegion3D/fruit_box_large_001"]
 transform = Transform3D(1.45454, 0.00109162, 0, -0.000769735, 1.02564, 0, 0, 0, 1.35593, -0.055094, 0.0584002, -0.587642)
 collision_layer = 9
 collision_mask = 9
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/fruit_box_large_001/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/fruit_box_large_001/FruitBoxReload"]
 transform = Transform3D(1.285, 0, 0, 0, 1.285, 0, 0, 0, 1.285, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_2vyc8")
 
@@ -537,7 +537,7 @@ collision_layer = 9
 collision_mask = 9
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/fruit_box_large_002/StaticBody3D"]
-transform = Transform3D(1.285, 0, 0, 0, 1.285, 0, 0, 0, 1.285, 0, 0, 0)
+transform = Transform3D(1.285, 2.17334e-18, 0, -3.08217e-18, 1.285, 0, 5.68434e-14, 6.93889e-18, 1.285, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_2vyc8")
 
 [node name="Tiles" type="Node3D" parent="NavigationRegion3D"]
@@ -1318,7 +1318,8 @@ light_color = Color(0.988235, 0.92549, 0.690196, 1)
 light_energy = 7.788
 
 [node name="Gameboy_1" parent="." instance=ExtResource("19_x1vym")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1, 1)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.258979, 1, 1)
+visible = false
 
 [node name="Gameboy_004" parent="Gameboy_1" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.000662029, 0.000421643)

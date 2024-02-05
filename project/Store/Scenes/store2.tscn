@@ -1,0 +1,137 @@
+[gd_scene load_steps=18 format=3 uid="uid://2riyqoftsk1t"]
+
+[ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_tj10n"]
+[ext_resource type="Script" path="res://Store/Scripts/ChildrenManager.gd" id="2_0cgof"]
+[ext_resource type="PackedScene" uid="uid://0fjnmd8u6yvw" path="res://Child/Scenes/child.tscn" id="3_neiwi"]
+[ext_resource type="PackedScene" uid="uid://c8au82xiqgrh1" path="res://Store/Scenes/gameboy.tscn" id="4_o3lfs"]
+[ext_resource type="PackedScene" uid="uid://buo5j43idfqcr" path="res://Player/Scenes/player.tscn" id="5_y1e8d"]
+[ext_resource type="PackedScene" uid="uid://bwb7odtagrx5s" path="res://Store/Scenes/door.tscn" id="7_bfai2"]
+[ext_resource type="PackedScene" uid="uid://la6262jmmnnq" path="res://Store/Scenes/Tile_based_shop.tscn" id="7_xpiq4"]
+[ext_resource type="LabelSettings" uid="uid://c86lt2fykbbxj" path="res://UILabel.tres" id="8_43la0"]
+[ext_resource type="Script" path="res://Utils/Scripts/score.gd" id="9_eed6l"]
+[ext_resource type="PackedScene" uid="uid://bq3ei4rh77djq" path="res://Utils/Scenes/timer.tscn" id="10_kfrey"]
+[ext_resource type="Script" path="res://Store/Scripts/TextController.gd" id="11_0bns1"]
+[ext_resource type="Script" path="res://Utils/Scripts/ammo.gd" id="12_6pmd2"]
+[ext_resource type="FontFile" uid="uid://q5wlfanhobnp" path="res://Montserrat-MediumItalic.ttf" id="13_iixsw"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_n3gp5"]
+sky_top_color = Color(0.168627, 0.243137, 0.403922, 1)
+sky_horizon_color = Color(0.780392, 0.203922, 0.219608, 1)
+sky_energy_multiplier = 1.2
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_5i27q"]
+sky_material = SubResource("ProceduralSkyMaterial_n3gp5")
+
+[sub_resource type="Environment" id="Environment_vqwgl"]
+background_mode = 2
+sky = SubResource("Sky_5i27q")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="LabelSettings" id="LabelSettings_0vcbm"]
+font = ExtResource("13_iixsw")
+font_size = 50
+outline_size = 7
+outline_color = Color(0.168627, 0.243137, 0.403922, 1)
+
+[node name="Store" type="Node3D"]
+script = ExtResource("1_tj10n")
+
+[node name="ChildrenManager" type="Node3D" parent="." node_paths=PackedStringArray("doors", "gameboySpawnPoints")]
+script = ExtResource("2_0cgof")
+doors = [NodePath("../Door"), NodePath("../Door2")]
+gameboySpawnPoints = [NodePath("../GameBoySpawnPoint"), NodePath("../GameBoySpawnPoint2"), NodePath("../GameBoySpawnPoint3"), NodePath("../GameBoySpawnPoint4")]
+child_scene = ExtResource("3_neiwi")
+gameboy_scene = ExtResource("4_o3lfs")
+
+[node name="Player" parent="." instance=ExtResource("5_y1e8d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.90916, 0.807365, 1.66248)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_vqwgl")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 2.51134, 0)
+light_color = Color(1, 1, 0.854902, 1)
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 1.566
+
+[node name="Door" parent="." instance=ExtResource("7_bfai2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.015, 0.75, -4.512)
+
+[node name="Shop_layout_1" parent="." instance=ExtResource("7_xpiq4")]
+
+[node name="Door2" parent="." instance=ExtResource("7_bfai2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.02619, 0.75, -4.512)
+
+[node name="GameBoySpawnPoint" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.00399, 0.75, 7.40367)
+
+[node name="GameBoySpawnPoint2" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.99057, 0.75, 7.25034)
+
+[node name="GameBoySpawnPoint3" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.99768, 0.75, 7.53478)
+
+[node name="GameBoySpawnPoint4" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.11988, 0.75, 0.691)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Score" type="Label" parent="CanvasLayer"]
+layout_direction = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -102.0
+offset_top = 18.0
+offset_right = -25.0
+offset_bottom = 104.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 30
+text = "10"
+label_settings = ExtResource("8_43la0")
+script = ExtResource("9_eed6l")
+
+[node name="Timer" parent="CanvasLayer" instance=ExtResource("10_kfrey")]
+Dseconds = 30
+Dminutes = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 3
+script = ExtResource("11_0bns1")
+
+[node name="Ammo" type="Label" parent="CanvasLayer/MarginContainer"]
+layout_direction = 1
+layout_mode = 2
+text = "Ammo : 10"
+label_settings = ExtResource("8_43la0")
+script = ExtResource("12_6pmd2")
+
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer"]
+layout_mode = 2
+text = "Don't Let the children take your gameboys"
+label_settings = SubResource("LabelSettings_0vcbm")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer2" type="Timer" parent="CanvasLayer/MarginContainer"]
+wait_time = 3.0
+autostart = true
+
+[connection signal="timeout" from="CanvasLayer/Timer" to="." method="_on_timer_timeout"]
+[connection signal="start" from="CanvasLayer/MarginContainer" to="ChildrenManager" method="_on_margin_container_start"]
+[connection signal="start" from="CanvasLayer/MarginContainer" to="CanvasLayer/Timer" method="_on_margin_container_start"]
+[connection signal="timeout" from="CanvasLayer/MarginContainer/Timer2" to="CanvasLayer/MarginContainer" method="_on_timer_2_timeout"]

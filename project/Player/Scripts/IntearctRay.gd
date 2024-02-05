@@ -14,7 +14,7 @@ func _process(delta):
 	if is_colliding():
 		var detected = get_collider()
 		
-		if(detected.name == "FruitBoxReload"):
+		if(detected != null && detected.name == "FruitBoxReload"):
 			prompt.text = "Press E to reload"
 			Global.can_reload = true
 			return

@@ -1318,7 +1318,6 @@ collision_layer = 9
 collision_mask = 9
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ShelfesColisions/MeshInstance3D/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="ShelfesColisions"]
@@ -1332,7 +1331,6 @@ collision_layer = 9
 collision_mask = 9
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ShelfesColisions/MeshInstance3D2/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="ShelfesColisions"]
@@ -1346,7 +1344,6 @@ collision_layer = 9
 collision_mask = 9
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ShelfesColisions/MeshInstance3D3/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="ShelfesColisions"]
@@ -1360,5 +1357,4 @@ collision_layer = 9
 collision_mask = 9
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ShelfesColisions/MeshInstance3D4/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_hdqhh")

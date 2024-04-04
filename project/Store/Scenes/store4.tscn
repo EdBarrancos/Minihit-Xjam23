@@ -1,35 +1,35 @@
-[gd_scene load_steps=62 format=3 uid="uid://b34w35i5fkxpl"]
+[gd_scene load_steps=62 format=3 uid="uid://duffyxgp2csfc"]
 
-[ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_elhm2"]
-[ext_resource type="Script" path="res://Store/Scripts/ChildrenManager.gd" id="2_igafd"]
-[ext_resource type="PackedScene" uid="uid://0fjnmd8u6yvw" path="res://Child/Scenes/child.tscn" id="3_jp3ej"]
-[ext_resource type="PackedScene" uid="uid://c8au82xiqgrh1" path="res://Store/Scenes/gameboy.tscn" id="4_a2a4p"]
-[ext_resource type="PackedScene" uid="uid://buo5j43idfqcr" path="res://Player/Scenes/player.tscn" id="5_yccb8"]
-[ext_resource type="PackedScene" uid="uid://bwb7odtagrx5s" path="res://Store/Scenes/door.tscn" id="6_dg15x"]
-[ext_resource type="PackedScene" uid="uid://bnihl0yxwfrax" path="res://Store/Assets/Blender_Import1/Counter_3.glb" id="7_jgtx7"]
-[ext_resource type="LabelSettings" uid="uid://c86lt2fykbbxj" path="res://UILabel.tres" id="8_dj1pm"]
-[ext_resource type="Material" uid="uid://bffsmalwo1uj1" path="res://Store/Assets/light_brown.tres" id="8_w83ki"]
-[ext_resource type="Script" path="res://Utils/Scripts/score.gd" id="9_10owf"]
-[ext_resource type="Material" uid="uid://c5yqrpouwx88x" path="res://Store/Assets/orange_stuff.tres" id="9_47exc"]
-[ext_resource type="Material" uid="uid://ctvs8n42ljr6g" path="res://Store/Assets/green_book.tres" id="10_0aagh"]
-[ext_resource type="PackedScene" uid="uid://bq3ei4rh77djq" path="res://Utils/Scenes/timer.tscn" id="10_761b7"]
-[ext_resource type="Script" path="res://Store/Scripts/TextController.gd" id="11_ldsay"]
-[ext_resource type="Material" uid="uid://d4fey052yxqak" path="res://Store/Assets/wood.tres" id="11_prxw5"]
-[ext_resource type="Script" path="res://Utils/Scripts/ammo.gd" id="12_3tl3b"]
-[ext_resource type="Material" uid="uid://bu4yuhcr6p30o" path="res://Store/Assets/blue_stuff.tres" id="12_vw8ej"]
-[ext_resource type="FontFile" uid="uid://q5wlfanhobnp" path="res://Montserrat-MediumItalic.ttf" id="13_twmxa"]
-[ext_resource type="ArrayMesh" uid="uid://sdckvecpb1n0" path="res://Store/Assets/Blender_Import1/Shop_Furniture_1_Cube_060.res" id="13_v20pl"]
-[ext_resource type="PackedScene" uid="uid://hixi7tqi7tx6" path="res://Store/Scenes/fruit_box_large.tscn" id="14_lkq41"]
-[ext_resource type="PackedScene" uid="uid://dixjovhq4qmr4" path="res://Store/Assets/Blender_Import1/Wall_tiles/Celling_tile.glb" id="15_3niau"]
-[ext_resource type="PackedScene" uid="uid://cwkf2ub8galkb" path="res://Store/Assets/Blender_Import1/Wall_tiles/wall.glb" id="16_6208h"]
-[ext_resource type="PackedScene" uid="uid://dpb5oq8aqjlls" path="res://Store/Assets/Blender_Import1/Wall_tiles/Corner_wall.glb" id="17_l8vwq"]
-[ext_resource type="PackedScene" uid="uid://cga3vvysl23hg" path="res://Store/Assets/Blender_Import1/Wall_tiles/door_wall.glb" id="18_vvog0"]
-[ext_resource type="PackedScene" uid="uid://cd771ulkrbnd5" path="res://Store/Assets/Blender_Import1/Wall_tiles/Window_wall.glb" id="19_u488r"]
-[ext_resource type="PackedScene" uid="uid://dn2tsesqcvnlx" path="res://Store/Assets/Blender_Import1/Wall_tiles/Floor_tile.glb" id="20_okwjq"]
-[ext_resource type="PackedScene" uid="uid://80kebsa1fgx5" path="res://Store/Assets/Blender_Import1/Products/Shelves_center.glb" id="21_h2xiy"]
-[ext_resource type="PackedScene" uid="uid://c008r45is7t0l" path="res://Store/Assets/Blender_Import1/Products/Shelves_corner2.glb" id="22_c0x7p"]
-[ext_resource type="PackedScene" uid="uid://dqcg4om1av83" path="res://Store/Assets/Blender_Import1/Products/Shelves_corner.glb" id="23_y5uvr"]
-[ext_resource type="PackedScene" uid="uid://c83b72j55nh1e" path="res://Store/Assets/fruits_1.glb" id="24_cr0fe"]
+[ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_d777w"]
+[ext_resource type="Script" path="res://Store/Scripts/ChildrenManager.gd" id="2_darp7"]
+[ext_resource type="PackedScene" uid="uid://0fjnmd8u6yvw" path="res://Child/Scenes/child.tscn" id="3_6pjt8"]
+[ext_resource type="PackedScene" uid="uid://c8au82xiqgrh1" path="res://Store/Scenes/gameboy.tscn" id="4_qwroo"]
+[ext_resource type="PackedScene" uid="uid://buo5j43idfqcr" path="res://Player/Scenes/player.tscn" id="5_sg0m2"]
+[ext_resource type="PackedScene" uid="uid://bnihl0yxwfrax" path="res://Store/Assets/Blender_Import1/Counter_3.glb" id="6_ou664"]
+[ext_resource type="Material" uid="uid://bffsmalwo1uj1" path="res://Store/Assets/light_brown.tres" id="7_d8sce"]
+[ext_resource type="Material" uid="uid://c5yqrpouwx88x" path="res://Store/Assets/orange_stuff.tres" id="8_oboks"]
+[ext_resource type="Material" uid="uid://ctvs8n42ljr6g" path="res://Store/Assets/green_book.tres" id="9_sremw"]
+[ext_resource type="Material" uid="uid://d4fey052yxqak" path="res://Store/Assets/wood.tres" id="10_lgadv"]
+[ext_resource type="Material" uid="uid://bu4yuhcr6p30o" path="res://Store/Assets/blue_stuff.tres" id="11_0djb2"]
+[ext_resource type="ArrayMesh" uid="uid://sdckvecpb1n0" path="res://Store/Assets/Blender_Import1/Shop_Furniture_1_Cube_060.res" id="12_sy147"]
+[ext_resource type="PackedScene" uid="uid://hixi7tqi7tx6" path="res://Store/Scenes/fruit_box_large.tscn" id="13_bo4y3"]
+[ext_resource type="PackedScene" uid="uid://dixjovhq4qmr4" path="res://Store/Assets/Blender_Import1/Wall_tiles/Celling_tile.glb" id="14_ygxef"]
+[ext_resource type="PackedScene" uid="uid://cwkf2ub8galkb" path="res://Store/Assets/Blender_Import1/Wall_tiles/wall.glb" id="15_iunhd"]
+[ext_resource type="PackedScene" uid="uid://dpb5oq8aqjlls" path="res://Store/Assets/Blender_Import1/Wall_tiles/Corner_wall.glb" id="16_rbumr"]
+[ext_resource type="PackedScene" uid="uid://cga3vvysl23hg" path="res://Store/Assets/Blender_Import1/Wall_tiles/door_wall.glb" id="17_wbsjc"]
+[ext_resource type="PackedScene" uid="uid://cd771ulkrbnd5" path="res://Store/Assets/Blender_Import1/Wall_tiles/Window_wall.glb" id="18_tjusf"]
+[ext_resource type="PackedScene" uid="uid://dn2tsesqcvnlx" path="res://Store/Assets/Blender_Import1/Wall_tiles/Floor_tile.glb" id="19_8ldt5"]
+[ext_resource type="PackedScene" uid="uid://80kebsa1fgx5" path="res://Store/Assets/Blender_Import1/Products/Shelves_center.glb" id="20_8yxx8"]
+[ext_resource type="PackedScene" uid="uid://c008r45is7t0l" path="res://Store/Assets/Blender_Import1/Products/Shelves_corner2.glb" id="21_a6scf"]
+[ext_resource type="PackedScene" uid="uid://dqcg4om1av83" path="res://Store/Assets/Blender_Import1/Products/Shelves_corner.glb" id="22_g6mwe"]
+[ext_resource type="PackedScene" uid="uid://c83b72j55nh1e" path="res://Store/Assets/fruits_1.glb" id="23_vloo7"]
+[ext_resource type="PackedScene" uid="uid://bwb7odtagrx5s" path="res://Store/Scenes/door.tscn" id="24_ghvre"]
+[ext_resource type="LabelSettings" uid="uid://c86lt2fykbbxj" path="res://UILabel.tres" id="25_lgjg1"]
+[ext_resource type="Script" path="res://Utils/Scripts/score.gd" id="26_idib1"]
+[ext_resource type="PackedScene" uid="uid://bq3ei4rh77djq" path="res://Utils/Scenes/timer.tscn" id="27_hrbxk"]
+[ext_resource type="Script" path="res://Store/Scripts/TextController.gd" id="28_1an0w"]
+[ext_resource type="Script" path="res://Utils/Scripts/ammo.gd" id="29_turbw"]
+[ext_resource type="FontFile" uid="uid://q5wlfanhobnp" path="res://Montserrat-MediumItalic.ttf" id="30_regg4"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_n3gp5"]
 sky_top_color = Color(0.168627, 0.243137, 0.403922, 1)
@@ -243,22 +243,22 @@ size = Vector3(12, 1, 14.5)
 points = PackedVector3Array(6, 0.5, 7.25, 6, -0.5, 7.25, 6, 0.5, -7.25, -6, 0.5, 7.25, -6, -0.5, 7.25, 6, -0.5, -7.25, -6, 0.5, -7.25, -6, -0.5, -7.25)
 
 [sub_resource type="LabelSettings" id="LabelSettings_0vcbm"]
-font = ExtResource("13_twmxa")
+font = ExtResource("30_regg4")
 font_size = 50
 outline_size = 7
 outline_color = Color(0.168627, 0.243137, 0.403922, 1)
 
 [node name="Store" type="Node3D"]
-script = ExtResource("1_elhm2")
+script = ExtResource("1_d777w")
 
 [node name="ChildrenManager" type="Node3D" parent="." node_paths=PackedStringArray("doors", "gameboySpawnPoints")]
-script = ExtResource("2_igafd")
+script = ExtResource("2_darp7")
 doors = [NodePath("../Door"), NodePath("../Door2")]
 gameboySpawnPoints = [NodePath("../GameBoySpawnPoint"), NodePath("../GameBoySpawnPoint2"), NodePath("../GameBoySpawnPoint4")]
-child_scene = ExtResource("3_jp3ej")
-gameboy_scene = ExtResource("4_a2a4p")
+child_scene = ExtResource("3_6pjt8")
+gameboy_scene = ExtResource("4_qwroo")
 
-[node name="Player" parent="." instance=ExtResource("5_yccb8")]
+[node name="Player" parent="." instance=ExtResource("5_sg0m2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.90916, 0.807365, 1.66248)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -277,7 +277,7 @@ shadow_bias = 1.566
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="Shop_layout_2"]
 navigation_mesh = SubResource("NavigationMesh_6kif5")
 
-[node name="Counter_3" parent="Shop_layout_2/NavigationRegion3D" instance=ExtResource("7_jgtx7")]
+[node name="Counter_3" parent="Shop_layout_2/NavigationRegion3D" instance=ExtResource("6_ou664")]
 transform = Transform3D(0.8, 0, -1.90735e-07, 0, 0.8, 0, -1.90735e-07, 0, -0.8, -7.37649, 0, -2.84073)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Counter_3"]
@@ -298,7 +298,7 @@ visible = false
 
 [node name="Cube_003" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/ProductShelf2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4845, 0.329287, 0.520032)
-material_override = ExtResource("8_w83ki")
+material_override = ExtResource("7_d8sce")
 mesh = SubResource("ArrayMesh_e6j7x")
 skeleton = NodePath("")
 
@@ -311,7 +311,7 @@ shape = SubResource("ConvexPolygonShape3D_rwjew")
 
 [node name="Cube_012" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/ProductShelf2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.27541, 0.735446, 0.654254)
-material_override = ExtResource("9_47exc")
+material_override = ExtResource("8_oboks")
 mesh = SubResource("ArrayMesh_846c4")
 skeleton = NodePath("")
 
@@ -319,7 +319,7 @@ skeleton = NodePath("")
 
 [node name="Cube_013" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/ProductShelf2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.49408, 0.729912, 0.870203)
-material_override = ExtResource("10_0aagh")
+material_override = ExtResource("9_sremw")
 mesh = SubResource("ArrayMesh_bhejm")
 skeleton = NodePath("")
 
@@ -327,7 +327,7 @@ skeleton = NodePath("")
 
 [node name="Cube_014" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/ProductShelf2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.48801, 0.70863, 0.548435)
-material_override = ExtResource("11_prxw5")
+material_override = ExtResource("10_lgadv")
 mesh = SubResource("ArrayMesh_w1v07")
 skeleton = NodePath("")
 
@@ -335,7 +335,7 @@ skeleton = NodePath("")
 
 [node name="Cube_015" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/ProductShelf2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3523, 0.703977, 0.357349)
-material_override = ExtResource("12_vw8ej")
+material_override = ExtResource("11_0djb2")
 mesh = SubResource("ArrayMesh_jwrhh")
 skeleton = NodePath("")
 
@@ -343,7 +343,7 @@ skeleton = NodePath("")
 
 [node name="Small_fruit_box" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.27495, 0.2, -3.79639)
-mesh = ExtResource("13_v20pl")
+mesh = ExtResource("12_sy147")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shop_layout_2/NavigationRegion3D/Small_fruit_box"]
 collision_layer = 9
@@ -354,7 +354,7 @@ shape = SubResource("ConvexPolygonShape3D_sqwha")
 
 [node name="Small_fruit_box2" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.875842, 0.2, -3.796)
-mesh = ExtResource("13_v20pl")
+mesh = ExtResource("12_sy147")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Shop_layout_2/NavigationRegion3D/Small_fruit_box2"]
 collision_layer = 9
@@ -363,7 +363,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Small_fruit_box2/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_sqpxs")
 
-[node name="fruit_box_large_001" parent="Shop_layout_2/NavigationRegion3D" instance=ExtResource("14_lkq41")]
+[node name="fruit_box_large_001" parent="Shop_layout_2/NavigationRegion3D" instance=ExtResource("13_bo4y3")]
 transform = Transform3D(1, -0.000750491, 0, 0.000750491, 1, 0, 0, 0, 0.8, 3.2982, 0.2, 0.22045)
 layers = 9
 
@@ -376,7 +376,7 @@ collision_mask = 9
 transform = Transform3D(1.285, 0, 0, 0, 1.285, 0, 0, 0, 1.285, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_2vyc8")
 
-[node name="fruit_box_large_002" parent="Shop_layout_2/NavigationRegion3D" instance=ExtResource("14_lkq41")]
+[node name="fruit_box_large_002" parent="Shop_layout_2/NavigationRegion3D" instance=ExtResource("13_bo4y3")]
 transform = Transform3D(-1, 0.000750491, 6.99382e-08, 0.000750491, 1, 0, -8.74227e-08, 6.561e-11, -0.8, -5.3311, 0.2, 0.166672)
 layers = 9
 
@@ -396,267 +396,267 @@ transform = Transform3D(1.00222, 0, 0, 0, 1.00222, 0, 0, 0, 1.00222, 0, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 visible = false
 
-[node name="Celling_tile2" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile2" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1.00227, 8.76212e-08, 0, -8.76212e-08, -1.00227, 0, 0, 0, 1.00227, 0, 0, 0)
 
-[node name="Celling_tile3" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile3" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 2, 0, 0)
 
-[node name="Celling_tile4" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile4" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 4, 0, 0)
 
-[node name="Celling_tile5" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile5" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, -2)
 
-[node name="Celling_tile6" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile6" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 2, 0, -2)
 
-[node name="Celling_tile7" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile7" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 4, 0, -2)
 
-[node name="Celling_tile8" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile8" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, -4)
 
-[node name="Celling_tile9" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile9" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 2, 0, -4)
 
-[node name="Celling_tile10" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile10" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 4, 0, -4)
 
-[node name="Celling_tile11" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile11" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 6)
 
-[node name="Celling_tile12" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile12" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 2, 0, 6)
 
-[node name="Celling_tile13" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile13" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 4, 0, 6)
 
-[node name="Celling_tile14" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile14" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 4)
 
-[node name="Celling_tile15" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile15" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 2, 0, 4)
 
-[node name="Celling_tile16" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile16" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 4, 0, 4)
 
-[node name="Celling_tile17" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile17" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 2)
 
-[node name="Celling_tile18" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile18" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 2, 0, 2)
 
-[node name="Celling_tile19" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile19" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 4, 0, 2)
 
-[node name="Celling_tile20" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile20" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -6, 0, 0)
 
-[node name="Celling_tile21" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile21" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -4, 0, 0)
 
-[node name="Celling_tile22" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile22" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -2, 0, 0)
 
-[node name="Celling_tile23" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile23" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -6, 0, -2)
 
-[node name="Celling_tile24" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile24" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -4, 0, -2)
 
-[node name="Celling_tile25" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile25" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -2, 0, -2)
 
-[node name="Celling_tile26" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile26" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -6, 0, -4)
 
-[node name="Celling_tile27" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile27" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -4, 0, -4)
 
-[node name="Celling_tile28" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile28" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -2, 0, -4)
 
-[node name="Celling_tile29" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile29" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
 
-[node name="Celling_tile30" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile30" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 2, 0, 0)
 
-[node name="Celling_tile31" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile31" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 4, 0, 0)
 
-[node name="Celling_tile32" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile32" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, -2)
 
-[node name="Celling_tile33" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile33" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 2, 0, -2)
 
-[node name="Celling_tile34" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile34" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 4, 0, -2)
 
-[node name="Celling_tile35" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile35" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, -4)
 
-[node name="Celling_tile36" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile36" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 2, 0, -4)
 
-[node name="Celling_tile37" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile37" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 4, 0, -4)
 
-[node name="Celling_tile38" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile38" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -6, 0, 6)
 
-[node name="Celling_tile39" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile39" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -4, 0, 6)
 
-[node name="Celling_tile40" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile40" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -2, 0, 6)
 
-[node name="Celling_tile41" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile41" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -6, 0, 4)
 
-[node name="Celling_tile42" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile42" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -4, 0, 4)
 
-[node name="Celling_tile43" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile43" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -2, 0, 4)
 
-[node name="Celling_tile44" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile44" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -6, 0, 2)
 
-[node name="Celling_tile45" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile45" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -4, 0, 2)
 
-[node name="Celling_tile46" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile46" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -2, 0, 2)
 
-[node name="Celling_tile47" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile47" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 10)
 
-[node name="Celling_tile48" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile48" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 2, 0, 10)
 
-[node name="Celling_tile49" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile49" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 4, 0, 10)
 
-[node name="Celling_tile50" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile50" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 8)
 
-[node name="Celling_tile51" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile51" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 2, 0, 8)
 
-[node name="Celling_tile52" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile52" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 4, 0, 8)
 
-[node name="Celling_tile53" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile53" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -6, 0, 10)
 
-[node name="Celling_tile54" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile54" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -4, 0, 10)
 
-[node name="Celling_tile55" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile55" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -2, 0, 10)
 
-[node name="Celling_tile56" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile56" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -6, 0, 8)
 
-[node name="Celling_tile57" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile57" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -4, 0, 8)
 
-[node name="Celling_tile58" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile58" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -2, 0, 8)
 
-[node name="Celling_tile59" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile59" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -8, 0, 0)
 
-[node name="Celling_tile60" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile60" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -8, 0, -2)
 
-[node name="Celling_tile61" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile61" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -8, 0, -4)
 
-[node name="Celling_tile62" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile62" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -8, 0, 6)
 
-[node name="Celling_tile63" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile63" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -8, 0, 4)
 
-[node name="Celling_tile64" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile64" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -8, 0, 2)
 
-[node name="Celling_tile65" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile65" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -8, 0, 10)
 
-[node name="Celling_tile66" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile66" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -8, 0, 8)
 
-[node name="Celling_tile67" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile67" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 12)
 
-[node name="Celling_tile68" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile68" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 2, 0, 12)
 
-[node name="Celling_tile69" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile69" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 4, 0, 12)
 
-[node name="Celling_tile70" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile70" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -6, 0, 12)
 
-[node name="Celling_tile71" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile71" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -4, 0, 12)
 
-[node name="Celling_tile72" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile72" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -2, 0, 12)
 
-[node name="Celling_tile73" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile73" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -8, 0, 12)
 
-[node name="Celling_tile74" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile74" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 14)
 
-[node name="Celling_tile75" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile75" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 2, 0, 14)
 
-[node name="Celling_tile76" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile76" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 4, 0, 14)
 
-[node name="Celling_tile77" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile77" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -6, 0, 14)
 
-[node name="Celling_tile78" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile78" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -4, 0, 14)
 
-[node name="Celling_tile79" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile79" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -2, 0, 14)
 
-[node name="Celling_tile80" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile80" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -8, 0, 14)
 
-[node name="Celling_tile81" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile81" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 16)
 
-[node name="Celling_tile82" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile82" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 2, 0, 16)
 
-[node name="Celling_tile83" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile83" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 4, 0, 16)
 
-[node name="Celling_tile84" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile84" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -6, 0, 16)
 
-[node name="Celling_tile85" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile85" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -4, 0, 16)
 
-[node name="Celling_tile86" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile86" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -2, 0, 16)
 
-[node name="Celling_tile87" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile87" parent="Shop_layout_2/NavigationRegion3D/Tiles/celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -8, 0, 16)
 
 [node name="walls" type="Node3D" parent="Shop_layout_2/NavigationRegion3D/Tiles"]
 
-[node name="wall2" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall2" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -2)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall2"]
@@ -671,7 +671,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall2/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall3" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall3" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall3"]
@@ -686,7 +686,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall3/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall4" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall4" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 2)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall4"]
@@ -701,7 +701,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall4/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall5" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall5" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 4)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall5"]
@@ -716,7 +716,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall5/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall6" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall6" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 6)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall6"]
@@ -731,7 +731,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall6/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall7" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall7" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 8)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall7"]
@@ -746,7 +746,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall7/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall8" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall8" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 0, 8)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall8"]
@@ -761,7 +761,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall8/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall9" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall9" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 0, 6)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall9"]
@@ -776,7 +776,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall9/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall10" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall10" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 0, 4)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall10"]
@@ -791,7 +791,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall10/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall11" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall11" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 0, 2)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall11"]
@@ -806,7 +806,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall11/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall12" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall12" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 0, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall12"]
@@ -821,7 +821,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall12/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall13" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall13" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 0, -2)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall13"]
@@ -836,7 +836,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall13/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall15" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall15" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6, 0, 16)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall15"]
@@ -851,7 +851,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall15/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall16" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall16" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2, 0, 16)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall16"]
@@ -866,7 +866,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall16/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall17" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall17" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 16)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall17"]
@@ -881,7 +881,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall17/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall18" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall18" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 16)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall18"]
@@ -896,7 +896,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall18/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Corner_wall2" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("17_l8vwq")]
+[node name="Corner_wall2" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_rbumr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 16)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/Corner_wall2"]
@@ -923,7 +923,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/Corner_wall2/MeshInstance3D2/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Corner_wall3" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("17_l8vwq")]
+[node name="Corner_wall3" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_rbumr")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 0, 16)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/Corner_wall3"]
@@ -950,7 +950,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/Corner_wall3/MeshInstance3D2/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Corner_wall4" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("17_l8vwq")]
+[node name="Corner_wall4" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_rbumr")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8, 0, -4)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/Corner_wall4"]
@@ -977,7 +977,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/Corner_wall4/MeshInstance3D2/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Corner_wall5" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("17_l8vwq")]
+[node name="Corner_wall5" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_rbumr")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 0, -4)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/Corner_wall5"]
@@ -992,7 +992,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/Corner_wall5/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="door_wall2" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("18_vvog0")]
+[node name="door_wall2" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("17_wbsjc")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, -4)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/door_wall2"]
@@ -1007,7 +1007,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/door_wall2/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="door_wall3" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("18_vvog0")]
+[node name="door_wall3" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("17_wbsjc")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 0, -4)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/door_wall3"]
@@ -1022,7 +1022,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/door_wall3/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Window_wall2" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("19_u488r")]
+[node name="Window_wall2" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("18_tjusf")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, -4)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/Window_wall2"]
@@ -1037,7 +1037,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/Window_wall2/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Window_wall3" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("19_u488r")]
+[node name="Window_wall3" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("18_tjusf")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0, -4)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/Window_wall3"]
@@ -1052,7 +1052,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/Window_wall3/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Window_wall4" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("19_u488r")]
+[node name="Window_wall4" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("18_tjusf")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4, 0, -4)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/Window_wall4"]
@@ -1067,7 +1067,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/Window_wall4/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall19" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall19" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, 16)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall19"]
@@ -1082,7 +1082,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall19/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall14" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall14" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 0, 10)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall14"]
@@ -1097,7 +1097,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall14/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall20" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall20" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 0, 12)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall20"]
@@ -1112,7 +1112,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall20/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall21" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall21" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 0, 14)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall21"]
@@ -1127,7 +1127,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall21/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall7---" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall7---" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 10)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall7---"]
@@ -1142,7 +1142,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall7---/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall8----" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall8----" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 12)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall8----"]
@@ -1157,7 +1157,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall8----/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="wall9---" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("16_6208h")]
+[node name="wall9---" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls" instance=ExtResource("15_iunhd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 14)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Tiles/walls/wall9---"]
@@ -1174,371 +1174,371 @@ shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
 [node name="floor" type="Node3D" parent="Shop_layout_2/NavigationRegion3D/Tiles"]
 
-[node name="Floor_tile2" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile2" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 
-[node name="Floor_tile3" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile3" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
 
-[node name="Floor_tile4" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile4" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 
-[node name="Floor_tile5" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile5" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 
-[node name="Floor_tile6" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile6" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
 
-[node name="Floor_tile7" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile7" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
 
-[node name="Floor_tile8" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile8" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
 
-[node name="Floor_tile9" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile9" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
 
-[node name="Floor_tile10" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile10" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
 
-[node name="Floor_tile11" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile11" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
 
-[node name="Floor_tile12" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile12" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6)
 
-[node name="Floor_tile13" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile13" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6)
 
-[node name="Floor_tile14" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile14" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
 
-[node name="Floor_tile15" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile15" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 8)
 
-[node name="Floor_tile16" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile16" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8)
 
-[node name="Floor_tile17" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile17" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
 
-[node name="Floor_tile18" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile18" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 10)
 
-[node name="Floor_tile19" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile19" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 10)
 
-[node name="Floor_tile20" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile20" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
 
-[node name="Floor_tile21" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile21" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
 
-[node name="Floor_tile22" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile22" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
 
-[node name="Floor_tile23" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile23" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
 
-[node name="Floor_tile24" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile24" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
 
-[node name="Floor_tile25" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile25" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
 
-[node name="Floor_tile26" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile26" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
 
-[node name="Floor_tile27" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile27" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
 
-[node name="Floor_tile28" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile28" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
 
-[node name="Floor_tile29" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile29" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 2)
 
-[node name="Floor_tile30" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile30" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 2)
 
-[node name="Floor_tile31" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile31" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
 
-[node name="Floor_tile32" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile32" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 4)
 
-[node name="Floor_tile33" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile33" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 4)
 
-[node name="Floor_tile34" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile34" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 4)
 
-[node name="Floor_tile35" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile35" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 6)
 
-[node name="Floor_tile36" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile36" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 6)
 
-[node name="Floor_tile37" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile37" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 6)
 
-[node name="Floor_tile38" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile38" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 8)
 
-[node name="Floor_tile39" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile39" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 8)
 
-[node name="Floor_tile40" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile40" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 8)
 
-[node name="Floor_tile41" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile41" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 10)
 
-[node name="Floor_tile42" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile42" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 10)
 
-[node name="Floor_tile43" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile43" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 10)
 
-[node name="Floor_tile44" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile44" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -2)
 
-[node name="Floor_tile45" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile45" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -2)
 
-[node name="Floor_tile46" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile46" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
 
-[node name="Floor_tile47" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile47" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4)
 
-[node name="Floor_tile48" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile48" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -4)
 
-[node name="Floor_tile49" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile49" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4)
 
-[node name="Floor_tile50" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile50" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
 
-[node name="Floor_tile51" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile51" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 2)
 
-[node name="Floor_tile52" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile52" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
 
-[node name="Floor_tile53" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile53" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 6)
 
-[node name="Floor_tile54" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile54" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 8)
 
-[node name="Floor_tile55" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile55" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 10)
 
-[node name="Floor_tile56" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile56" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2)
 
-[node name="Floor_tile57" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile57" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
 
-[node name="Floor_tile58" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile58" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
 
-[node name="Floor_tile59" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile59" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 12)
 
-[node name="Floor_tile60" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile60" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 12)
 
-[node name="Floor_tile61" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile61" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14)
 
-[node name="Floor_tile62" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile62" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 14)
 
-[node name="Floor_tile63" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile63" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 14)
 
-[node name="Floor_tile64" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile64" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 16)
 
-[node name="Floor_tile65" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile65" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 16)
 
-[node name="Floor_tile66" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile66" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 16)
 
-[node name="Floor_tile67" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile67" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 16)
 
-[node name="Floor_tile68" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile68" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 16)
 
-[node name="Floor_tile69" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile69" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 16)
 
-[node name="Floor_tile70" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile70" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 14)
 
-[node name="Floor_tile71" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile71" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 14)
 
-[node name="Floor_tile72" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile72" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 14)
 
-[node name="Floor_tile73" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile73" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 12)
 
-[node name="Floor_tile74" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile74" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 12)
 
-[node name="Floor_tile75" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile75" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 12)
 
-[node name="Floor_tile76" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile76" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 10)
 
-[node name="Floor_tile77" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile77" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 12)
 
-[node name="Floor_tile78" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile78" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 14)
 
-[node name="Floor_tile79" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("20_okwjq")]
+[node name="Floor_tile79" parent="Shop_layout_2/NavigationRegion3D/Tiles/floor" instance=ExtResource("19_8ldt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 16)
 
 [node name="mid_celling" type="Node3D" parent="Shop_layout_2/NavigationRegion3D/Tiles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
-[node name="Celling_tile4" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile4" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 2, 3, 0)
 
-[node name="Celling_tile7" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile7" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 2, 3, -2)
 
-[node name="Celling_tile10" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile10" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 2, 3, -4)
 
-[node name="Celling_tile13" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile13" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 2, 3, 6)
 
-[node name="Celling_tile16" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile16" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 2, 3, 4)
 
-[node name="Celling_tile19" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile19" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 2, 3, 2)
 
-[node name="Celling_tile31" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile31" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 2, 3, 0)
 
-[node name="Celling_tile34" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile34" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 2, 3, -2)
 
-[node name="Celling_tile37" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile37" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 2, 3, -4)
 
-[node name="Celling_tile52" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile52" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 2, 3, 8)
 
-[node name="Celling_tile5" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile5" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -6, 3, 5.97273)
 
-[node name="Celling_tile8" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile8" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -6, 3, 7.97273)
 
-[node name="Celling_tile11" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile11" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -6, 3, 9.97273)
 
-[node name="Celling_tile14" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile14" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -6, 3, -0.027273)
 
-[node name="Celling_tile17" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile17" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -6, 3, 1.97273)
 
-[node name="Celling_tile20" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile20" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -6, 3, 3.97273)
 
-[node name="Celling_tile32" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile32" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -6, 3, 5.97273)
 
-[node name="Celling_tile35" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile35" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -6, 3, 7.97273)
 
-[node name="Celling_tile38" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile38" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -6, 3, 9.97273)
 
-[node name="Celling_tile50" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile50" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -6, 3, -4.02727)
 
-[node name="Celling_tile53" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile53" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -6, 3, -2.02727)
 
-[node name="Celling_tile54" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile54" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 2, 3, 10)
 
-[node name="Celling_tile55" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile55" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 4, 3, 14)
 
-[node name="Celling_tile56" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile56" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 2, 3, 14)
 
-[node name="Celling_tile57" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile57" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0, 3, 14)
 
-[node name="Celling_tile58" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile58" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -2, 3, 14)
 
-[node name="Celling_tile59" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile59" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -4, 3, 14)
 
-[node name="Celling_tile60" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile60" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -6, 3, 14)
 
-[node name="Celling_tile61" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile61" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -8, 3, 14)
 
-[node name="Celling_tile62" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile62" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, -8, 3, -2)
 
-[node name="Celling_tile63" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile63" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, -6, 3, -2)
 
-[node name="Celling_tile64" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile64" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, -4, 3, -2)
 
-[node name="Celling_tile65" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile65" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, -2, 3, -2)
 
-[node name="Celling_tile66" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile66" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 0, 3, -2)
 
-[node name="Celling_tile67" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile67" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 2, 3, -2)
 
-[node name="Celling_tile68" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile68" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 4, 3, -2)
 
-[node name="Celling_tile39" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile39" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -6, 3, 11.9727)
 
-[node name="Celling_tile40" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile40" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -6, 3, 13.9727)
 
-[node name="Celling_tile41" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile41" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(4.37114e-08, 1, 8.74228e-08, 1, -4.37114e-08, 0, 3.82137e-15, 8.74228e-08, -1, -6, 3, 15.9727)
 
-[node name="Celling_tile69" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile69" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 2, 3, 12)
 
-[node name="Celling_tile70" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile70" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 2, 3, 14)
 
-[node name="Celling_tile71" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("15_3niau")]
+[node name="Celling_tile71" parent="Shop_layout_2/NavigationRegion3D/Tiles/mid_celling" instance=ExtResource("14_ygxef")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 2, 3, 16)
 
 [node name="Shelves" type="Node3D" parent="Shop_layout_2/NavigationRegion3D"]
 
-[node name="Shelves_center" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("21_h2xiy")]
+[node name="Shelves_center" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("20_8yxx8")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2, 0, 2)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_center"]
@@ -1553,7 +1553,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_center/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Shelves_corner2" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("22_c0x7p")]
+[node name="Shelves_corner2" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("21_a6scf")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 6)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner2"]
@@ -1568,7 +1568,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner2/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Shelves_corner3" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("23_y5uvr")]
+[node name="Shelves_corner3" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("22_g6mwe")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner3"]
@@ -1583,7 +1583,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner3/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Shelves_center2" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("21_h2xiy")]
+[node name="Shelves_center2" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("20_8yxx8")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, 6)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_center2"]
@@ -1598,7 +1598,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_center2/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Shelves_corner4" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("22_c0x7p")]
+[node name="Shelves_corner4" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("21_a6scf")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2, 0, 6)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner4"]
@@ -1613,7 +1613,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner4/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Shelves_corner5" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("23_y5uvr")]
+[node name="Shelves_corner5" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("22_g6mwe")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0, 10)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner5"]
@@ -1628,7 +1628,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner5/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Shelves_corner5" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner5" instance=ExtResource("23_y5uvr")]
+[node name="Shelves_corner5" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner5" instance=ExtResource("22_g6mwe")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4, 0, -1.19209e-07)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner5/Shelves_corner5"]
@@ -1643,7 +1643,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner5/Shelves_corner5/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Shelves_center3" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("21_h2xiy")]
+[node name="Shelves_center3" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("20_8yxx8")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 0, 6)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_center3"]
@@ -1658,7 +1658,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_center3/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Shelves_corner6" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("22_c0x7p")]
+[node name="Shelves_corner6" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("21_a6scf")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 0, 8)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner6"]
@@ -1673,7 +1673,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner6/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Shelves_corner7" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("23_y5uvr")]
+[node name="Shelves_corner7" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("22_g6mwe")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 0, 4)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner7"]
@@ -1688,7 +1688,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner7/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Shelves_center4" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("21_h2xiy")]
+[node name="Shelves_center4" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("20_8yxx8")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, 6)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_center4"]
@@ -1703,7 +1703,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_center4/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Shelves_corner8" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("22_c0x7p")]
+[node name="Shelves_corner8" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("21_a6scf")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2, 0, 12)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner8"]
@@ -1718,7 +1718,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner8/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Shelves_corner9" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("23_y5uvr")]
+[node name="Shelves_corner9" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("22_g6mwe")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8, 0, 4)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner9"]
@@ -1733,7 +1733,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner9/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Shelves_corner10" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("22_c0x7p")]
+[node name="Shelves_corner10" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("21_a6scf")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 0, 12)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner10"]
@@ -1748,7 +1748,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner10/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Shelves_corner11" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("22_c0x7p")]
+[node name="Shelves_corner11" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("21_a6scf")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 12)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner11"]
@@ -1763,7 +1763,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner11/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Shelves_corner12" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("22_c0x7p")]
+[node name="Shelves_corner12" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("21_a6scf")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6, 0, 12)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner12"]
@@ -1778,7 +1778,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner12/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="Shelves_corner13" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("22_c0x7p")]
+[node name="Shelves_corner13" parent="Shop_layout_2/NavigationRegion3D/Shelves" instance=ExtResource("21_a6scf")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, 12)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner13"]
@@ -1793,7 +1793,7 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/Shelves/Shelves_corner13/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_hdqhh")
 
-[node name="fruits_1" parent="Shop_layout_2" instance=ExtResource("24_cr0fe")]
+[node name="fruits_1" parent="Shop_layout_2" instance=ExtResource("23_vloo7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.77803, 0.773321, -0.945353)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Shop_layout_2"]
@@ -1887,10 +1887,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -14.9393, -4.76837e-07)
 light_color = Color(0.988235, 0.92549, 0.690196, 1)
 light_energy = 7.788
 
-[node name="Door" parent="." instance=ExtResource("6_dg15x")]
+[node name="Door" parent="." instance=ExtResource("24_ghvre")]
 transform = Transform3D(1.00221, 0, 0, 0, 1.00221, 0, 0, 0, 1.00221, 2.015, 0.75, -4.26176)
 
-[node name="Door2" parent="." instance=ExtResource("6_dg15x")]
+[node name="Door2" parent="." instance=ExtResource("24_ghvre")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.02619, 0.75, -4.24371)
 
 [node name="GameBoySpawnPoint" type="Marker3D" parent="."]
@@ -1920,10 +1920,10 @@ offset_bottom = 104.0
 grow_horizontal = 0
 theme_override_font_sizes/font_size = 30
 text = "10"
-label_settings = ExtResource("8_dj1pm")
-script = ExtResource("9_10owf")
+label_settings = ExtResource("25_lgjg1")
+script = ExtResource("26_idib1")
 
-[node name="Timer" parent="CanvasLayer" instance=ExtResource("10_761b7")]
+[node name="Timer" parent="CanvasLayer" instance=ExtResource("27_hrbxk")]
 Dseconds = 30
 Dminutes = 1
 
@@ -1939,14 +1939,14 @@ offset_right = 20.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_horizontal = 3
-script = ExtResource("11_ldsay")
+script = ExtResource("28_1an0w")
 
 [node name="Ammo" type="Label" parent="CanvasLayer/MarginContainer"]
 layout_direction = 1
 layout_mode = 2
 text = "Ammo : 10"
-label_settings = ExtResource("8_dj1pm")
-script = ExtResource("12_3tl3b")
+label_settings = ExtResource("25_lgjg1")
+script = ExtResource("29_turbw")
 
 [node name="Label" type="Label" parent="CanvasLayer/MarginContainer"]
 layout_mode = 2

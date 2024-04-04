@@ -1,15 +1,53 @@
-[gd_scene load_steps=7 format=3 uid="uid://c7oot0tep422m"]
+[gd_scene load_steps=13 format=3 uid="uid://c7oot0tep422m"]
 
 [ext_resource type="Script" path="res://Game/Scripts/end_screen.gd" id="1_r7h15"]
 [ext_resource type="Texture2D" uid="uid://bhl7jgl5hwqrh" path="res://Game/Assets/GDTArtboard_24x.png" id="2_43oj3"]
 [ext_resource type="FontFile" uid="uid://q5wlfanhobnp" path="res://Montserrat-MediumItalic.ttf" id="3_ivgw6"]
 [ext_resource type="PackedScene" uid="uid://c1am0enhtpict" path="res://Game/Scenes/play_button.tscn" id="4_f4k5j"]
 [ext_resource type="Texture2D" uid="uid://fdq8b38w0ip3" path="res://Game/Assets/UI/Lost_screen_bg.png" id="5_pnqav"]
+[ext_resource type="Script" path="res://Game/Scripts/play_button.gd" id="6_ei1wn"]
+[ext_resource type="AudioStream" uid="uid://cn5ysn00c0viw" path="res://Game/Assets/Sounds/click-21156.mp3" id="7_0wnxt"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yit4a"]
 font = ExtResource("3_ivgw6")
 font_size = 100
 font_color = Color(0.780392, 0.203922, 0.219608, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jcbek"]
+bg_color = Color(1, 0.168627, 0.0235294, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_688up"]
+bg_color = Color(1, 0.168627, 0.0235294, 0.576471)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vnlci"]
+bg_color = Color(1, 0.168627, 0.0235294, 0.576471)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_015so"]
+bg_color = Color(1, 0.168627, 0.0235294, 0.576471)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
 
 [node name="EndScreen" type="Control"]
 layout_mode = 3
@@ -80,15 +118,45 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -290.0
-offset_top = 36.5
+offset_top = 72.0
 offset_right = 290.0
-offset_bottom = 159.5
+offset_bottom = 216.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/separation = 40
 
-[node name="Main Menu Button" parent="VBoxContainer" instance=ExtResource("4_f4k5j")]
+[node name="Main Menu Button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.964706, 0.588235, 0.47451, 1)
+theme_override_fonts/font = ExtResource("3_ivgw6")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_jcbek")
+theme_override_styles/hover = SubResource("StyleBoxFlat_688up")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_688up")
 text = "Main Menu"
+script = ExtResource("6_ei1wn")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="VBoxContainer/Main Menu Button"]
+stream = ExtResource("7_0wnxt")
+bus = &"Sound effect"
+
+[node name="Try Again" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.964706, 0.588235, 0.47451, 1)
+theme_override_fonts/font = ExtResource("3_ivgw6")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_jcbek")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vnlci")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_015so")
+text = "Try Again"
+script = ExtResource("6_ei1wn")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="VBoxContainer/Try Again"]
+stream = ExtResource("7_0wnxt")
+bus = &"Sound effect"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer3/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/Main Menu Button" to="." method="_on_button_pressed"]
+[connection signal="button_down" from="VBoxContainer/Main Menu Button" to="VBoxContainer/Main Menu Button" method="_on_button_down"]
+[connection signal="pressed" from="VBoxContainer/Main Menu Button" to="." method="_on_main_menu_button_pressed"]
+[connection signal="button_down" from="VBoxContainer/Try Again" to="VBoxContainer/Try Again" method="_on_button_down"]
+[connection signal="pressed" from="VBoxContainer/Try Again" to="." method="_on_try_again_pressed"]

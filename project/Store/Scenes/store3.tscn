@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=3 uid="uid://b34w35i5fkxpl"]
+[gd_scene load_steps=63 format=3 uid="uid://b34w35i5fkxpl"]
 
 [ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_elhm2"]
 [ext_resource type="Script" path="res://Store/Scripts/ChildrenManager.gd" id="2_igafd"]
@@ -19,6 +19,7 @@
 [ext_resource type="Material" uid="uid://bu4yuhcr6p30o" path="res://Store/Assets/blue_stuff.tres" id="12_vw8ej"]
 [ext_resource type="FontFile" uid="uid://q5wlfanhobnp" path="res://Montserrat-MediumItalic.ttf" id="13_twmxa"]
 [ext_resource type="ArrayMesh" uid="uid://sdckvecpb1n0" path="res://Store/Assets/Blender_Import1/Shop_Furniture_1_Cube_060.res" id="13_v20pl"]
+[ext_resource type="PackedScene" uid="uid://dtc5rffjjcoea" path="res://Utils/Scenes/arrow.tscn" id="14_ie80k"]
 [ext_resource type="PackedScene" uid="uid://hixi7tqi7tx6" path="res://Store/Scenes/fruit_box_large.tscn" id="14_lkq41"]
 [ext_resource type="PackedScene" uid="uid://dixjovhq4qmr4" path="res://Store/Assets/Blender_Import1/Wall_tiles/Celling_tile.glb" id="15_3niau"]
 [ext_resource type="PackedScene" uid="uid://cwkf2ub8galkb" path="res://Store/Assets/Blender_Import1/Wall_tiles/wall.glb" id="16_6208h"]
@@ -375,6 +376,9 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/fruit_box_large_001/FruitBoxReload"]
 transform = Transform3D(1.285, 0, 0, 0, 1.285, 0, 0, 0, 1.285, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_2vyc8")
+
+[node name="Arrow_1" parent="Shop_layout_2/NavigationRegion3D/fruit_box_large_001" instance=ExtResource("14_ie80k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00150418, 2.00437, 0)
 
 [node name="fruit_box_large_002" parent="Shop_layout_2/NavigationRegion3D" instance=ExtResource("14_lkq41")]
 transform = Transform3D(-1, 0.000750491, 6.99382e-08, 0.000750491, 1, 0, -8.74227e-08, 6.561e-11, -0.8, -5.3311, 0.2, 0.166672)

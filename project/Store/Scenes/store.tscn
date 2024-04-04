@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://da1yajnxnbrpo"]
+[gd_scene load_steps=19 format=3 uid="uid://da1yajnxnbrpo"]
 
 [ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_d57fn"]
 [ext_resource type="PackedScene" uid="uid://buo5j43idfqcr" path="res://Player/Scenes/player.tscn" id="2_2t2d7"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://8t2pp8hdeyo8" path="res://Store/Scenes/shop.tscn" id="9_s11ty"]
 [ext_resource type="Script" path="res://Store/Scripts/TextController.gd" id="10_l4bu1"]
 [ext_resource type="Script" path="res://Utils/Scripts/ammo.gd" id="11_cijer"]
+[ext_resource type="PackedScene" uid="uid://dtc5rffjjcoea" path="res://Utils/Scenes/arrow.tscn" id="14_bfpc2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_n3gp5"]
 sky_top_color = Color(0.168627, 0.243137, 0.403922, 1)
@@ -59,6 +60,9 @@ shadow_enabled = true
 shadow_bias = 1.566
 
 [node name="Shop_layout_1" parent="." instance=ExtResource("9_s11ty")]
+
+[node name="Arrow_1" parent="Shop_layout_1" instance=ExtResource("14_bfpc2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.566294, 1.7887, -1.03987)
 
 [node name="Door" parent="." instance=ExtResource("5_86msp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.015, 0.75, -4.512)

@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://2riyqoftsk1t"]
+[gd_scene load_steps=19 format=3 uid="uid://2riyqoftsk1t"]
 
 [ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_tj10n"]
 [ext_resource type="Script" path="res://Store/Scripts/ChildrenManager.gd" id="2_0cgof"]
+[ext_resource type="PackedScene" uid="uid://dtc5rffjjcoea" path="res://Utils/Scenes/arrow.tscn" id="2_1umuk"]
 [ext_resource type="PackedScene" uid="uid://0fjnmd8u6yvw" path="res://Child/Scenes/child.tscn" id="3_neiwi"]
 [ext_resource type="PackedScene" uid="uid://c8au82xiqgrh1" path="res://Store/Scenes/gameboy.tscn" id="4_o3lfs"]
 [ext_resource type="PackedScene" uid="uid://buo5j43idfqcr" path="res://Player/Scenes/player.tscn" id="5_y1e8d"]
@@ -63,6 +64,9 @@ shadow_bias = 1.566
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.015, 0.75, -4.26176)
 
 [node name="Shop_layout_1" parent="." instance=ExtResource("7_xpiq4")]
+
+[node name="Arrow_1" parent="Shop_layout_1" instance=ExtResource("2_1umuk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.532478, 2.25027, -1.13805)
 
 [node name="Door2" parent="." instance=ExtResource("7_bfai2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.02619, 0.75, -4.24371)

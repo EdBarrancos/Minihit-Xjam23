@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://buo5j43idfqcr"]
+[gd_scene load_steps=11 format=3 uid="uid://buo5j43idfqcr"]
 
 [ext_resource type="Script" path="res://Player/Scripts/player.gd" id="1_75rw3"]
 [ext_resource type="PackedScene" uid="uid://pvi750xacjly" path="res://Player/Scenes/gun.tscn" id="2_hw5sk"]
@@ -6,10 +6,13 @@
 [ext_resource type="AudioStream" uid="uid://bobxjqb6v6nhb" path="res://Player/Assets/Sound/score.wav" id="3_y4jfb"]
 [ext_resource type="LabelSettings" uid="uid://c86lt2fykbbxj" path="res://UILabel.tres" id="4_5gah6"]
 [ext_resource type="Script" path="res://Player/Scripts/AudioStreamPlayer.gd" id="4_wanaf"]
+[ext_resource type="Script" path="res://Player/Scripts/InteractRayShape.gd" id="5_3s07s"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ot820"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_42dqw"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_knwrf"]
 
 [node name="Player" type="CharacterBody3D"]
 collision_layer = 8
@@ -33,6 +36,29 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.742019, 0)
 
 [node name="Gun" parent="Head/Camera3D" groups=["Gun"] instance=ExtResource("2_hw5sk")]
 transform = Transform3D(1, 0, 0, 0, 1, -0.000227511, 0, 0.000227511, 1, 0.2172, -0.293332, -0.934567)
+
+[node name="ShapeCast3D" type="ShapeCast3D" parent="Head/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 0.00181516, -0.999998, 0, 0.999998, 0.00181516, 0, -0.212063, 0)
+visible = false
+shape = SubResource("CapsuleShape3D_knwrf")
+script = ExtResource("5_3s07s")
+
+[node name="Prompt" type="Label" parent="Head/Camera3D/ShapeCast3D"]
+visible = false
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -27.5
+offset_bottom = 27.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 1
+text = "Message
+[Key]"
+label_settings = ExtResource("4_5gah6")
+horizontal_alignment = 1
 
 [node name="IntearctRay" type="RayCast3D" parent="Head/Camera3D"]
 target_position = Vector3(0, 0, -2)

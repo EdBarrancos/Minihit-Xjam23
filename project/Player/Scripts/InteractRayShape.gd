@@ -1,4 +1,5 @@
-extends RayCast3D
+extends ShapeCast3D
+
 
 @onready var prompt = $Prompt
 # Called when the node enters the scene tree for the first time.
@@ -13,7 +14,7 @@ func _process(delta):
 	prompt.text = ""
 	
 	if is_colliding():
-		var detected = get_collider()
+		var detected = get_collider(0)
 		
 		if(detected != null && detected.name == "FruitBoxReload"):
 			prompt.text = "Press E to reload"

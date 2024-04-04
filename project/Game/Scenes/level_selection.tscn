@@ -26,5 +26,11 @@ layout_mode = 2
 theme_override_colors/font_hover_color = Color(0.184314, 0.266667, 0.439216, 1)
 text = "Level 2"
 
+[node name="Level3" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_iekud")]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.184314, 0.266667, 0.439216, 1)
+text = "Level 3"
+
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Level3" to="." method="_on_level_3_pressed"]

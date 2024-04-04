@@ -1,4 +1,4 @@
-[gd_scene load_steps=88 format=3 uid="uid://b34w35i5fkxpl"]
+[gd_scene load_steps=88 format=3 uid="uid://dkhfy8olqtd2n"]
 
 [ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_elhm2"]
 [ext_resource type="Script" path="res://Store/Scripts/ChildrenManager.gd" id="2_igafd"]

@@ -61,6 +61,7 @@ label_settings = ExtResource("4_5gah6")
 horizontal_alignment = 1
 
 [node name="IntearctRay" type="RayCast3D" parent="Head/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 0, 0)
 target_position = Vector3(0, 0, -2)
 script = ExtResource("3_nlori")
 

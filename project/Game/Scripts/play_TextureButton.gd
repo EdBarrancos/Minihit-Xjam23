@@ -14,5 +14,4 @@ func _on_pressed():
 	pass
 
 func _on_button_down():
-	#$AudioStreamPlayer.play()
-	pass
+	$AudioStreamPlayer.play()

@@ -1,14 +1,80 @@
-[gd_scene load_steps=6 format=3 uid="uid://stl2awynl0tl"]
+[gd_scene load_steps=18 format=3 uid="uid://stl2awynl0tl"]
 
 [ext_resource type="Script" path="res://Game/Scripts/end_screen.gd" id="1_87c6v"]
 [ext_resource type="Texture2D" uid="uid://bhl7jgl5hwqrh" path="res://Game/Assets/GDTArtboard_24x.png" id="2_n57x7"]
 [ext_resource type="FontFile" uid="uid://q5wlfanhobnp" path="res://Montserrat-MediumItalic.ttf" id="3_d23n8"]
 [ext_resource type="PackedScene" uid="uid://c1am0enhtpict" path="res://Game/Scenes/play_button.tscn" id="4_5f8w5"]
+[ext_resource type="Texture2D" uid="uid://bgdjxwuqhy520" path="res://Game/Assets/UI/win_screen_bg.png" id="5_qwejk"]
+[ext_resource type="Script" path="res://Game/Scripts/play_button.gd" id="6_721u6"]
+[ext_resource type="AudioStream" uid="uid://cn5ysn00c0viw" path="res://Game/Assets/Sounds/click-21156.mp3" id="7_17g6w"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yit4a"]
 font = ExtResource("3_d23n8")
 font_size = 100
 font_color = Color(0.780392, 0.203922, 0.219608, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_86pwb"]
+font = ExtResource("3_d23n8")
+font_size = 100
+font_color = Color(0.223529, 0.709804, 0.290196, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ttlx0"]
+bg_color = Color(0.223529, 0.709804, 0.290196, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_an4tb"]
+bg_color = Color(0.223529, 0.709804, 0.290196, 0.592157)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wnbth"]
+bg_color = Color(0.223529, 0.709804, 0.290196, 0.592157)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ionw4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uafov"]
+bg_color = Color(0.223529, 0.709804, 0.290196, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wi13t"]
+bg_color = Color(0.223529, 0.709804, 0.290196, 0.592157)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ppxwb"]
+bg_color = Color(0.223529, 0.709804, 0.290196, 0.592157)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ckx5i"]
 
 [node name="EndScreen" type="Control"]
 layout_mode = 3
@@ -20,6 +86,7 @@ grow_vertical = 2
 script = ExtResource("1_87c6v")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -59,4 +126,70 @@ theme_override_constants/margin_bottom = 60
 [node name="Button" parent="MarginContainer/VBoxContainer/MarginContainer3" instance=ExtResource("4_5f8w5")]
 layout_mode = 2
 
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_qwejk")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -290.0
+offset_top = -48.5
+offset_right = 290.0
+offset_bottom = 278.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 40
+
+[node name="Points" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "150"
+label_settings = SubResource("LabelSettings_86pwb")
+horizontal_alignment = 1
+
+[node name="Main Menu Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.584314, 0.976471, 0.427451, 1)
+theme_override_fonts/font = ExtResource("3_d23n8")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_ttlx0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_an4tb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wnbth")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ionw4")
+text = "Main Menu"
+script = ExtResource("6_721u6")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="VBoxContainer/Main Menu Button"]
+stream = ExtResource("7_17g6w")
+bus = &"Sound effect"
+
+[node name="Try Again" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.584314, 0.976471, 0.427451, 1)
+theme_override_fonts/font = ExtResource("3_d23n8")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_uafov")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wi13t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ppxwb")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ckx5i")
+text = "Next Shift"
+script = ExtResource("6_721u6")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="VBoxContainer/Try Again"]
+stream = ExtResource("7_17g6w")
+bus = &"Sound effect"
+
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer3/Button" to="." method="_on_button_pressed"]
+[connection signal="button_down" from="VBoxContainer/Main Menu Button" to="VBoxContainer/Main Menu Button" method="_on_button_down"]
+[connection signal="button_down" from="VBoxContainer/Try Again" to="VBoxContainer/Try Again" method="_on_button_down"]

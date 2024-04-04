@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://3bsvtmwpejiv"]
+[gd_scene load_steps=10 format=3 uid="uid://3bsvtmwpejiv"]
 
 [ext_resource type="Script" path="res://Game/Scripts/main_menu.gd" id="1_b81ih"]
 [ext_resource type="Texture2D" uid="uid://bxrdccqb4xeev" path="res://Game/Assets/UI/Start_menu.png" id="3_ybf1y"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://d3xw1pbnuwqro" path="res://Game/Assets/UI/Start_button.png" id="5_dslf4"]
 [ext_resource type="Script" path="res://Game/Scripts/play_TextureButton.gd" id="6_6h7a3"]
 [ext_resource type="Texture2D" uid="uid://d2ip76dtf11ii" path="res://Game/Assets/UI/Selected_start_button.png" id="6_n6gwn"]
+[ext_resource type="AudioStream" uid="uid://cn5ysn00c0viw" path="res://Game/Assets/Sounds/click-21156.mp3" id="7_y4jyv"]
 [ext_resource type="Texture2D" uid="uid://b20u03w6d6jl" path="res://Game/Assets/UI/quit_button.png" id="8_5wxrd"]
 [ext_resource type="Texture2D" uid="uid://doikal8hs18dh" path="res://Game/Assets/UI/options_button.png" id="9_ariej"]
 
@@ -60,6 +61,7 @@ texture = ExtResource("3_ybf1y")
 expand_mode = 2
 
 [node name="Hidding Buttons" type="ColorRect" parent="."]
+layout_mode = 0
 offset_left = 298.0
 offset_top = 192.0
 offset_right = 860.0
@@ -83,6 +85,10 @@ ignore_texture_size = true
 stretch_mode = 4
 script = ExtResource("6_6h7a3")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Play Button"]
+stream = ExtResource("7_y4jyv")
+bus = &"Sound effect"
+
 [node name="Quit Button" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 653.0
@@ -94,6 +100,10 @@ ignore_texture_size = true
 stretch_mode = 4
 script = ExtResource("6_6h7a3")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Quit Button"]
+stream = ExtResource("7_y4jyv")
+bus = &"Sound effect"
+
 [node name="Options Button" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 618.0
@@ -104,6 +114,10 @@ texture_normal = ExtResource("9_ariej")
 ignore_texture_size = true
 stretch_mode = 4
 script = ExtResource("6_6h7a3")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Options Button"]
+stream = ExtResource("7_y4jyv")
+bus = &"Sound effect"
 
 [connection signal="button_down" from="Play Button" to="Play Button" method="_on_button_down"]
 [connection signal="pressed" from="Play Button" to="." method="_on_play_button_pressed"]

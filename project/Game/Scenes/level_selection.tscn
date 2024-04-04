@@ -135,6 +135,7 @@ scale = Vector2(0.6, 0.6)
 texture_normal = ExtResource("13_pk4h4")
 texture_pressed = ExtResource("13_pk4h4")
 texture_hover = ExtResource("13_pk4h4")
+script = ExtResource("7_cbgfb")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Level2" to="." method="_on_level_2_pressed"]
@@ -146,3 +147,4 @@ texture_hover = ExtResource("13_pk4h4")
 [connection signal="pressed" from="HBoxContainer/Level 3" to="." method="_on_level_3_pressed"]
 [connection signal="pressed" from="HBoxContainer/Level 4" to="." method="_on_level_4_pressed"]
 [connection signal="pressed" from="HBoxContainer/Level 5" to="." method="_on_level_5_pressed"]
+[connection signal="pressed" from="Back Button" to="." method="_on_back_button_pressed"]

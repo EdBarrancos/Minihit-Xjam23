@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://c7oot0tep422m"]
+[gd_scene load_steps=16 format=3 uid="uid://c7oot0tep422m"]
 
 [ext_resource type="Script" path="res://Game/Scripts/end_screen.gd" id="1_r7h15"]
 [ext_resource type="Texture2D" uid="uid://bhl7jgl5hwqrh" path="res://Game/Assets/GDTArtboard_24x.png" id="2_43oj3"]
@@ -12,6 +12,11 @@
 font = ExtResource("3_ivgw6")
 font_size = 100
 font_color = Color(0.780392, 0.203922, 0.219608, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_xraw6"]
+font = ExtResource("3_ivgw6")
+font_size = 100
+font_color = Color(1, 0.168627, 0.0235294, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jcbek"]
 bg_color = Color(1, 0.168627, 0.0235294, 1)
@@ -31,6 +36,8 @@ corner_radius_bottom_left = 40
 expand_margin_top = 5.0
 expand_margin_bottom = 5.0
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_54by4"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vnlci"]
 bg_color = Color(1, 0.168627, 0.0235294, 0.576471)
 corner_radius_top_left = 40
@@ -48,6 +55,8 @@ corner_radius_bottom_right = 40
 corner_radius_bottom_left = 40
 expand_margin_top = 5.0
 expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1utmi"]
 
 [node name="EndScreen" type="Control"]
 layout_mode = 3
@@ -118,12 +127,18 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -290.0
-offset_top = 72.0
+offset_top = -45.5
 offset_right = 290.0
-offset_bottom = 216.0
+offset_bottom = 281.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 40
+
+[node name="Points" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "150"
+label_settings = SubResource("LabelSettings_xraw6")
+horizontal_alignment = 1
 
 [node name="Main Menu Button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -133,6 +148,7 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_jcbek")
 theme_override_styles/hover = SubResource("StyleBoxFlat_688up")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_688up")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_54by4")
 text = "Main Menu"
 script = ExtResource("6_ei1wn")
 
@@ -148,6 +164,7 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_jcbek")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vnlci")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_015so")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1utmi")
 text = "Try Again"
 script = ExtResource("6_ei1wn")
 

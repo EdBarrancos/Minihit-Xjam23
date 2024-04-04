@@ -2,7 +2,7 @@ extends Node3D
 
 const mainmenu = preload("res://Game/Scenes/main_menu.tscn")
 #const level = preload("res://Store/Scenes/store.tscn")
-const end_screen = preload("res://Game/Scenes/end_screen.tscn")
+const end_screen = preload("res://Game/Scenes/lose_screen.tscn")
 
 @onready var current_scene = $"Main Menu"
 

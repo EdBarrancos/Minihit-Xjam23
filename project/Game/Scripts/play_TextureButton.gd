@@ -1,4 +1,4 @@
-extends Button
+extends TextureButton
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,5 +14,5 @@ func _on_pressed():
 	pass
 
 func _on_button_down():
-	$AudioStreamPlayer.play()
-	
+	#$AudioStreamPlayer.play()
+	pass

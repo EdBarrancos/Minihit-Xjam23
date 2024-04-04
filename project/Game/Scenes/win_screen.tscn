@@ -1,12 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://c7oot0tep422m"]
+[gd_scene load_steps=6 format=3 uid="uid://stl2awynl0tl"]
 
-[ext_resource type="Script" path="res://Game/Scripts/end_screen.gd" id="1_rusjq"]
-[ext_resource type="Texture2D" uid="uid://bhl7jgl5hwqrh" path="res://Game/Assets/GDTArtboard_24x.png" id="2_7paw4"]
-[ext_resource type="PackedScene" uid="uid://c1am0enhtpict" path="res://Game/Scenes/play_button.tscn" id="2_gt40a"]
-[ext_resource type="FontFile" uid="uid://q5wlfanhobnp" path="res://Montserrat-MediumItalic.ttf" id="3_yxl4l"]
+[ext_resource type="Script" path="res://Game/Scripts/end_screen.gd" id="1_87c6v"]
+[ext_resource type="Texture2D" uid="uid://bhl7jgl5hwqrh" path="res://Game/Assets/GDTArtboard_24x.png" id="2_n57x7"]
+[ext_resource type="FontFile" uid="uid://q5wlfanhobnp" path="res://Montserrat-MediumItalic.ttf" id="3_d23n8"]
+[ext_resource type="PackedScene" uid="uid://c1am0enhtpict" path="res://Game/Scenes/play_button.tscn" id="4_5f8w5"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yit4a"]
-font = ExtResource("3_yxl4l")
+font = ExtResource("3_d23n8")
 font_size = 100
 font_color = Color(0.780392, 0.203922, 0.219608, 1)
 
@@ -17,7 +17,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_rusjq")
+script = ExtResource("1_87c6v")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -36,7 +36,7 @@ layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MarginContainer"]
 layout_mode = 2
-texture = ExtResource("2_7paw4")
+texture = ExtResource("2_n57x7")
 
 [node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -56,7 +56,7 @@ theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 30
 theme_override_constants/margin_bottom = 60
 
-[node name="Button" parent="MarginContainer/VBoxContainer/MarginContainer3" instance=ExtResource("2_gt40a")]
+[node name="Button" parent="MarginContainer/VBoxContainer/MarginContainer3" instance=ExtResource("4_5f8w5")]
 layout_mode = 2
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer3/Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,94 @@
+[gd_scene load_steps=7 format=3 uid="uid://c7oot0tep422m"]
+
+[ext_resource type="Script" path="res://Game/Scripts/end_screen.gd" id="1_r7h15"]
+[ext_resource type="Texture2D" uid="uid://bhl7jgl5hwqrh" path="res://Game/Assets/GDTArtboard_24x.png" id="2_43oj3"]
+[ext_resource type="FontFile" uid="uid://q5wlfanhobnp" path="res://Montserrat-MediumItalic.ttf" id="3_ivgw6"]
+[ext_resource type="PackedScene" uid="uid://c1am0enhtpict" path="res://Game/Scenes/play_button.tscn" id="4_f4k5j"]
+[ext_resource type="Texture2D" uid="uid://fdq8b38w0ip3" path="res://Game/Assets/UI/Lost_screen_bg.png" id="5_pnqav"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yit4a"]
+font = ExtResource("3_ivgw6")
+font_size = 100
+font_color = Color(0.780392, 0.203922, 0.219608, 1)
+
+[node name="EndScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r7h15")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("2_43oj3")
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Points" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer2"]
+layout_mode = 2
+text = "150"
+label_settings = SubResource("LabelSettings_yit4a")
+horizontal_alignment = 1
+
+[node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 60
+
+[node name="Button" parent="MarginContainer/VBoxContainer/MarginContainer3" instance=ExtResource("4_f4k5j")]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_pnqav")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -290.0
+offset_top = 36.5
+offset_right = 290.0
+offset_bottom = 159.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Main Menu Button" parent="VBoxContainer" instance=ExtResource("4_f4k5j")]
+layout_mode = 2
+text = "Main Menu"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer3/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Main Menu Button" to="." method="_on_button_pressed"]

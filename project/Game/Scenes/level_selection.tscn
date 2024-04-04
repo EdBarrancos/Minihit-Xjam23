@@ -1,17 +1,31 @@
-[gd_scene load_steps=3 format=3 uid="uid://dp3hpi0owfrxj"]
+[gd_scene load_steps=15 format=3 uid="uid://dp3hpi0owfrxj"]
 
 [ext_resource type="Script" path="res://Game/Scripts/level_selection.gd" id="1_pl04q"]
 [ext_resource type="PackedScene" uid="uid://c1am0enhtpict" path="res://Game/Scenes/play_button.tscn" id="2_iekud"]
+[ext_resource type="Texture2D" uid="uid://drpqdksa3s3wm" path="res://Game/Assets/UI/Levels_menus_v2.png" id="3_1nt56"]
+[ext_resource type="Texture2D" uid="uid://uygfti060v1o" path="res://Game/Assets/UI/Levels_menus_bg.png" id="4_56w6k"]
+[ext_resource type="Texture2D" uid="uid://c4jlpwlefhhip" path="res://Game/Assets/UI/Level_1.png" id="5_i0ggg"]
+[ext_resource type="Texture2D" uid="uid://giyso648oehl" path="res://Game/Assets/UI/Selected_level_1.png" id="6_xprbs"]
+[ext_resource type="Script" path="res://Game/Scripts/play_TextureButton.gd" id="7_cbgfb"]
+[ext_resource type="Texture2D" uid="uid://bajngul61cmpd" path="res://Game/Assets/UI/Level_2.png" id="7_hos4i"]
+[ext_resource type="Texture2D" uid="uid://by6wi6s3h8n8f" path="res://Game/Assets/UI/Selected_level_2.png" id="8_womx0"]
+[ext_resource type="Texture2D" uid="uid://cnim2x6mgrvps" path="res://Game/Assets/UI/Block_level_2.png" id="9_xc4dv"]
+[ext_resource type="Texture2D" uid="uid://bsk41yyyajft8" path="res://Game/Assets/UI/Level_3.png" id="10_8lb0t"]
+[ext_resource type="Texture2D" uid="uid://bfaeolirceupq" path="res://Game/Assets/UI/Selected_level_3.png" id="11_f3or1"]
+[ext_resource type="Texture2D" uid="uid://bxdf0pe6a2qwo" path="res://Game/Assets/UI/Block_level_3.png" id="12_no7yx"]
+[ext_resource type="Texture2D" uid="uid://b0lob3gapibk3" path="res://Game/Assets/UI/back_button.png" id="13_pk4h4"]
 
 [node name="LevelSelection" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
 script = ExtResource("1_pl04q")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+visible = false
+offset_right = 356.0
+offset_bottom = 631.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
@@ -31,6 +45,103 @@ layout_mode = 2
 theme_override_colors/font_hover_color = Color(0.184314, 0.266667, 0.439216, 1)
 text = "Level 3"
 
+[node name="Level4" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_iekud")]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.184314, 0.266667, 0.439216, 1)
+text = "Level 4"
+
+[node name="Level5" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_iekud")]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.184314, 0.266667, 0.439216, 1)
+text = "Level 5"
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_1nt56")
+expand_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_56w6k")
+expand_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 7.0
+offset_top = -81.5
+offset_right = 2823.0
+offset_bottom = 539.5
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+
+[node name="Level 1" type="TextureButton" parent="HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("5_i0ggg")
+texture_pressed = ExtResource("6_xprbs")
+texture_hover = ExtResource("6_xprbs")
+script = ExtResource("7_cbgfb")
+
+[node name="Level 2" type="TextureButton" parent="HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("7_hos4i")
+texture_pressed = ExtResource("8_womx0")
+texture_hover = ExtResource("8_womx0")
+texture_disabled = ExtResource("9_xc4dv")
+script = ExtResource("7_cbgfb")
+
+[node name="Level 3" type="TextureButton" parent="HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("10_8lb0t")
+texture_pressed = ExtResource("11_f3or1")
+texture_hover = ExtResource("11_f3or1")
+texture_disabled = ExtResource("12_no7yx")
+script = ExtResource("7_cbgfb")
+
+[node name="Level 4" type="TextureButton" parent="HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("5_i0ggg")
+texture_pressed = ExtResource("6_xprbs")
+texture_hover = ExtResource("6_xprbs")
+script = ExtResource("7_cbgfb")
+
+[node name="Level 5" type="TextureButton" parent="HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("5_i0ggg")
+texture_pressed = ExtResource("6_xprbs")
+texture_hover = ExtResource("6_xprbs")
+script = ExtResource("7_cbgfb")
+
+[node name="Back Button" type="TextureButton" parent="."]
+layout_mode = 1
+offset_top = 525.0
+offset_right = 234.0
+offset_bottom = 731.0
+scale = Vector2(0.6, 0.6)
+texture_normal = ExtResource("13_pk4h4")
+texture_pressed = ExtResource("13_pk4h4")
+texture_hover = ExtResource("13_pk4h4")
+
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Level2" to="." method="_on_level_2_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Level4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Level5" to="." method="_on_level_5_pressed"]
+[connection signal="pressed" from="HBoxContainer/Level 1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/Level 2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/Level 3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/Level 4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="HBoxContainer/Level 5" to="." method="_on_level_5_pressed"]

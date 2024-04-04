@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=3 uid="uid://duffyxgp2csfc"]
+[gd_scene load_steps=63 format=3 uid="uid://duffyxgp2csfc"]
 
 [ext_resource type="Script" path="res://Store/Scripts/store.gd" id="1_d777w"]
 [ext_resource type="Script" path="res://Store/Scripts/ChildrenManager.gd" id="2_darp7"]
@@ -13,6 +13,7 @@
 [ext_resource type="Material" uid="uid://bu4yuhcr6p30o" path="res://Store/Assets/blue_stuff.tres" id="11_0djb2"]
 [ext_resource type="ArrayMesh" uid="uid://sdckvecpb1n0" path="res://Store/Assets/Blender_Import1/Shop_Furniture_1_Cube_060.res" id="12_sy147"]
 [ext_resource type="PackedScene" uid="uid://hixi7tqi7tx6" path="res://Store/Scenes/fruit_box_large.tscn" id="13_bo4y3"]
+[ext_resource type="PackedScene" uid="uid://dtc5rffjjcoea" path="res://Utils/Scenes/arrow.tscn" id="14_537x2"]
 [ext_resource type="PackedScene" uid="uid://dixjovhq4qmr4" path="res://Store/Assets/Blender_Import1/Wall_tiles/Celling_tile.glb" id="14_ygxef"]
 [ext_resource type="PackedScene" uid="uid://cwkf2ub8galkb" path="res://Store/Assets/Blender_Import1/Wall_tiles/wall.glb" id="15_iunhd"]
 [ext_resource type="PackedScene" uid="uid://dpb5oq8aqjlls" path="res://Store/Assets/Blender_Import1/Wall_tiles/Corner_wall.glb" id="16_rbumr"]
@@ -375,6 +376,9 @@ collision_mask = 9
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Shop_layout_2/NavigationRegion3D/fruit_box_large_001/FruitBoxReload"]
 transform = Transform3D(1.285, 0, 0, 0, 1.285, 0, 0, 0, 1.285, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_2vyc8")
+
+[node name="Arrow_1" parent="Shop_layout_2/NavigationRegion3D/fruit_box_large_001/FruitBoxReload" instance=ExtResource("14_537x2")]
+transform = Transform3D(1, 0, 0, 8.73115e-11, 1, 0, 7.10543e-15, -3.46945e-18, 1, -0.000402451, 1.8149, 0)
 
 [node name="fruit_box_large_002" parent="Shop_layout_2/NavigationRegion3D" instance=ExtResource("13_bo4y3")]
 transform = Transform3D(-1, 0.000750491, 6.99382e-08, 0.000750491, 1, 0, -8.74227e-08, 6.561e-11, -0.8, -4.3311, 0.2, -0.833328)

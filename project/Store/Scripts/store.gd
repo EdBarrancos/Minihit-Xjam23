@@ -10,4 +10,8 @@ func _process(delta):
 		get_tree().quit()
 
 func _on_timer_timeout():
-	get_parent().load_end_screen()
+	if(Global.score > 0):
+		get_tree().change_scene_to_file("res://Game/Scenes/win_screen.tscn")
+	else:
+		get_tree().change_scene_to_file("res://Game/Scenes/lose_screen.tscn")
+

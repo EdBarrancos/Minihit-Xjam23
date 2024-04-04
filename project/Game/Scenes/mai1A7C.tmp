@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://bxrdccqb4xeev" path="res://Game/Assets/UI/Start_menu.png" id="3_ybf1y"]
 [ext_resource type="Texture2D" uid="uid://bhl7jgl5hwqrh" path="res://Game/Assets/GDTArtboard_24x.png" id="4_bfuhg"]
 [ext_resource type="Texture2D" uid="uid://d3xw1pbnuwqro" path="res://Game/Assets/UI/Start_button.png" id="5_dslf4"]
-[ext_resource type="Script" path="res://Game/Scripts/play_TextureButton.gd" id="6_6h7a3"]
 [ext_resource type="Texture2D" uid="uid://d2ip76dtf11ii" path="res://Game/Assets/UI/Selected_start_button.png" id="6_n6gwn"]
+[ext_resource type="Script" path="res://Game/Scripts/play_button.gd" id="7_0no50"]
 [ext_resource type="Texture2D" uid="uid://b20u03w6d6jl" path="res://Game/Assets/UI/quit_button.png" id="8_5wxrd"]
 [ext_resource type="Texture2D" uid="uid://doikal8hs18dh" path="res://Game/Assets/UI/options_button.png" id="9_ariej"]
 
@@ -81,7 +81,7 @@ texture_pressed = ExtResource("6_n6gwn")
 texture_hover = ExtResource("6_n6gwn")
 ignore_texture_size = true
 stretch_mode = 4
-script = ExtResource("6_6h7a3")
+script = ExtResource("7_0no50")
 
 [node name="Quit Button" type="TextureButton" parent="."]
 layout_mode = 0
@@ -92,7 +92,7 @@ offset_bottom = 599.0
 texture_normal = ExtResource("8_5wxrd")
 ignore_texture_size = true
 stretch_mode = 4
-script = ExtResource("6_6h7a3")
+script = ExtResource("7_0no50")
 
 [node name="Options Button" type="TextureButton" parent="."]
 layout_mode = 0
@@ -103,7 +103,7 @@ offset_bottom = 427.0
 texture_normal = ExtResource("9_ariej")
 ignore_texture_size = true
 stretch_mode = 4
-script = ExtResource("6_6h7a3")
+script = ExtResource("7_0no50")
 
 [connection signal="button_down" from="Play Button" to="Play Button" method="_on_button_down"]
 [connection signal="pressed" from="Play Button" to="." method="_on_play_button_pressed"]

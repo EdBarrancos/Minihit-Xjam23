@@ -7,6 +7,8 @@ var current_ammo = 10
 
 var can_reload = false
 
+var current_scene = "0"
+
 signal score_increased
 
 func _child_was_hit():
@@ -28,3 +30,9 @@ func _child_spawned():
 	
 func _gun_shot():
 	current_ammo -= 1
+	
+func _reset_variables():
+	score = 0
+	current_child = 0
+	current_ammo = 10
+	

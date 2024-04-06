@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://c7oot0tep422m"]
 
-[ext_resource type="Script" path="res://Game/Scripts/end_screen.gd" id="1_r7h15"]
+[ext_resource type="Script" path="res://Game/Scripts/lose_screen.gd" id="1_ukdvg"]
 [ext_resource type="Texture2D" uid="uid://bhl7jgl5hwqrh" path="res://Game/Assets/GDTArtboard_24x.png" id="2_43oj3"]
 [ext_resource type="FontFile" uid="uid://q5wlfanhobnp" path="res://Montserrat-MediumItalic.ttf" id="3_ivgw6"]
 [ext_resource type="PackedScene" uid="uid://c1am0enhtpict" path="res://Game/Scenes/play_button.tscn" id="4_f4k5j"]
@@ -65,7 +65,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_r7h15")
+script = ExtResource("1_ukdvg")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 visible = false

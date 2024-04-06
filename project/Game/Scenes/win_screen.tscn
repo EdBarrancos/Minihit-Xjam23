@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=3 uid="uid://stl2awynl0tl"]
 
-[ext_resource type="Script" path="res://Game/Scripts/end_screen.gd" id="1_87c6v"]
+[ext_resource type="Script" path="res://Game/Scripts/win_screen.gd" id="1_87c6v"]
 [ext_resource type="Texture2D" uid="uid://bhl7jgl5hwqrh" path="res://Game/Assets/GDTArtboard_24x.png" id="2_n57x7"]
 [ext_resource type="FontFile" uid="uid://q5wlfanhobnp" path="res://Montserrat-MediumItalic.ttf" id="3_d23n8"]
 [ext_resource type="PackedScene" uid="uid://c1am0enhtpict" path="res://Game/Scenes/play_button.tscn" id="4_5f8w5"]
@@ -174,7 +174,7 @@ script = ExtResource("6_721u6")
 stream = ExtResource("7_17g6w")
 bus = &"Sound effect"
 
-[node name="Try Again" type="Button" parent="VBoxContainer"]
+[node name="Next Shift" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.584314, 0.976471, 0.427451, 1)
 theme_override_fonts/font = ExtResource("3_d23n8")
@@ -186,10 +186,12 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_ckx5i")
 text = "Next Shift"
 script = ExtResource("6_721u6")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="VBoxContainer/Try Again"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="VBoxContainer/Next Shift"]
 stream = ExtResource("7_17g6w")
 bus = &"Sound effect"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer3/Button" to="." method="_on_button_pressed"]
 [connection signal="button_down" from="VBoxContainer/Main Menu Button" to="VBoxContainer/Main Menu Button" method="_on_button_down"]
-[connection signal="button_down" from="VBoxContainer/Try Again" to="VBoxContainer/Try Again" method="_on_button_down"]
+[connection signal="pressed" from="VBoxContainer/Main Menu Button" to="." method="_on_main_menu_button_pressed"]
+[connection signal="button_down" from="VBoxContainer/Next Shift" to="VBoxContainer/Next Shift" method="_on_button_down"]
+[connection signal="pressed" from="VBoxContainer/Next Shift" to="." method="_on_next_shift_pressed"]

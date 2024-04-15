@@ -6,6 +6,16 @@ extends Control
 func _ready():
 	points.text = str(Global.score)
 	Global._reset_variables()
+	
+	match Global.available_scene:
+		"1":
+			Global.available_scene = "2"
+		"2":
+			Global.available_scene = "3"
+		"3":
+			Global.available_scene = "4"
+		"4":
+			Global.available_scene = "5"
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

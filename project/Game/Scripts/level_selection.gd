@@ -1,5 +1,25 @@
 extends Control
 
+@onready var Level1Button = $"HBoxContainer/Level 1"
+@onready var Level2Button = $"HBoxContainer/Level 2"
+@onready var Level3Button = $"HBoxContainer/Level 3"
+@onready var Level4Button = $"HBoxContainer/Level 4"
+@onready var Level5Button = $"HBoxContainer/Level 5"
+
+func ready():
+	pass
+	
+func _process(delta):
+	match Global.available_scene:
+		"2":
+			Level2Button.disabled = false
+		"3":
+			Level3Button.disabled = false
+		"4":
+			Level4Button.disabled = false
+		"5":
+			Level5Button.disabled = false
+	
 func _on_level_1_pressed():
 	Global.current_scene = "1"
 	get_tree().change_scene_to_file("res://Store/Scenes/store.tscn")

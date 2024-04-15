@@ -1,6 +1,6 @@
 extends Node
 
-var score = 0
+var score = 1
 var current_child = 0
 
 var current_ammo = 10
@@ -8,6 +8,7 @@ var current_ammo = 10
 var can_reload = false
 
 var current_scene = "0"
+var available_scene = "1"
 
 signal score_increased
 

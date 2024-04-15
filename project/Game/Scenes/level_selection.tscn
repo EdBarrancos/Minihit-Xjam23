@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dp3hpi0owfrxj"]
+[gd_scene load_steps=16 format=3 uid="uid://dp3hpi0owfrxj"]
 
 [ext_resource type="Script" path="res://Game/Scripts/level_selection.gd" id="1_pl04q"]
 [ext_resource type="PackedScene" uid="uid://c1am0enhtpict" path="res://Game/Scenes/play_button.tscn" id="2_iekud"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://bfaeolirceupq" path="res://Game/Assets/UI/Selected_level_3.png" id="11_f3or1"]
 [ext_resource type="Texture2D" uid="uid://bxdf0pe6a2qwo" path="res://Game/Assets/UI/Block_level_3.png" id="12_no7yx"]
 [ext_resource type="Texture2D" uid="uid://b0lob3gapibk3" path="res://Game/Assets/UI/back_button.png" id="13_pk4h4"]
+[ext_resource type="Texture2D" uid="uid://cfsrjd5rxstvr" path="res://Game/Assets/UI/Block_level_1.png" id="14_k88oo"]
 
 [node name="LevelSelection" type="Control"]
 layout_mode = 3
@@ -98,6 +99,7 @@ script = ExtResource("7_cbgfb")
 
 [node name="Level 2" type="TextureButton" parent="HBoxContainer"]
 layout_mode = 2
+disabled = true
 texture_normal = ExtResource("7_hos4i")
 texture_pressed = ExtResource("8_womx0")
 texture_hover = ExtResource("8_womx0")
@@ -106,6 +108,7 @@ script = ExtResource("7_cbgfb")
 
 [node name="Level 3" type="TextureButton" parent="HBoxContainer"]
 layout_mode = 2
+disabled = true
 texture_normal = ExtResource("10_8lb0t")
 texture_pressed = ExtResource("11_f3or1")
 texture_hover = ExtResource("11_f3or1")
@@ -114,16 +117,20 @@ script = ExtResource("7_cbgfb")
 
 [node name="Level 4" type="TextureButton" parent="HBoxContainer"]
 layout_mode = 2
+disabled = true
 texture_normal = ExtResource("5_i0ggg")
 texture_pressed = ExtResource("6_xprbs")
 texture_hover = ExtResource("6_xprbs")
+texture_disabled = ExtResource("14_k88oo")
 script = ExtResource("7_cbgfb")
 
 [node name="Level 5" type="TextureButton" parent="HBoxContainer"]
 layout_mode = 2
+disabled = true
 texture_normal = ExtResource("5_i0ggg")
 texture_pressed = ExtResource("6_xprbs")
 texture_hover = ExtResource("6_xprbs")
+texture_disabled = ExtResource("14_k88oo")
 script = ExtResource("7_cbgfb")
 
 [node name="Back Button" type="TextureButton" parent="."]

@@ -100,7 +100,6 @@ label_settings = ExtResource("8_1wwaf")
 script = ExtResource("7_pb05v")
 
 [node name="Timer" parent="CanvasLayer" instance=ExtResource("2_n1lct")]
-Dseconds = 30
 Dminutes = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
